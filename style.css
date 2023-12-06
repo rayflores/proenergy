@@ -1,0 +1,20 @@
+/*
+Theme Name:   proenergy
+Theme URI:    https://olliewp.com
+Description:  A child theme for Ollie.
+Author:       OllieWP
+Author URI:   http://example.com
+Template:     ollie
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         Tags: blog, portfolio, entertainment
+Text Domain:  ollie
+*/
+li.current-menu-item a span{
+    font-family: "Eurostile-Bold";
+    color:black;
+    border-image: url('./assets/images/border-underline.png');
+    border-image-width: 0px 0px 4px 18px;
+    border-image-outset: 0 0 5px 2px;
+}
