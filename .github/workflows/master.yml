@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    branches:
+      - 'master'
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -14,4 +17,4 @@ jobs:
         server: wattbridget.info
         username: rayflores@wattbridge.info
         password: ${{ secrets.PE_FTP_PW }}
-        server-dir: wp-content/themes/proenergy
+        server-dir: wp-content/themes/proenergy/
