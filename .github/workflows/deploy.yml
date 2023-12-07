@@ -13,7 +13,7 @@ jobs:
        - name: Checkout code
          uses: actions/checkout@v2
        - name: Deploy to GoDaddy
-         uses: SamKirkland/FTP-Deply-Action@3.1.1
+         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
          with: 
            server: ftp.wattbridge.info
            username: ${{ secrets.PE_FTP_UN }}
