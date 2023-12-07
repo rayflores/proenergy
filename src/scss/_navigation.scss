@@ -1,0 +1,14 @@
+li{
+
+    &.current-menu-item {
+        a { 
+            span {
+                font-family: "Eurostile-Bold";
+                color:black;
+                border-image: url('../../assets/images/border-underline.png');
+                border-image-width: 0px 0px 4px 18px;
+                border-image-outset: 0 0 5px 2px;
+            }
+        }
+    }
+}
