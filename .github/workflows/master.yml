@@ -14,7 +14,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.wattbridge.info
+        server: wattbridge.info
         username: rayflores@wattbridge.info
         password: ${{ secrets.PE_FTP_PW }}
         server-dir: wp-content/themes/proenergy/
