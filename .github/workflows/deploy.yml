@@ -18,4 +18,4 @@ jobs:
            server: ftp.wattbridge.info
            username: ${{ secrets.PE_FTP_UN }}
            password: ${{ secrets.PE_FTP_PW }}
-           local-dir: devproroot/wp-content/themes/proenergy
+           local-dir: devproroot/wp-content/themes/proenergy/
