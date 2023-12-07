@@ -1,0 +1,21 @@
+{
+  "name": "proenergy",
+    "version": "1.0.0",
+    "description": "A child theme of the Ollie theme",
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start",
+        "lint:css": "wp-scripts lint-style",
+        "lint:js": "wp-scripts lint-js",
+        "format:css": "npm run lint:css -- --fix",
+        "format:js": "npm run lint:js -- --fix",
+        "test:playwright": "wp-scripts test-playwright",
+        "test:playwright:help": "wp-scripts test-playwright --help",
+        "test:playwright:debug": "wp-scripts test-playwright --debug"
+    },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.18.0"
+  },
+  "author": "Ray Flores",
+  "license": "GNU GPL"
+}
