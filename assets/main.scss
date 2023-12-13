@@ -44,11 +44,11 @@ $gray-800: #343a40;
 $gray-900: #212529;
 
 // Color vars
-$blue: #0d6efd;
+$red: #862633;
+$blue: #003A70;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #d63384;
-$red: #dc3545;
 $orange: #fd7e14;
 $yellow: #ffc107;
 $green: #198754;
@@ -56,14 +56,51 @@ $teal: #20c997;
 $cyan: #0dcaf0;
 
 // Fonts
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('./fonts/HelveticaNeue.ttc') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Eurostile-Bold';
+	src: url('./fonts/Eurostile-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('./fonts/MyriadPro-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Italic';
+	src: url('./fonts/MyriadPro-it.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'MyriadPro-Semiboldit';
+	src: url('./fonts/MyriadPro-Semiboldit.otf') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+}
 $font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
 	'Liberation Sans', sans-serif;
 $font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-helvetica: 'Helvetica Neue', sans-serif;
+$font-family-euro-bold: 'Eurostile-Bold', sans-serif;
+$font-family-myriadpro: 'MyriadPro-Regular', sans-serif;
+$font-family-myriadpro-italic: 'MyriadPro-Italic', sans-serif;
+$font-family-myriadpro-italic-semibold: 'MyriadPro-Semiboldit', sans-serif;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-$font-family-base: $font-family-sans-serif;
+$font-family-base: $font-family-myriadpro;
 
 $link-decoration: none;
-
+$nav-link-font-size: 1em;
+$navbar-padding-y: 1.565rem;
+$navbar-nav-link-padding-x: 1.75rem;
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../node_modules/bootstrap/scss/variables';
 @import '../node_modules/bootstrap/scss/variables-dark';
@@ -177,10 +214,24 @@ img {
 
 .navbar-brand {
 	img {
-		height: 40px;
+		height: 22px;
 	}
 }
-
+#navbar {
+	.navbar-nav {
+		li {
+			&.current-menu-item {
+				a {
+					&.nav-link {
+						&.active {
+							font-family: $font-family-euro-bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 .navbar-static-top {
 	margin-bottom: $grid-gutter-width;
 }
