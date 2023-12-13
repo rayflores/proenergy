@@ -1,21 +1,29 @@
 {
-  "name": "proenergy",
-    "version": "1.0.0",
-    "description": "A child theme of the Ollie theme",
-    "scripts": {
-        "build": "wp-scripts build",
-        "start": "wp-scripts start",
-        "lint:css": "wp-scripts lint-style",
-        "lint:js": "wp-scripts lint-js",
-        "format:css": "npm run lint:css -- --fix",
-        "format:js": "npm run lint:js -- --fix",
-        "test:playwright": "wp-scripts test-playwright",
-        "test:playwright:help": "wp-scripts test-playwright --help",
-        "test:playwright:debug": "wp-scripts test-playwright --debug"
-    },
-  "devDependencies": {
-    "@wordpress/scripts": "^26.18.0"
-  },
-  "author": "Ray Flores",
-  "license": "GNU GPL"
+	"name": "themes-starter",
+	"version": "3.0.0",
+	"license": "GPL-2.0",
+	"description": "A WordPress Starter Theme built with Bootstrap 5.",
+	"homepage": "https://them.es",
+	"author": "them.es",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/them-es/themes-starter.git"
+	},
+	"scripts": {
+		"watch": "webpack serve && wp-scripts start",
+		"build": "wp-scripts build"
+	},
+	"browserslist": [
+		"last 2 versions"
+	],
+	"dependencies": {
+		"bootstrap": "^5.3.1",
+		"@popperjs/core": "^2.11.8",
+		"jquery": "^3.7.0"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.11.0",
+		"path": "^0.12.7",
+		"webpack-remove-empty-scripts": "^1.0.3"
+	}
 }

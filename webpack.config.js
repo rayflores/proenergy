@@ -1,20 +1,41 @@
-/**
- * External Dependencies
- */
-const path = require( 'path' );
+const path = require('path'),
+	removeEmptyScriptsPlugin = require('webpack-remove-empty-scripts'),
+	webpackConfig = require('@wordpress/scripts/config/webpack.config');
 
-/**
- * WordPress Dependencies
- */
-const defaultConfig = require( '@wordpress/scripts/config/webpack.config.js' );
-
+// Extend the @wordpress webpack config and add the entry points.
 module.exports = {
-	...defaultConfig,
+	...webpackConfig,
 	...{
-		entry: {
-			main: path.resolve( process.cwd(), 'src/scss', 'style.scss' ),
-			mainjs: path.resolve( process.cwd(), 'src/js', 'mainjs.js' ),
+		mode: 'production',
+		devServer: {
+			static: {
+				directory: path.join(__dirname, 'assets'),
+			},
+			client: {
+				overlay: false,
+			},
+			hot: false,
+			compress: true,
+			devMiddleware: {
+				writeToDisk: true,
+			},
 		},
+		context: path.resolve(__dirname, 'assets'),
+		entry: ['./main.js', './main.scss'],
+		// jQuery support
+		/*externals: {
+			jquery: "jQuery",
+		},*/
+		plugins: [
+			...webpackConfig.plugins,
+			/*new webpack.ProvidePlugin({
+				$: "jquery",
+				jQuery: "jquery",
+				"window.jQuery": "jquery",
+			}),*/
+			new removeEmptyScriptsPlugin({
+				stage: removeEmptyScriptsPlugin.STAGE_AFTER_PROCESS_PLUGINS,
+			}),
+		],
 	},
-	plugins: [ ...defaultConfig.plugins ],
 };
