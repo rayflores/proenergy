@@ -551,7 +551,17 @@ add_action( 'init', 'remove_wp_editor_pages' );
 function remove_wp_editor_pages(){
 	remove_post_type_support( 'page', 'editor' );
 }
+/**
+ * Remove featured image metabox
+ */
 function remove_wp_featured_image_metabox(){
 	remove_meta_box( 'postimagediv', 'page', 'side' );
 }
 add_action( 'admin_head', 'remove_wp_featured_image_metabox' );
+/**
+ * Add ACF save folder
+ */
+function acf_json_save_point( $path ) {
+    return get_stylesheet_directory() . '/acf-json';
+}
+add_filter( 'acf/settings/save_json', 'acf_json_save_point' );
