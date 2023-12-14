@@ -10,7 +10,6 @@ get_header();
 the_post();
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'content' ); ?>>
-	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<?php
 	if ( have_rows( 'pe_flexible_content' ) ) :
 		while( have_rows( 'pe_flexible_content' ) ) : the_row();

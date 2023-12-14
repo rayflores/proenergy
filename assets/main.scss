@@ -101,6 +101,7 @@ $link-decoration: none;
 $nav-link-font-size: 1em;
 $navbar-padding-y: 1.565rem;
 $navbar-nav-link-padding-x: 1.75rem;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../node_modules/bootstrap/scss/variables';
 @import '../node_modules/bootstrap/scss/variables-dark';
@@ -241,7 +242,9 @@ img {
 #main {
 	margin-top: $spacer;
 }
-
+#main.container {
+	padding: 0;
+}
 /* Footer */
 
 #footer {
