@@ -63,6 +63,12 @@ $cyan: #0dcaf0;
 	font-style: normal;
 }
 @font-face {
+	font-family: 'Eurostile-Normal';
+	src: url('./fonts/EuroStyle-Normal.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
 	font-family: 'Eurostile-Bold';
 	src: url('./fonts/Eurostile-Bold.ttf') format('truetype');
 	font-weight: 700;
@@ -91,6 +97,7 @@ $font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetic
 $font-family-serif: Georgia, 'Times New Roman', Times, serif;
 $font-family-helvetica: 'Helvetica Neue', sans-serif;
 $font-family-euro-bold: 'Eurostile-Bold', sans-serif;
+$font-family-euro-normal: 'Eurostile-Normal', sans-serif;
 $font-family-myriadpro: 'MyriadPro-Regular', sans-serif;
 $font-family-myriadpro-italic: 'MyriadPro-Italic', sans-serif;
 $font-family-myriadpro-italic-semibold: 'MyriadPro-Semiboldit', sans-serif;
@@ -240,7 +247,7 @@ img {
 /* Main */
 
 #main {
-	margin-top: $spacer;
+	margin-top: 0;
 }
 #main.container {
 	padding: 0;

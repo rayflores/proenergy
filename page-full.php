@@ -16,9 +16,11 @@ the_post();
 			if ( get_row_layout() == 'hero' ) :
 				include 'modules/hero/hero.php';
 			elseif( get_row_layout() == 'all_text' ) :
-				?>
-				<div>All Text Block render here</div>
-				<?php
+				include 'modules/all-text/all-text.php';
+			elseif( get_row_layout() === 'bulleted_image_right' ) :
+				include 'modules/bullet-right/bulleted-image-right.php';
+			elseif( get_row_layout() === 'bulleted_image_left' ) :
+				include 'modules/bullet-left/bulleted-image-left.php';	
 			endif;
 		endwhile;
 	endif;
