@@ -132,7 +132,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -554,5 +554,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1702610287
+    "modified": 1703730098
 }

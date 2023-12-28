@@ -9,11 +9,11 @@ $hero_headline = get_sub_field( 'hero_headline' );
 ?>
 <style>
 .hero-container {
-    max-height: 1040px;
+    max-height: 100%;
     position: relative;
 }
 .hero-container img.img-fluid {
-    max-height: 1040px;
+    max-height: 880px;
     object-fit: none;
     object-position: 0 0; /* positioned top left of the content box */
 }
@@ -31,7 +31,7 @@ $hero_headline = get_sub_field( 'hero_headline' );
 }
 .hero-container .hero-headline::before {
     position: absolute;
-    background: linear-gradient(to right, #003A70 192px, #862633 50px);
+    background: linear-gradient(to right, #003A70 192px, #862633 150px);
     height: 20px;
     content: '';
     bottom: -10px;
