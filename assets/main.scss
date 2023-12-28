@@ -220,7 +220,11 @@ img {
 		min-width: 250px;
 	}
 }
-
+.navbar>.container {
+	margin-left: 6em;
+	margin-right: 4em;
+	max-width: 100%;
+}
 .navbar-brand {
 	img {
 		height: 22px;
