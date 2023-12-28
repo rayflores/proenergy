@@ -12,7 +12,8 @@ $link = get_sub_field('at_link');
     color: #53565A;
 }
 .all-text-wrapper .container {
-
+    margin: 0;
+    padding: 4em 6em;
 }
 .all-text-container {
     padding: 2em 0;
