@@ -53,11 +53,11 @@ i.bi-arrow-right::before {
     width: 30px;
 }
 </style>
-<div class="all-text-wrapper">
-    <div class="container">
+<section id="section_all-text">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <div class="all-text-container">
+            <div class="all-text-wrapper col-12 px-5">
+                <div class="all-text-container px-5">
                     <?php
                     if ( $headline ) : ?>
                     <h2 class="all-text-headline"><?php echo $headline; ?></h2>
