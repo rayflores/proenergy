@@ -27,7 +27,6 @@ $hero_headline = get_sub_field( 'hero_headline' );
     padding: 0.5em 1em;
     position: absolute;
     text-transform: uppercase;
-    width: 50%;
 }
 .hero-container .hero-headline::before {
     position: absolute;
@@ -43,10 +42,10 @@ $hero_headline = get_sub_field( 'hero_headline' );
 }
 
 </style>
-<div class="hero-wrapper">
-    <div class="hero-container">
+<section id="section_hero-wrapper">
+    <div class="hero-container col-lg-12">
         <?php echo wp_get_attachment_image( $hero_image['ID'], 'full', "", array( 'class' => 'img-fluid' ) ); ?>
-        <div class="hero-headline">
+        <div class="hero-headline col-lg-8">
             <?php echo $hero_headline; ?>
         </div>   
     </div>

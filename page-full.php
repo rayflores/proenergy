@@ -15,13 +15,17 @@ the_post();
 		while( have_rows( 'pe_flexible_content' ) ) : the_row();
 			if ( get_row_layout() == 'hero' ) :
 				include 'modules/hero/hero.php';
-			elseif( get_row_layout() == 'all_text' ) :
+			endif;
+			if( get_row_layout() == 'all_text' ) :
 				include 'modules/all-text/all-text.php';
-			elseif( get_row_layout() === 'bulleted_image_right' ) :
+			endif;
+			if( get_row_layout() === 'bulleted_image_right' ) :
 				include 'modules/bullet-right/bulleted-image-right.php';
-			elseif( get_row_layout() === 'bulleted_image_left' ) :
+			endif;
+			if( get_row_layout() === 'bulleted_image_left' ) :
 				include 'modules/bullet-left/bulleted-image-left.php';	
 			endif;
+			
 		endwhile;
 	endif;
 	?>
