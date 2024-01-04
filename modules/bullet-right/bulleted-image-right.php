@@ -2,6 +2,7 @@
 /**
  * Module Name: Bulleted Image Right
  */
+$section_bg = get_sub_field('bir_background_grey') !== '' ? get_sub_field('bir_background_grey') : '';
 $image_video = get_sub_field('bir_image_video') !== '' ? get_sub_field('bir_image_video') : '';
 $top_text = get_sub_field('bir_top_text') !== '' ? get_sub_field('bir_top_text') : '';
 $headline = get_sub_field('bir_header_text') !== '' ? get_sub_field('bir_header_text') : '';
@@ -11,6 +12,7 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
 <section id="section_bulleted-image-right" class="pt-5">
     <style>
         #section_bulleted-image-right{
+            background-color: <?php echo $section_bg; ?>;
             height: 585px;
         }
         .container-fluid {
@@ -133,7 +135,7 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
                         <?php endif; ?>
                     </div>    
                 </div>  
-                <div class="col-7 bir-image h-100">
+                <div class="col-6 bir-image h-100 offset-1">
                     <img src="<?php echo $image_video['url']; ?>" alt="<?php echo $image_video['alt']; ?>" class="img-fluid h-100 w-100" />
                 <div class="bir-image-overlay"></div>
             </div>
