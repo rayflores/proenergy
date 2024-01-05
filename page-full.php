@@ -28,6 +28,9 @@ the_post();
 			if( get_row_layout() === 'header_band' ) :
 				include 'modules/header-band/header-band.php';	
 			endif;
+			if( get_row_layout() === 'tabbed_bulleted_image_left' ) :
+				include 'modules/tabbed-bil/tabbed-bil.php';	
+			endif;
 			
 		endwhile;
 	endif;
