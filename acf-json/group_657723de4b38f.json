@@ -587,6 +587,357 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6597fe1f4aa40": {
+                    "key": "layout_6597fe1f4aa40",
+                    "name": "header_band",
+                    "label": "Header Band",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6597fe304aa42",
+                            "label": "Background Color",
+                            "name": "hb_background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#003A70",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_6597fe934aa43",
+                            "label": "Header Text",
+                            "name": "hb_header_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6597fec34aa44",
+                            "label": "Paragraph",
+                            "name": "hb_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_6598080a7b616",
+                            "label": "Header Color",
+                            "name": "hb_header_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFFFFF",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_659810a9ff7ed": {
+                    "key": "layout_659810a9ff7ed",
+                    "name": "tabbed_bulleted_image_left",
+                    "label": "Tabbed Bulleted Image Left",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_659810a9ff7f0",
+                            "label": "Top Text",
+                            "name": "bil_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_659810e9ff7f8",
+                            "label": "Tabs",
+                            "name": "tbil_tabs",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Tab",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65981163ff7f9",
+                                    "label": "Tab Label",
+                                    "name": "tbil_tab_label",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                },
+                                {
+                                    "key": "field_659810a9ff7ee",
+                                    "label": "Background Grey?",
+                                    "name": "bil_background_grey",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "ui": 1,
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                },
+                                {
+                                    "key": "field_659810a9ff7ef",
+                                    "label": "Image \/ Video",
+                                    "name": "bil_image_video",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                },
+                                {
+                                    "key": "field_659810a9ff7f1",
+                                    "label": "Header Text",
+                                    "name": "bil_header_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                },
+                                {
+                                    "key": "field_659810a9ff7f2",
+                                    "label": "Paragraph",
+                                    "name": "bil_paragraph",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                },
+                                {
+                                    "key": "field_659810a9ff7f7",
+                                    "label": "Bullet Color",
+                                    "name": "bil_bullet_color",
+                                    "aria-label": "",
+                                    "type": "color_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "#003A70",
+                                    "enable_opacity": 0,
+                                    "return_format": "string",
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                },
+                                {
+                                    "key": "field_659810a9ff7f3",
+                                    "label": "Numbered Bullet",
+                                    "name": "bil_numbered_bullet",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Bullet",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_659810a9ff7f4",
+                                            "label": "Percentage",
+                                            "name": "bil_nb_percentage",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_659810a9ff7f3"
+                                        },
+                                        {
+                                            "key": "field_659810a9ff7f5",
+                                            "label": "Percentage Header",
+                                            "name": "bil_nb_percentage_header",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_659810a9ff7f3"
+                                        },
+                                        {
+                                            "key": "field_659810a9ff7f6",
+                                            "label": "Bullet Link",
+                                            "name": "bil_nb_bullet_link",
+                                            "aria-label": "",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "parent_repeater": "field_659810a9ff7f3"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_659810e9ff7f8"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -614,5 +965,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1704380057
+    "modified": 1704467683
 }
