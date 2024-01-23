@@ -14,12 +14,24 @@
 			?>
 		</main><!-- /#main -->
 		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p><?php printf( esc_html__( '&copy; %1$s %2$s. All rights reserved.', 'my-theme' ), wp_date( 'Y' ), get_bloginfo( 'name', 'display' ) ); ?></p>
-					</div>
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 justify-content-md-center">
+				<?php if ( is_active_sidebar( 'third_widget_area' ) ) : ?>
+						<div class="col-md-4">
+							<?php
+								dynamic_sidebar( 'third_widget_area' );
 
+								if ( current_user_can( 'manage_options' ) ) :
+							?>
+								<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>" class="badge bg-secondary"><?php esc_html_e( 'Edit', 'my-theme' ); ?></a></span><!-- Show Edit Widget link -->
+							<?php
+								endif;
+							?>
+						</div>
+					<?php
+						endif;
+					?>
+					<div class="col-md-4"></div>
 					<?php
 						if ( has_nav_menu( 'footer-menu' ) ) : // See function register_nav_menus() in functions.php
 							/*
@@ -39,11 +51,11 @@
 							);
 						endif;
 
-						if ( is_active_sidebar( 'third_widget_area' ) ) :
+						if ( is_active_sidebar( 'right_widget_area' ) ) :
 					?>
-						<div class="col-md-12">
+						<div class="col-md-4">
 							<?php
-								dynamic_sidebar( 'third_widget_area' );
+								dynamic_sidebar( 'right_widget_area' );
 
 								if ( current_user_can( 'manage_options' ) ) :
 							?>

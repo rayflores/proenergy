@@ -10,7 +10,7 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
 ?>
 <section id="section_header-band" class="pt-5">
     <style>
-        #section_header-band .container-fluid{
+        #section_header-band>.container-fluid{
             background-color: <?php echo $section_bg; ?>;
         }
         .container-fluid {
@@ -23,9 +23,10 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
             line-height: 0.75em;
             text-align: left;
             padding-top: 2em;
+            padding-left: 80px;
         }
         .hb-headline::after{
-            content: url("<?php echo get_stylesheet_directory_uri(); ?>/assets/images/border-underline-white.png");
+            content: url("<?php echo get_stylesheet_directory_uri(); ?>/images/border-underline-white.png");
             display: block;
             width: 100%;
         }
@@ -75,7 +76,7 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
             padding-bottom: 2em;
         }
         .hb-paragraph a.bir-nb-link::after{
-            content: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png');
+            content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
             display: inline-block;
             width: 40px;
             height: 0;
@@ -84,7 +85,7 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
     </style>
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-12 pt-5 pb-5 ps-5 mt-4 mb-4">
+            <div class="col-12 pt-5 pb-5 mt-4 mb-4">
                 <h2 class="hb-headline pt-5 pb-5 mt-5 mb-5"><?php echo $headline; ?></h2>
                 <?php if ( $paragraph !== '' ) : ?>
                 <p class="hb-paragraph"><?php echo $paragraph; ?></p>
@@ -92,3 +93,4 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
             </div>
         </div>
     </div>
+</section>

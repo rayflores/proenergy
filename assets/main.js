@@ -22,4 +22,28 @@ import * as bootstrap from 'bootstrap';
 			trigger: 'focus',
 		});
 	});
+	// scroll behavior smooth to left. bir and bil 
+	const revealObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry, index) => {
+			if (entry.intersectionRatio === 1) {
+			//   console.log(index + "image is fully visible");
+			} else if (!entry.isIntersecting) {
+			entry.target.classList.remove("animating");
+			//   console.log(index + " image has left the viewport");
+			} else if (entry.intersectionRatio > 0.5) {
+			//   let ratio = entry.intersectionRatio.toFixed(4);
+			//   console.log(index + "image has started leaving the viewport (ratio "+ratio+")");
+			} else if (entry.intersectionRatio < 0.5) {
+			// let ratio = entry.intersectionRatio.toFixed(4);
+			entry.target.classList.add("animating");
+			// console.log(index + "image has started entering the viewport (ratio "+ratio+")");
+			}
+		});
+	}, {
+		root: null,
+		threshold: [ 0.4, 0.9 ]
+	});
+	document.querySelectorAll(".reveal").forEach((reveal) => {
+		revealObserver.observe(reveal);
+	});
 })();

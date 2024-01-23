@@ -1,0 +1,38 @@
+#section_all-text {
+    .all-text-wrapper {
+        background-color: #ffffff;
+        color: #53565A;
+        .all-text-container {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-left: 80px;
+            .all-text-headline {
+                color: #53565A;
+                font-family: 'Eurostile-Bold';
+                font-size: 2.25em;
+                letter-spacing: 0;
+                margin-bottom: 0.5em;
+            }
+            .all-text-description {
+                font-family: 'MyriadPro-Regular';
+                font-size: 1.125em;
+            }
+            a {
+                &.at-link {
+                    color: #A3A8AA;
+                    display: inline-block;
+                    font-family: 'MyriadPro-Italic';
+                    font-size: 1.125em;
+                    margin-top: 30px;
+                    &::after{
+                        content: url('../images/right-arrow.png');
+                        display: inline-block;
+                        width: 40px;
+                        height: 0;
+                        margin-left: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
