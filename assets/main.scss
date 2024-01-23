@@ -57,45 +57,45 @@ $cyan: #0dcaf0;
 
 // Fonts
 @font-face {
-	font-family: 'Helvetica Neue';
-	src: url('./fonts/HelveticaNeue.ttc') format('truetype');
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue.ttc') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Eurostile-Normal';
-	src: url('./fonts/EuroStyle-Normal.woff') format('woff');
+	src: url('../fonts/EuroStyle-Normal.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Eurostile-Bold';
-	src: url('./fonts/Eurostile-Bold.ttf') format('truetype');
+	src: url('../fonts/Eurostile-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'MyriadPro-Regular';
-	src: url('./fonts/MyriadPro-Regular.otf') format('opentype');
+	src: url('../fonts/MyriadPro-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'MyriadPro-Italic';
-	src: url('./fonts/MyriadPro-it.otf') format('opentype');
+	src: url('../fonts/MyriadPro-it.otf') format('opentype');
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face {
 	font-family: 'MyriadPro-Semiboldit';
-	src: url('./fonts/MyriadPro-Semiboldit.otf') format('opentype');
+	src: url('../fonts/MyriadPro-Semiboldit.otf') format('opentype');
 	font-weight: 600;
 	font-style: italic;
 }
 $font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
 	'Liberation Sans', sans-serif;
 $font-family-serif: Georgia, 'Times New Roman', Times, serif;
-$font-family-helvetica: 'Helvetica Neue', sans-serif;
+$font-family-helvetica: 'HelveticaNeue', sans-serif;
 $font-family-euro-bold: 'Eurostile-Bold', sans-serif;
 $font-family-euro-normal: 'Eurostile-Normal', sans-serif;
 $font-family-myriadpro: 'MyriadPro-Regular', sans-serif;
@@ -153,21 +153,25 @@ $navbar-nav-link-padding-x: 1.75rem;
 @import '../node_modules/bootstrap/scss/offcanvas';
 @import '../node_modules/bootstrap/scss/helpers';
 
+// 9. Include ACF modules
+// add file with .scss extension to the assets folder
+
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import '../node_modules/bootstrap/scss/utilities/api';
-// 8. Optionally include Bootstrap Icons v1.11.2
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+// 9. Include ACF modules
+@import './hero';
+@import './all-text';
+// @import 'modules/bullet-left';
+@import './bullet-right';
+// @import 'modules/header-band';
+// @import 'modules/hero';
+// @import 'modules/tabbed-bil';
 /**
  * General
  */
 
 body {
-	&.page-template-page-full {
-		#main {
-			max-width: 100%;
-		}
-	}
-
 	/* If WP-Adminbar is visible */
 	&.admin-bar {
 		#header.fixed-top {
@@ -220,10 +224,8 @@ img {
 		min-width: 250px;
 	}
 }
-.navbar>.container {
-	margin-left: 6em;
-	margin-right: 4em;
-	max-width: 100%;
+.page-template-page-full #main.container {
+	max-width: 1200px;
 }
 .navbar-brand {
 	img {
@@ -260,9 +262,9 @@ img {
 /* Footer */
 
 #footer {
-	background-color: #fff;
-
+	background-color: #53565A;
 	p {
+		color: #FFFFFF;
 		margin-top: 10px;
 	}
 

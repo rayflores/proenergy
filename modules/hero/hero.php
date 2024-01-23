@@ -5,47 +5,20 @@
  * Proenergy Hero Block Template
  */
 $hero_image = get_sub_field( 'hero_image_video' );
+$hero_image_url = $hero_image['url'];
+
 $hero_headline = get_sub_field( 'hero_headline' );
 ?>
-<section id="section_hero-wrapper">
-    <style>
-    .hero-container {
-        max-height: 100%;
-        position: relative;
-    }
-    .hero-container img.img-fluid {
-        max-height: 880px;
-        object-fit: none;
-        object-position: 0 0; /* positioned top left of the content box */
-    }
-    .hero-container .hero-headline {
-        bottom: 0;
-        color: #ffffff;
-        font-family: 'Eurostile-Normal';
-        font-size: 6em;
-        letter-spacing: 15px;
-        line-height: 0.8;
-        padding: 0.5em 1em;
-        position: absolute;
-        text-transform: uppercase;
-    }
-    .hero-container .hero-headline::before {
-        position: absolute;
-        background: linear-gradient(to right, #003A70 192px, #862633 150px);
-        height: 20px;
-        content: '';
-        bottom: -10px;
-        right: 0;
-        left: 0;
-    }
-    .hero-container .hero-headline span {
-        font-family: 'Eurostile-Bold';
-    }
-    </style>
-    <div class="hero-container col-lg-12">
-        <?php echo wp_get_attachment_image( $hero_image['ID'], 'full', "", array( 'class' => 'img-fluid' ) ); ?>
-        <div class="hero-headline col-lg-6">
-            <?php echo $hero_headline; ?>
-        </div>   
+<section id="section_hero-wrapper" style="background-image: url('<?php echo $hero_image_url; ?>');">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="hero-container col-lg-12">
+                <div class="hero-headline col-lg-12">
+                    <div class="hero-headline-text col-lg-6">
+                        <?php echo $hero_headline; ?>
+                    </div>
+                </div>   
+            </div>
+        </div>
     </div>
 </section>

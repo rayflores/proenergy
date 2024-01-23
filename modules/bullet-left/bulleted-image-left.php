@@ -9,17 +9,13 @@ $headline = get_sub_field('bil_header_text') !== '' ? get_sub_field('bil_header_
 $paragraph = get_sub_field('bil_paragraph') !== '' ? get_sub_field('bil_paragraph') : '';
 $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bullet_color') : '';
 ?>
-<section id="section_bulleted-image-left" class="pt-5">
+<section id="section_bulleted-image-left" class="pt-5 pb-5">
     <style>
-        #section_bulleted-image-left{
-            height: 585px;
-        }
-        .container-fluid {
+          .container-fluid {
             padding: 0;
         }
         .bil-top-text {
             line-height: 1em;
-            padding-left: 5.75em;
             position: relative;
             outline: 0;
             border: 0;
@@ -35,6 +31,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             width: 5%;
             height: 1px;
             background: #A3A8AA;
+            z-index: 1;
         }
         .bil-top-text::after{
             background-color: #fcfcfa;
@@ -42,12 +39,14 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             content: attr(data-content);
             display: inline-block;
             letter-spacing: 1em;
+            padding-left: 80px;
             position: relative;
             line-height: 1.5em;
             text-transform: uppercase;
+            z-index: 0;
         }
         a.bil-nb-link::after{
-            content: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/right-arrow.png');
+            content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
             display: inline-block;
             width: 40px;
             height: 0;
@@ -59,11 +58,15 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             font-size: 2.25em;
             letter-spacing: 0;
             margin-bottom: 0.5em;
+            padding-left: 80px;
         }
         .bil-paragraph {
             font-family: 'MyriadPro-Regular';
             font-size: 1.125em;
-            padding-right: 2.25em;
+            padding-left: 80px;
+        }
+        .bil-bullets{
+            padding-left: 80px;
         }
         .bil-nb-percentage{
             color: <?php echo $bullet_color; ?>;
@@ -88,32 +91,41 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         .bil-image{
             position: relative;
         }
-        .bil-image-overlay{
+        .bil-image-mask {
+            background: linear-gradient(117deg, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0) 45%);
             position: absolute;
-            top: 0;
-            z-index: 10;
-            width: 250px;
+            z-index: 1;
             height: 100%;
-            background: rgba(255,255,255,0.8);
-            transform: skew(-195.25deg);
-            left: -60px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transform: translateX(0);
+            -webkit-transtition: transform 5s ease-out;
+            transition: transform 5s ease-out;
+        }
+        .reveal {
+            position: relative;
+            overflow: hidden;
+        }
+        .reveal.animating .bil-image-mask{
+            transform: translateX(-100%);
         }
     </style>
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-5 bil-image h-100 p-0">
-                    <img src="<?php echo $image_video['url']; ?>" alt="<?php echo $image_video['alt']; ?>" class="img-fluid h-100 w-100" />
-                <div class="bil-image-overlay"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5 bil-image p-0 reveal">
+                    <div class="bil-image-mask"></div>
+                    <img src="<?php echo $image_video['url']; ?>" alt="<?php echo $image_video['alt']; ?>" class="img-fluid h-100 object-fit-cover" />
                 </div>
-                <div class="col-7 bil-text-container h-100 p-0 pt-5">
+                <div class="col-7 bil-text-container p-0">
                     <div class="bil-top-text col-12" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>"></div>
-                    <div class="bil-headline pt-4 offset-1">
+                    <div class="bil-headline pt-4">
                         <?php echo $headline !== '' ? $headline : ''; ?>
                     </div>
-                    <div class="bil-paragraph col-8 offset-1">
+                    <div class="bil-paragraph col-10">
                         <?php echo $paragraph !== '' ? $paragraph : ''; ?>
                     </div>
-                    <div class="bil-numbered-bullets col-8 offset-1">
+                    <div class="bil-numbered-bullets col-7">
                         <?php 
                         if (have_rows('bil_numbered_bullet') ): ?>
                         <div class="bil-bullets">

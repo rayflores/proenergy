@@ -261,8 +261,19 @@ function themes_starter_widgets_init() {
 	// Area 3.
 	register_sidebar(
 		array(
-			'name'          => 'Third Widget Area (Footer)',
+			'name'          => 'Left Widget Area (Footer)',
 			'id'            => 'third_widget_area',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	// Area 4.
+	register_sidebar(
+		array(
+			'name'          => 'Right Side Widget Area (Footer)',
+			'id'            => 'right_widget_area',
 			'before_widget' => '',
 			'after_widget'  => '',
 			'before_title'  => '<h3 class="widget-title">',
@@ -536,7 +547,9 @@ function themes_starter_scripts_loader() {
 	}
 
 	// 2. Scripts.
+
 	wp_enqueue_script( 'mainjs', get_theme_file_uri( 'build/main.js' ), array(), $theme_version, true );
+	// wp_enqueue_script( 'mainjs', get_theme_file_uri( 'assets/main.js' ), array(), $theme_version, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -600,3 +613,6 @@ function pe_acf_admin_head() {
 	<?php
 	}
 	add_action('acf/input/admin_head', 'pe_acf_admin_head');
+
+// Disable WordPress' automatic image scaling feature
+add_filter( 'big_image_size_threshold', '__return_false' );

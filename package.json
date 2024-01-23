@@ -1,13 +1,13 @@
 {
-	"name": "themes-starter",
-	"version": "3.0.0",
+	"name": "proenergy-theme",
+	"version": "1.0.1",
 	"license": "GPL-2.0",
-	"description": "A WordPress Starter Theme built with Bootstrap 5.",
-	"homepage": "https://them.es",
-	"author": "them.es",
+	"description": "A WordPress Theme built with Bootstrap 5 for Proenergy",
+	"homepage": "https://proenergy.com",
+	"author": "rayflores",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/them-es/themes-starter.git"
+		"url": "git://github.com/rayflores/proenergy.git"
 	},
 	"scripts": {
 		"watch": "webpack serve && wp-scripts start",
@@ -17,13 +17,13 @@
 		"last 2 versions"
 	],
 	"dependencies": {
-		"bootstrap": "^5.3.1",
+		"bootstrap": "^5.3.2",
 		"@popperjs/core": "^2.11.8",
-		"jquery": "^3.7.0"
+		"jquery": "^3.7.1"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.11.0",
+		"@wordpress/scripts": "^26.19.0",
 		"path": "^0.12.7",
-		"webpack-remove-empty-scripts": "^1.0.3"
+		"webpack-remove-empty-scripts": "^1.0.4"
 	}
 }
