@@ -24,14 +24,42 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_65b11c9237892",
+                            "label": "Image or Video",
+                            "name": "hero_image_or_video",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui_on_text": "Image",
+                            "ui_off_text": "Video",
+                            "ui": 1
+                        },
+                        {
                             "key": "field_65772414208cb",
-                            "label": "Hero Image\/Video",
-                            "name": "hero_image_video",
+                            "label": "Hero Image",
+                            "name": "hero_image",
                             "aria-label": "",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_65b11c9237892",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -47,6 +75,34 @@
                             "max_size": "",
                             "mime_types": "",
                             "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_65b11cf537893",
+                            "label": "Hero Video",
+                            "name": "hero_video",
+                            "aria-label": "",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_65b11c9237892",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
                             "key": "field_6577243f208cc",
@@ -965,5 +1021,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1704682620
+    "modified": 1706106498
 }

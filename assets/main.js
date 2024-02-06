@@ -1,4 +1,5 @@
 // Webpack Imports
+import { viewport } from '@popperjs/core';
 import * as bootstrap from 'bootstrap';
 
 (function () {
@@ -45,5 +46,40 @@ import * as bootstrap from 'bootstrap';
 	});
 	document.querySelectorAll(".reveal").forEach((reveal) => {
 		revealObserver.observe(reveal);
+	});
+	
+	jQuery(function ($) {
+		// top navigation hide on scroll down
+		var isMobile = ajax_object.isMobile;
+		if (isMobile == '' || isMobile == 'false') {
+			$(window).on('scroll', function () {
+				var top = $(window).scrollTop();
+				var width = $(window).width();
+				if ( width > 767 ) {
+					if (top >= 220 && !$('#menu-top-menu').hasClass('d-none')) {
+						$('#navbar').removeClass('align-items-start');
+						$('#menu-top-menu').addClass('d-none');
+						$('nav#header').addClass('small-nav');
+					} 
+					if (top < 220 && $('#menu-top-menu').hasClass('d-none')) {
+						$('#navbar').addClass('align-items-start');
+						$('#menu-top-menu').removeClass('d-none');
+						$('nav#header').removeClass('small-nav');
+					}
+				}
+			});
+			$(window).on('resize', function () {
+				var newWidth = $(window).getWidth();
+				var newTop = $(window).scrollTop();
+				if ( newWidth > 767 ) {
+					if (newTop >= 220 && !$('#menu-top-menu').hasClass('d-none')) {
+						$('#menu-top-menu').addClass('d-none');
+					} 
+					if (newTop < 220 && $('#menu-top-menu').hasClass('d-none')) {
+						$('#menu-top-menu').removeClass('d-none');
+					}
+				}
+			});
+		}
 	});
 })();

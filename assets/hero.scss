@@ -1,14 +1,24 @@
 #section_hero-wrapper {
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
     height: 570px;
-    padding:0;
     position: relative;
-    z-index: -1;
-    .hero-container {
-        .hero-headline {
+    width: 100%;
+    z-index: 0;
+    @include media-breakpoint-down(lg) {
+        height: 400px;
+    }
+    video {
+        height: 570px;
+        left: 50%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 0;
+    }
+    .hero-headline {
             bottom: 0;
             color: #ffffff;
             font-family: 'Eurostile-Normal';
@@ -23,7 +33,6 @@
                 font-family: 'Eurostile-Bold';
             }
         }
-    }
     &::before {
         position: absolute;
         background: url('../images/hero-underline.png') no-repeat left center;

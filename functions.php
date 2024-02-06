@@ -513,6 +513,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		array(
 			'main-menu'   => 'Main Navigation Menu',
 			'footer-menu' => 'Footer Menu',
+			'top-menu'    => 'Top Menu',
 		)
 	);
 }
@@ -548,9 +549,13 @@ function themes_starter_scripts_loader() {
 
 	// 2. Scripts.
 
-	wp_enqueue_script( 'mainjs', get_theme_file_uri( 'build/main.js' ), array(), $theme_version, true );
+	wp_enqueue_script( 'mainjs', get_theme_file_uri( 'build/main.js' ), array('jquery'), $theme_version, true );
 	// wp_enqueue_script( 'mainjs', get_theme_file_uri( 'assets/main.js' ), array(), $theme_version, true );
-
+	wp_localize_script( 'mainjs', 'ajax_object', array( 
+		'ajax_url' => admin_url( 'admin-ajax.php' ),
+		'isMobile' => wp_is_mobile(),
+		)
+	);
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -114,7 +114,7 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
             transform: translateX(-100%);
         }
     </style>
-        <div class="container-fluid pt-5">
+        <div class="pt-5">
             <div class="row">
                 <div class="col-12 bir-text-container">
                     <div class="bir-top-text col-6" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>">
