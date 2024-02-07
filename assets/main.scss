@@ -106,8 +106,9 @@ $font-family-base: $font-family-myriadpro;
 
 $link-decoration: none;
 $nav-link-font-size: 1em;
-$navbar-padding-y: 1.565rem;
+$navbar-padding-y: 0;
 $navbar-nav-link-padding-x: 1.75rem;
+$gutter-x: 0;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../node_modules/bootstrap/scss/variables';
@@ -218,10 +219,18 @@ img {
 }
 
 /* Header */
-
-#header {
-	.search-form {
-		min-width: 250px;
+header {
+	#header {
+		height: 100px;
+		position: fixed;
+		z-index: 100;
+		transition: height .3s;
+		.search-form {
+			min-width: 250px;
+		}
+		&.small-nav {
+			height: 60px;
+		}
 	}
 }
 .page-template-page-full #main.container {
@@ -234,12 +243,30 @@ img {
 }
 #navbar {
 	.navbar-nav {
-		li {
-			&.current-menu-item {
-				a {
-					&.nav-link {
-						&.active {
-							font-family: $font-family-euro-bold;
+		&.main-menu {
+			li {
+				&.current-menu-item {
+					a {
+						&.nav-link {
+							&.active {
+								font-family: $font-family-euro-bold;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.top-menu {
+			background: #f2f2f2;
+			padding: 0;
+			transition: top .2s;
+			li {
+				&.current-menu-item {
+					a {
+						&.nav-link {
+							&.active {
+								font-family: $font-family-euro-bold;
+							}
 						}
 					}
 				}

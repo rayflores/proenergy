@@ -19,6 +19,7 @@ module.exports = {
 			devMiddleware: {
 				writeToDisk: true,
 			},
+			allowedHosts: 'all',
 		},
 		context: path.resolve(__dirname, 'assets'),
 		entry: ['./main.js', './main.scss'],
