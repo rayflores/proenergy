@@ -112,7 +112,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         }
     </style>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row g-0">
                 <div class="col-5 bil-image p-0 reveal">
                     <div class="bil-image-mask"></div>
                     <img src="<?php echo $image_video['url']; ?>" alt="<?php echo $image_video['alt']; ?>" class="img-fluid h-100 object-fit-cover" />
