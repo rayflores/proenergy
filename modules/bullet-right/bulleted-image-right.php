@@ -9,15 +9,12 @@ $headline = get_sub_field('bir_header_text') !== '' ? get_sub_field('bir_header_
 $paragraph = get_sub_field('bir_paragraph') !== '' ? get_sub_field('bir_paragraph') : '';
 $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bullet_color') : '';
 ?>
-<section id="section_bulleted-image-right" class="pt-5 pb-5">
+<section id="section_bulleted-image-right" class="pt-5 pb-5" style="background-color: <?php echo $section_bg; ?>">
     <style>
         /* :root {
             --percent: 55%;
         } */
-        #section_bulleted-image-right{
-            background-color: <?php echo $section_bg; ?>;
-        }
-        .container-fluid {
+        /* .container-fluid {
             padding: 0;
         }
         .bir-top-text {
@@ -112,16 +109,16 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
         }
         .reveal.animating .bir-image-mask{
             transform: translateX(-100%);
-        }
+        } */
     </style>
         <div class="pt-5">
-            <div class="row">
+            <div class="row g-0">
                 <div class="col-12 bir-text-container">
                     <div class="bir-top-text col-6" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>">
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row g-0">
                 <div class="col-6 bir-text-container">
                     <div class="bir-headline pt-4">
                         <?php echo $headline !== '' ? $headline : ''; ?>
@@ -135,10 +132,10 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
                         <div class="bir-bullets">
                             <?php while (have_rows('bir_numbered_bullet') ) : the_row(); ?>
                             <div class="bir-bullet pt-5">
-                                <div class="bir-nb-percentage">
+                                <div class="bir-nb-percentage" style="color:<?php echo $bullet_color; ?>">
                                     <?php echo get_sub_field('bir_nb_percentage') !== '' ? get_sub_field('bir_nb_percentage') : ''; ?>
                                 </div>
-                                <div class="bir-nb-percentage-header">
+                                <div class="bir-nb-percentage-header" style="color: <?php echo $bullet_color; ?>">
                                     <?php echo get_sub_field('bir_nb_percentage_header') !== '' ? get_sub_field('bir_nb_percentage_header') : ''; ?>
                                 </div>
                                 <?php

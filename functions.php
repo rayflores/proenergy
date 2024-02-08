@@ -537,7 +537,8 @@ if ( is_readable( $custom_walker_footer ) ) {
  * @return void
  */
 function themes_starter_scripts_loader() {
-	$theme_version = wp_get_theme()->get( 'Version' );
+	// $theme_version = wp_get_theme()->get( 'Version' );
+	$theme_version = (int) current_time( 'timestamp' );
 
 	// 1. Styles.
 	wp_enqueue_style( 'style', get_theme_file_uri( 'style.css' ), array(), $theme_version, 'all' );
