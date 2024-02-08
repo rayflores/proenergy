@@ -1,0 +1,96 @@
+#section_bulleted-image-right{
+    .bir-text-container {
+        padding: 0;
+    }
+    .bir-top-text {
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color: #A3A8AA;
+        text-align: left;
+        height: 1.5em;
+    }
+    .bir-top-text::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 50px;
+        height: 1px;
+        background: #A3A8AA;
+        z-index: 1;
+    }
+    .bir-top-text::after{
+        background-color: #fcfcfa;
+        color: #A3A8AA;
+        content: attr(data-content);
+        display: inline-block;
+        letter-spacing: 1em;
+        padding-left: 80px;
+        position: relative;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        z-index: 0;
+    }
+    a.bir-nb-link::after{
+        content: url('../images/right-arrow.png');
+        display: inline-block;
+        width: 40px;
+        height: 0;
+        margin-left: 1em;
+    }
+    .bir-headline {
+        color: #53565A;
+        font-family: 'Eurostile-Bold';
+        font-size: 2.25em;
+        letter-spacing: 0;
+        margin-bottom: 0.5em;
+        padding-left: 80px;
+    }
+    .bir-paragraph {
+        font-family: 'MyriadPro-Regular';
+        font-size: 1.125em;
+        padding-left: 80px;
+    }
+    .bir-numbered-bullets{
+        padding-left: 80px;
+    }
+    .bir-nb-percentage{
+        font-family: 'Eurostile-Bold';
+        font-size: 2.25em;
+        letter-spacing: 0;
+        line-height: 0.75em;
+        text-transform: uppercase;
+    }
+    .bir-nb-percentage-header{
+        font-family: 'Eurostile-Bold';
+        font-size: 1.125em;
+        letter-spacing: 0;
+    }
+    .bir-nb-link{
+        color: #A3A8AA;
+        font-family: 'MyriadPro-Italic';
+        font-size: 1.125em;
+        margin-top: 30px;
+    }
+    .bir-image-mask {
+        background: linear-gradient(117deg, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0) 45%);
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        -webkit-transtition: transform 5s ease-out;
+        transition: transform 5s ease-out;
+    }
+    .reveal {
+        position: relative;
+        overflow: hidden;
+    }
+    .reveal.animating .bir-image-mask{
+        transform: translateX(-100%);
+    }
+}
