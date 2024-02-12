@@ -84,7 +84,7 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
         }
     </style>
     <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row g-0 align-items-center">
             <div class="col-12 pt-5 pb-5 mt-4 mb-4">
                 <h2 class="hb-headline pt-5 pb-5 mt-5 mb-5"><?php echo $headline; ?></h2>
                 <?php if ( $paragraph !== '' ) : ?>
