@@ -117,7 +117,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             border-radius: 0;
             color: #003A70;
         }
-        .nav-tabs .nav-link.active::before{
+        .nav-tabs li .nav-link.active::before{
             content: '';
             position: absolute;
             top: 0;
@@ -125,6 +125,9 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             width: 51px;
             height: 1px;
             background: #003A70;
+        }
+        .nav-tabs li:not(:first-child) .nav-link.active::before{
+            left: 50px;
         }
     </style>
     <div class="container-fluid">
@@ -135,7 +138,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         </div>
         <div class="row g-0">
             <div id="tabbed-bil-tabs" class="pb-4">
-                <ul class="nav nav-tabs col-6" id="tabbed-bil" role="tablist">
+                <ul class="nav nav-tabs col-6 justify-content-end" id="tabbed-bil" role="tablist">
                     <?php 
                     if (have_rows( 'tbil_tabs' ) ) : 
                         while ( have_rows( 'tbil_tabs' ) ) : the_row();
@@ -176,8 +179,8 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                         <div class="col-6">
                             <?php echo wp_get_attachment_image( $tbil_image_video['ID'], 'full', "", array( 'class' => 'img-fluid h-100 object-fit-cover' ) ); ?>
                         </div>
-                        <div class="col-6">
-                            <div class="tbil-tab-active pt-5">
+                        <div class="col-6 px-5">
+                            <div class="tbil-tab-active pb-5">
                                 <?php echo $tbil_tab_label; ?>
                             </div>
                             <h2 class="tbil-headline"><?php echo $tbil_header_text; ?></h2>
