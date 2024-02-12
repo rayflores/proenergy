@@ -233,9 +233,10 @@ header {
 		}
 	}
 	.second-navbar {
-		background-color: transparent;
+		background-image: none;
+		position: fixed;
 		z-index: 100;
-		top: 100px;
+		top: 132px;
 		ul {
 			li {
 				background-color: rgba($color: #666, $alpha: 0.8);
