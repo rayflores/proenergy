@@ -57,14 +57,14 @@ import * as bootstrap from 'bootstrap';
 				var width = $(window).width();
 				if ( width > 767 ) {
 					if (top >= 220 && !$('#menu-top-menu').hasClass('d-none')) {
-						$('#navbar').removeClass('align-items-start');
-						$('#menu-top-menu').addClass('d-none');
 						$('nav#header').addClass('small-nav');
+						$('#menu-top-menu').addClass('d-none').fadeOut(1000);
 					} 
 					if (top < 220 && $('#menu-top-menu').hasClass('d-none')) {
-						$('#navbar').addClass('align-items-start');
-						$('#menu-top-menu').removeClass('d-none');
 						$('nav#header').removeClass('small-nav');
+						setTimeout(function(){
+							$('#menu-top-menu').removeClass('d-none').fadeIn(3000);
+						},300);
 					}
 				}
 			});
