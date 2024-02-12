@@ -128,12 +128,12 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         }
     </style>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row g-0">
             <div class="top-text-container col-lg-12 pb-5">
                 <div class="tbil-top-text col-6" data-content="<?php echo $tbil_top_text; ?>"></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row g-0">
             <div id="tabbed-bil-tabs" class="pb-4">
                 <ul class="nav nav-tabs col-6" id="tabbed-bil" role="tablist">
                     <?php 
@@ -172,7 +172,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                         }
                 ?>
                 <div class="tab-pane fade <?php echo $bullet_active; ?>" id="<?php echo strtolower( str_replace( ' ', '-', $tbil_tab_label ) ); ?>" role="tabpanel" aria-labelledby="<?php echo strtolower( str_replace( ' ', '-', $tbil_tab_label ) ); ?>-tab">
-                    <div class="row justify-content-center d-flex">
+                    <div class="row g-0 justify-content-center d-flex">
                         <div class="col-6">
                             <?php echo wp_get_attachment_image( $tbil_image_video['ID'], 'full', "", array( 'class' => 'img-fluid h-100 object-fit-cover' ) ); ?>
                         </div>

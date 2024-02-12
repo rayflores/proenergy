@@ -42,18 +42,8 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div id="navbar" class="collapse navbar-collapse col-7 row h-100 align-items-start">
+				<div id="navbar" class="collapse navbar-collapse col-7 row h-100">
 					<?php
-						// Loading WordPress Custom Menu (theme_location).
-						wp_nav_menu(
-							array(
-								'menu_class'     => 'navbar-nav top-menu justify-content-start',
-								'container'      => '',
-								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'         => new WP_Bootstrap_Navwalker(),
-								'theme_location' => 'top-menu',
-							)
-						);
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(
 							array(
@@ -78,9 +68,27 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
 		</nav><!-- /#header -->
+		<nav class="navbar second-navbar navbar-expand-md container-fluid navbar-light justify-content-end">
+			<div class="position-relative h-100">
+				<div class="col-6 offset-md-6 top-small-menu-nav align-self-end flex-row">
+						<?php
+							// Loading WordPress Custom Menu (theme_location).
+							wp_nav_menu(
+								array(
+									'menu_class'     => 'navbar-nav top-menu justify-content-end',
+									'container'      => '',
+									'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+									'walker'         => new WP_Bootstrap_Navwalker(),
+									'theme_location' => 'top-menu',
+								)
+							);
+						?>
+					</div>
+			</div>
+		</nav>
 	</header>
-
 	<main id="main"<?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' style="padding-top: 100px;"'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' style="padding-bottom: 100px;"'; endif; ?>>
+		
 		<?php
 			// If Single or Archive (Category, Tag, Author or a Date based page).
 			if ( is_single() || is_archive() ) :
