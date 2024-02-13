@@ -70,12 +70,12 @@
 		</nav><!-- /#header -->
 		<nav class="navbar second-navbar navbar-expand-md container-fluid navbar-light justify-content-end">
 			<div class="position-relative h-100">
-				<div class="col-6 offset-md-6 top-small-menu-nav align-self-end flex-row">
+				<div class="col-6 top-small-menu-nav">
 						<?php
 							// Loading WordPress Custom Menu (theme_location).
 							wp_nav_menu(
 								array(
-									'menu_class'     => 'navbar-nav top-menu justify-content-end',
+									'menu_class'     => 'navbar-nav top-menu ',
 									'container'      => '',
 									'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
 									'walker'         => new WP_Bootstrap_Navwalker(),
