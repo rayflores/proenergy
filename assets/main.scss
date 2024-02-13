@@ -178,6 +178,9 @@ body {
 		#header.fixed-top {
 			top: var(--wp-admin--admin-bar--height);
 		}
+		.second-navbar {
+			top: calc(var(--wp-admin--admin-bar--height) + 100px);
+		}
 
 		.edit-link a {
 			color: #fff !important;
@@ -234,17 +237,34 @@ header {
 	}
 	.second-navbar {
 		background-image: none;
+		max-width: 450px;
 		position: fixed;
+		right: 0;
+		top: 100px;
 		z-index: 100;
-		top: 132px;
-		ul {
-			li {
-				background-color: rgba($color: #666, $alpha: 0.8);
-				a {
-					color: #fff;
-				}
+		.top-small-menu-nav {
+			background-color: rgba($color: #666, $alpha: 0.8);
+			padding-bottom: 10px;
+			padding-top: 10px;
+			width: 100%;
+			ul {
+				&.top-menu {
+					li {
+						border-right: 1px rgba($color: #fff, $alpha: 0.5) solid;
+						&:last-child {
+							border-right: none;
+						}
+						.nav-link {
+							color: #fff;
+							font-family: $font-family-myriadpro;
+							font-size: 12px;
+							letter-spacing: 1px;
+							padding: 3px 25px;
+							text-transform: uppercase;
+						}
+					}
+				}		
 			}
-		
 		}
 	}
 }
