@@ -37,7 +37,13 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 		 * @param stdClass $args   An object of wp_nav_menu() arguments.
 		 */
 		public function start_lvl( &$output, $depth = 0, $args = null ) {
-			$output .= '<ul role="menu" class="dropdown-menu">';
+			if ( 1 === $depth && $args->has_children ) {
+				$output .= '<ul role="menu" class="dropdown-menu mega-inside">';
+			} elseif ( 0 === $depth && $args->has_children ) {
+				$output .= '<ul role="menu" class="dropdown-menu mega-container">';
+			} else {
+				$output .= '<ul role="menu" class="dropdown-menu">';
+			}
 		}
 
 		/**
@@ -66,7 +72,8 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 			} elseif ( 0 === strcasecmp( $item->title, 'divider' ) && 1 === $depth ) {
 				$output .= '<li role="presentation" class="divider">';
 			} elseif ( 0 === strcasecmp( $item->attr_title, 'dropdown-header' ) && 1 === $depth ) {
-				$output .= '<li role="presentation" class="dropdown-header">' . esc_attr( $item->title );
+				// $output .= '<li role="presentation" class="dropdown-mega-header">' . esc_attr( $item->title );
+				$output .= '<li role="presentation" class="dropdown-mega-header">' . $item->title;
 			} elseif ( 0 === strcasecmp( $item->attr_title, 'disabled' ) ) {
 				$output .= '<li role="presentation" class="disabled"><a href="#">' . esc_attr( $item->title ) . '</a>';
 			} else {
@@ -79,7 +86,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$classes[]   = 'menu-item-' . $item->ID;
 				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
 				if ( $args->has_children ) {
-					$class_names .= ' dropdown';
+					$class_names .= ' dropdown-here dropdown-megamenu';
 				}
 				if ( preg_grep( '/^current/', $classes ) ) {
 					$atts['aria-current'] = 'page';
@@ -92,7 +99,8 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$output     .= '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"' . $id . $class_names . '>';
 
 				if ( empty( $item->attr_title ) ) {
-					$atts['title'] = ! empty( $item->title ) ? strip_tags( $item->title ) : '';
+					// $atts['title'] = ! empty( $item->title ) ? strip_tags( $item->title ) : '';
+					$atts['title'] = ! empty( $item->title ) ? $item->title : '';
 				} else {
 					$atts['title'] = $item->attr_title;
 				}

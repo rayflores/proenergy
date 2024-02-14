@@ -175,8 +175,11 @@ $gutter-x: 0;
 body {
 	/* If WP-Adminbar is visible */
 	&.admin-bar {
-		#header.fixed-top {
-			top: var(--wp-admin--admin-bar--height);
+		#header {
+			top: 32px;
+			.fixed-top {
+				top: var(--wp-admin--admin-bar--height);
+			}
 		}
 		.second-navbar {
 			top: calc(var(--wp-admin--admin-bar--height) + 100px);
@@ -226,6 +229,7 @@ header {
 	#header {
 		height: 100px;
 		position: fixed;
+		top: 0;
 		z-index: 100;
 		transition: height .3s;
 		.search-form {
@@ -234,6 +238,46 @@ header {
 		&.small-nav {
 			height: 60px;
 		}
+		&.navbar-expand-md {
+			.navbar-nav {
+				.dropdown-menu {
+					&.mega-container {
+						> .dropdown-header {
+							display: inline-block;
+						}
+						&.show {
+							background-color: rgba(248, 249, 250, 1);
+							border:none;
+							border-radius: 0;
+							display: flex;
+							gap: 5%;
+							justify-content: flex-end;
+							margin-top: 0;
+							padding-right: 4em;
+							top: 100px;
+							width:100%;
+							.dropdown-mega-header{
+								.mega-inside {
+									align-items: flex-start;
+									background-color: transparent;
+									border: none;
+									box-shadow: none;
+									display: flex;
+									flex-direction: column;
+									position: relative;
+									li {
+										.dropdown-item {
+											color: #a3a8aa;
+											padding-left: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	.second-navbar {
 		background-image: none;
@@ -241,7 +285,7 @@ header {
 		position: fixed;
 		right: 0;
 		top: 100px;
-		z-index: 100;
+		z-index: 99;
 		.top-small-menu-nav {
 			background-color: rgba($color: #666, $alpha: 0.8);
 			padding-bottom: 10px;
@@ -291,22 +335,6 @@ header {
 				}
 			}
 		}
-		&.top-menu {
-			background: #f2f2f2;
-			padding: 0;
-			transition: top .2s;
-			li {
-				&.current-menu-item {
-					a {
-						&.nav-link {
-							&.active {
-								font-family: $font-family-euro-bold;
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 }
 .navbar-static-top {
@@ -316,7 +344,7 @@ header {
 /* Main */
 
 #main {
-	margin-top: 0;
+	margin-top: 100px;
 }
 #main.container {
 	padding: 0;
