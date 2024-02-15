@@ -11,17 +11,40 @@ the_post();
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'content' ); ?>>
 	<?php
-	if ( ! is_front_page() ) : ?>
-	<section id="section_breadcrumbs">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-12">
-					<?php get_the_breadcrumbs(); ?>
-				</div>
-			</div>
-		</div>
-	</section>
-	<?php
+	if ( ! is_front_page() ) : 
+		if ( have_rows( 'proenergy_powerflx_modules' ) ) :
+			$run_once = false;
+			while( have_rows( 'proenergy_powerflx_modules' ) ) : the_row();
+				if( get_row_layout() === 'powerflx_header' ) :
+					include 'modules/powerflx-header/powerflx-header.php';	
+				endif;
+				if ( !$run_once ) :
+				?>
+				<section id="section_breadcrumbs" class="pt-5 ps-5">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 ">
+								<?php 
+								get_the_breadcrumbs(); 
+								$run_once = true; ?>
+							</div>
+						</div>
+					</div>
+				</section>
+				<?php
+				endif;
+				if( get_row_layout() === 'powerflx_all_text' ) :
+					include 'modules/powerflx-all-text/powerflx-all-text.php';	
+				endif;
+				if( get_row_layout() === 'powerflx_bir' ) :
+					include 'modules/powerflx-bir/powerflx-bir.php';	
+				endif;
+				if( get_row_layout() === 'powerflx_bil' ) :
+					include 'modules/powerflx-bil/powerflx-bil.php';	
+				endif;
+				
+			endwhile;
+		endif;
 	endif;
 	if ( have_rows( 'pe_home_flexible_content' ) ) :
 		while( have_rows( 'pe_home_flexible_content' ) ) : the_row();
