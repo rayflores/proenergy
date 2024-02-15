@@ -369,7 +369,29 @@ header {
 		}
 	}
 }
-
+/* Breadcrumbs */
+#section_breadcrumbs {
+	#breadcrumbs {
+		ol {
+			li {
+				a {
+					color: #A3A8AA;
+				}
+				&:last-child{
+					a {
+						span {
+							font-family : "MyriadPro-Italic";
+							font-size : 18px;
+							line-height : 25px;
+							color : #862633;
+							color : rgb(134, 38, 51);
+						}
+					}
+				}
+			}
+		}
+	}
+}
 /* Sidebar */
 
 .widget-area {

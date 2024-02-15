@@ -20,10 +20,10 @@ the_post();
 				endif;
 				if ( !$run_once ) :
 				?>
-				<section id="section_breadcrumbs">
+				<section id="section_breadcrumbs" class="pt-5 ps-5">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-12">
+							<div class="col-12 ">
 								<?php 
 								get_the_breadcrumbs(); 
 								$run_once = true; ?>

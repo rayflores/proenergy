@@ -50,7 +50,7 @@ $all_text_link = get_sub_field( 'all_text_link' );
 </style>
 <section id="section_pflx-all-text-wrapper">
     <div class="container-fluid">
-        <div class="p-4 p-md-5 mb-4 text-bg-light">
+        <div class="p-4 ps-md-5 pe-md-5 mb-4 text-bg-light">
             <div class="col-lg-12 px-0">
                 <div class="pflx-all-text-header-container">
                     <h2><?php echo $all_text_header; ?></h2>
