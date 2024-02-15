@@ -225,6 +225,24 @@
                             "append": ""
                         },
                         {
+                            "key": "field_65ce68a5c27e1",
+                            "label": "Bullet Color",
+                            "name": "powerflx_bir_bullet_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#862633",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
                             "key": "field_65cd86e29e684",
                             "label": "PowerFLX Link",
                             "name": "powerflx_bir_link",
@@ -449,5 +467,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707973051
+    "modified": 1708026118
 }

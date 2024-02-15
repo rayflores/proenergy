@@ -646,16 +646,16 @@ function get_the_breadcrumbs() {
 		
 		if ( !empty($ancestors) ) {
 			foreach ($ancestors as $ancestor_id) {
-				$breadcrumbs[] = '<a href="' . get_permalink($ancestor_id) . '">' . get_the_title($ancestor_id) . '</a>';
+				$breadcrumbs[] = '<li class="breadcrumb-item"><a href="' . get_permalink($ancestor_id) . '"><span>' . get_the_title($ancestor_id) . '</span></a></li>';
 			}
 		}
 
         // Add the current page breadcrumb
-        $breadcrumbs[] = get_the_title($post_id);
+        $breadcrumbs[] = '<li class="breadcrumb-item first"><a href="' . get_permalink($post_id) . '"><span>' .get_the_title($post_id) . '</span></a></li>';
     }
 
 	// Output the breadcrumbs
-    echo '<div class="breadcrumbs">' . implode(' // ', $breadcrumbs) . '</div>';
+    echo '<section id="breadcrumbs"><ol class="breadcrumb">' . implode('', $breadcrumbs) . '</ol></div>';
 }
 function get_image_srcset($image_id) {
     // Get the image metadata
