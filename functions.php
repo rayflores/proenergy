@@ -621,3 +621,74 @@ function pe_acf_admin_head() {
 
 // Disable WordPress' automatic image scaling feature
 add_filter( 'big_image_size_threshold', '__return_false' );
+
+// create a function that will use pages to create breadcrumbs
+function get_the_breadcrumbs() {
+	$post_id = get_queried_object_id();
+	$breadcrumbs = array();
+	// Check if the current page is a single post
+    if (is_single()) {
+        // Get the post type
+        $post_type = get_post_type();
+
+        // Get the post type archive link
+        $post_type_archive_link = get_post_type_archive_link($post_type);
+
+        // Add the post type archive breadcrumb
+        $breadcrumbs[] = '<a href="' . esc_url($post_type_archive_link) . '">' . ucfirst($post_type) . ' Archive</a>';
+
+        // Add the current post breadcrumb
+        $breadcrumbs[] = get_the_title($post_id);
+    } elseif (is_page()) {
+        // If the current page is a parent page, add its title to breadcrumbs
+        $ancestors = get_ancestors($post_id, 'page');
+        $ancestors = array_reverse($ancestors);
+		
+		if ( !empty($ancestors) ) {
+			foreach ($ancestors as $ancestor_id) {
+				$breadcrumbs[] = '<a href="' . get_permalink($ancestor_id) . '">' . get_the_title($ancestor_id) . '</a>';
+			}
+		}
+
+        // Add the current page breadcrumb
+        $breadcrumbs[] = get_the_title($post_id);
+    }
+
+	// Output the breadcrumbs
+    echo '<div class="breadcrumbs">' . implode(' // ', $breadcrumbs) . '</div>';
+}
+function get_image_srcset($image_id) {
+    // Get the image metadata
+    $image_meta = wp_get_attachment_metadata($image_id);
+
+    // Check if the image metadata is available
+    if (!$image_meta) {
+        return '';
+    }
+
+    // Get the image sizes
+    $sizes = $image_meta['sizes'];
+
+    // Initialize an array to store srcset values
+    $srcset = array();
+
+    // Loop through the image sizes and create srcset values
+    foreach ($sizes as $size => $data) {
+        $src = wp_get_attachment_image_src($image_id, $size);
+        $srcset[] = $src[0] . ' ' . $data['width'] . 'w';
+    }
+
+    // Join the srcset values with a comma and return
+    return implode(', ', $srcset);
+}
+function get_image_alt_text($image_id) {
+    // Get the alt text from post meta
+    $alt_text = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+
+    // If alt text is not available, get the image title as a fallback
+    if (empty($alt_text)) {
+        $alt_text = get_the_title($image_id);
+    }
+
+    return $alt_text;
+}

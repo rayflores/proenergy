@@ -3,7 +3,9 @@
  * Module Name: Bulleted Image Right
  */
 $section_bg = get_sub_field('bir_background_grey') !== '' ? get_sub_field('bir_background_grey') : 'transparent';
-$image_video = get_sub_field('bir_image_video') !== '' ? get_sub_field('bir_image_video') : '';
+$image_video_id = get_sub_field('bir_image_video') !== '' ? get_sub_field('bir_image_video') : '';
+$srcset = get_image_srcset($image_video_id);
+$alt_text = get_image_alt_text($image_video_id);
 $top_text = get_sub_field('bir_top_text') !== '' ? get_sub_field('bir_top_text') : '';
 $headline = get_sub_field('bir_header_text') !== '' ? get_sub_field('bir_header_text') : '';
 $paragraph = get_sub_field('bir_paragraph') !== '' ? get_sub_field('bir_paragraph') : '';
@@ -54,7 +56,7 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
                 <div class="col-1"></div>
                 <div class="col-5 bir-image reveal">
                     <div class="bir-image-mask"></div>
-                    <img src="<?php echo $image_video['url']; ?>" alt="<?php echo $image_video['alt']; ?>" class="img-fluid h-100 object-fit-cover image-bg" />
+                    <img src="<?php echo esc_url(wp_get_attachment_url($image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover image-bg">
                 </div>
             </div>
         </div>

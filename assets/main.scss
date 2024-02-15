@@ -250,7 +250,6 @@ header {
 							border:none;
 							border-radius: 0;
 							display: flex;
-							gap: 5%;
 							justify-content: flex-end;
 							margin-top: 0;
 							padding-left: 1em;
@@ -258,6 +257,7 @@ header {
 							top: 100px;
 							width:100%;
 							.dropdown-mega-header{
+								width: 275px;
 								.mega-inside {
 									align-items: flex-start;
 									background-color: transparent;
@@ -265,6 +265,8 @@ header {
 									box-shadow: none;
 									display: flex;
 									flex-direction: column;
+									gap: 1em;
+									margin-top: 1.5em;
 									position: relative;
 									li {
 										.dropdown-item {

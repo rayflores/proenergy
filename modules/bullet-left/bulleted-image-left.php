@@ -3,7 +3,9 @@
  * Module Name: Bulleted Image Left
  */
 $section_bg = get_sub_field('bil_background_grey') !== '' ? get_sub_field('bil_background_grey') : '';
-$image_video = get_sub_field('bil_image_video') !== '' ? get_sub_field('bil_image_video') : '';
+$image_video_id = get_sub_field('bil_image_video') !== '' ? get_sub_field('bil_image_video') : '';
+$srcset = get_image_srcset($image_video_id);
+$alt_text = get_image_alt_text($image_video_id);
 $top_text = get_sub_field('bil_top_text') !== '' ? get_sub_field('bil_top_text') : '';
 $headline = get_sub_field('bil_header_text') !== '' ? get_sub_field('bil_header_text') : '';
 $paragraph = get_sub_field('bil_paragraph') !== '' ? get_sub_field('bil_paragraph') : '';
@@ -115,7 +117,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             <div class="row g-0">
                 <div class="col-5 bil-image p-0 reveal">
                     <div class="bil-image-mask"></div>
-                    <img src="<?php echo $image_video['url']; ?>" alt="<?php echo $image_video['alt']; ?>" class="img-fluid h-100 object-fit-cover" />
+                    <img src="<?php echo esc_url(wp_get_attachment_url($image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover">
                 </div>
                 <div class="col-7 bil-text-container p-0">
                     <div class="bil-top-text col-12" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>"></div>

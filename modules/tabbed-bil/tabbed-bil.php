@@ -163,7 +163,9 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                     while ( have_rows( 'tbil_tabs' ) ) : the_row();
                         $tbil_tab_label = get_sub_field('tbil_tab_label') !== '' ? get_sub_field('tbil_tab_label') : '';
                         $tbil_bg_grey = get_sub_field('tbil_background_grey') !== '' ? get_sub_field('tbil_background_grey') : '';
-                        $tbil_image_video = get_sub_field('tbil_image_video') !== '' ? get_sub_field('tbil_image_video') : '';
+                        $tbil_image_video_id = get_sub_field('tbil_image_video') !== '' ? get_sub_field('tbil_image_video') : '';
+                        $srcset = get_image_srcset($tbil_image_video_id);
+                        $alt_text = get_image_alt_text($tbil_image_video_id);
                         $tbil_header_text = get_sub_field('tbil_header_text') !== '' ? get_sub_field('tbil_header_text') : '';
                         $tbil_paragraph = get_sub_field('tbil_paragraph') !== '' ? get_sub_field('tbil_paragraph') : '';
                         $tbil_bullet_color = get_sub_field('tbil_bullet_color') !== '' ? get_sub_field('tbil_bullet_color') : '';
@@ -177,7 +179,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                 <div class="tab-pane fade <?php echo $bullet_active; ?>" id="<?php echo strtolower( str_replace( ' ', '-', $tbil_tab_label ) ); ?>" role="tabpanel" aria-labelledby="<?php echo strtolower( str_replace( ' ', '-', $tbil_tab_label ) ); ?>-tab">
                     <div class="row g-0 justify-content-center d-flex">
                         <div class="col-6">
-                            <?php echo wp_get_attachment_image( $tbil_image_video['ID'], 'full', "", array( 'class' => 'img-fluid h-100 object-fit-cover' ) ); ?>
+                            <img src="<?php echo esc_url(wp_get_attachment_url($tbil_image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover">
                         </div>
                         <div class="col-6 px-5">
                             <div class="tbil-tab-active pb-5">

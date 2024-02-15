@@ -11,8 +11,20 @@ the_post();
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'content' ); ?>>
 	<?php
-	if ( have_rows( 'pe_flexible_content' ) ) :
-		while( have_rows( 'pe_flexible_content' ) ) : the_row();
+	if ( ! is_front_page() ) : ?>
+	<section id="section_breadcrumbs">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<?php get_the_breadcrumbs(); ?>
+				</div>
+			</div>
+		</div>
+	</section>
+	<?php
+	endif;
+	if ( have_rows( 'pe_home_flexible_content' ) ) :
+		while( have_rows( 'pe_home_flexible_content' ) ) : the_row();
 			if ( get_row_layout() == 'hero' ) :
 				include 'modules/hero/hero.php';
 			endif;
