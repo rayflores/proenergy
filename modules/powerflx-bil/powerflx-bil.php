@@ -14,6 +14,9 @@ $bil_bullet_text = get_sub_field('powerflx_bil_text') !== '' ? get_sub_field('po
 $bil_link = get_sub_field('powerflx_bil_link') !== '' ? get_sub_field('powerflx_bil_link') : '';
 ?>
 <style>
+    #section_pflx-bil-wrapper {
+        max-height: 655px;
+    }
     .pflx-bil-top-text {
         line-height: 1em;
         position: relative;
@@ -94,12 +97,35 @@ $bil_link = get_sub_field('powerflx_bil_link') !== '' ? get_sub_field('powerflx_
         height: 0;
         margin-left: 1em;
     }
+    .showcase .showcase-img {
+        min-height: 40rem;
+        background-size: cover;
+    }
+    /* .pflx-bil-image-mask {
+        background: linear-gradient(117deg, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0) 45%);
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        -webkit-transtition: transform 5s ease-out;
+        transition: transform 5s ease-out;
+    }
+    .reveal {
+        position: relative;
+        overflow: hidden;
+    }
+    .reveal.animating .pflx-bil-image-mask{
+        transform: translateX(-100%);
+    } */
 </style>
-<section id="section_pflx-bil-wrapper" class="pt-5 pb-5 my-5">
+<section id="section_pflx-bil-wrapper" class="pt-5 pb-5 my-5 showcase">
+<div class="container-fluid p-0">
     <div class="row g-0">
-        <div class="col-5 pflx-bil-image-container p-0 reveal">
+        <div class="col-5 pflx-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($bil_image_id)); ?>');">
             <div class="pflx-bil-image-mask"></div>
-            <img class="img-fluid h-100 object-fit-cover" src="<?php echo esc_url(wp_get_attachment_url($bil_image_id)); ?>" srcset="<?php echo $bil_image_srcset; ?>" alt="PowerFLX Bullet Image Left">
         </div>
         <div class="col-7 pflx-bil-text-container p-0 pt-5 mt-3">
             <div class="pflx-bil-top-text col-12" data-content="<?php echo $bil_top_text !== '' ? $bil_top_text : ''; ?>"></div>
@@ -117,9 +143,10 @@ $bil_link = get_sub_field('powerflx_bil_link') !== '' ? get_sub_field('powerflx_
                     <?php echo $bil_bullet_text; ?>
                 </div>
             </div>
-            <div class="pflx-bil-link-container">
+            <div class="pflx-bil-link-container mt-5">
                 <a href="<?php echo $bil_link['url']; ?>" target="<?php echo $bil_link['target']; ?>"><?php echo $bil_link['title']; ?></a>
             </div>
         </div>
     </div>
+</div>
 </section>
