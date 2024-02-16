@@ -97,6 +97,8 @@ import * as bootstrap from 'bootstrap';
 			var theTop = $(window).scrollTop();
 			if ( theTop >= 220 && theWidth > 767 ) {
 				$('ul.dropdown-menu.mega-container').css('top', '60px');
+			} else {
+				$('ul.dropdown-menu.mega-container').css('top', '100px');
 			}
 		});
 	});
