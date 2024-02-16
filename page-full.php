@@ -60,6 +60,9 @@ the_post();
 				if( get_row_layout() === 'powerflx_text_right_slant_image' ) :
 					include 'modules/powerflx-slant-right/powerflx-slant-right.php';	
 				endif;
+				if( get_row_layout() === 'powerflx_just_text' ) :
+					include 'modules/powerflx-just-text/powerflx-just-text.php';	
+				endif;
 			endwhile;
 		endif;
 	endif;

@@ -153,6 +153,112 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_65cfbc360d472": {
+                    "key": "layout_65cfbc360d472",
+                    "name": "powerflx_just_text",
+                    "label": "PowerFLX Just Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65cfbcb885a1f",
+                            "label": "Just Text Background Color",
+                            "name": "just_text_bg_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#A3A8AA",
+                            "enable_opacity": 1,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65cfc1e8bd429",
+                            "label": "Just Text Top Text",
+                            "name": "just_text_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65cfbc360d473",
+                            "label": "Just Text Header",
+                            "name": "just_text_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65cfbc360d474",
+                            "label": "Just Text Paragraph",
+                            "name": "just_text_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65cfc42b265a6",
+                            "label": "Just Text Text Color",
+                            "name": "just_text_text_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#53565A",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65cd85339e67d": {
                     "key": "layout_65cd85339e67d",
                     "name": "powerflx_bir",
@@ -1133,6 +1239,18 @@
                 "operator": "==",
                 "value": "284"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "343"
+            }
         ]
     ],
     "menu_order": 0,
@@ -1144,5 +1262,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708103955
+    "modified": 1708115024
 }
