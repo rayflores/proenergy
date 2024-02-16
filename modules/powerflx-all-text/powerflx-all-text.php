@@ -54,9 +54,29 @@ if ( is_page() && $post->post_parent ) {
     }
     <?php 
     if ( $child ) { ?>
+
+    @media (min-width: 767.98px) { 
         .pflx-all-text-paragraph-container p {
-            padding-right: 22em;
+            padding-right: 0;
+        } 
+    }
+    @media (min-width: 991.98px) { 
+        .pflx-all-text-paragraph-container p {
+            padding-right: 1em;
         }
+     }
+    @media (min-width: 1199.98px) {  }
+
+    @media (min-width: 1399.98px) { 
+        .pflx-all-text-paragraph-container p {
+            padding-right: 2em;
+        }
+     }
+    @media (min-width: 1899.98px) { 
+        .pflx-all-text-paragraph-container p {
+            padding-right: 3em;
+        }
+    }
     <?php } ?>
 </style>
 <section id="section_pflx-all-text-wrapper">
@@ -67,7 +87,7 @@ if ( is_page() && $post->post_parent ) {
                     <h2><?php echo $all_text_header; ?></h2>
                 </div>
                 <div class="pflx-all-text-paragraph-container">
-                    <p class="col-7"><?php echo $all_text_paragraph; ?></p>
+                    <p class="col-lg-8 col-md-12 col-sm-10"><?php echo $all_text_paragraph; ?></p>
                 </div>
                 <?php if ( '' !== $all_text_link ) : ?>
                 <div class="pflx-all-text-link-container">

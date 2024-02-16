@@ -48,6 +48,9 @@ the_post();
 				if( get_row_layout() === 'powerflx_three_bullets' ) :
 					include 'modules/powerflx-three-bullets/powerflx-three-bullets.php';	
 				endif;
+				if( get_row_layout() === 'powerflx_text_with_table' ) :
+					include 'modules/powerflx-text-table/powerflx-text-table.php';	
+				endif;
 			endwhile;
 		endif;
 	endif;
