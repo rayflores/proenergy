@@ -57,6 +57,9 @@ the_post();
 				if( get_row_layout() === 'powerflx_text_unordered_list' ) :
 					include 'modules/powerflx-ulist/powerflx-ulist.php';	
 				endif;
+				if( get_row_layout() === 'powerflx_text_right_slant_image' ) :
+					include 'modules/powerflx-slant-right/powerflx-slant-right.php';	
+				endif;
 			endwhile;
 		endif;
 	endif;
