@@ -655,7 +655,7 @@ function get_the_breadcrumbs() {
     }
 
 	// Output the breadcrumbs
-    echo '<section id="breadcrumbs"><ol class="breadcrumb">' . implode('', $breadcrumbs) . '</ol></div>';
+    echo '<div id="breadcrumbs"><ol class="breadcrumb">' . implode('', $breadcrumbs) . '</ol></div>';
 }
 function get_image_srcset($image_id) {
     // Get the image metadata

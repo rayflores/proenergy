@@ -4,6 +4,7 @@
  * Description: Template for PowerFLX Three Bullets Module
  */
 ?>
+<section id="section_powerflx-three-bullets" class="m-5 pb-5">
 <style>
     .powerflx-bullet-percentage {
         font-family : "Eurostile-Bold";
@@ -23,7 +24,6 @@
     }
 
 </style>
-<section id="section_powerflx-three-bullets" class="m-5 pb-5">
     <div class="container-fluid">
         <div class="row g-0">
             <?php            

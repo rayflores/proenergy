@@ -13,6 +13,7 @@ if ( is_page() && $post->post_parent ) {
     $child = true;
 }
 ?>
+<section id="section_pflx-all-text-wrapper">
 <style>
     .pflx-all-text-header-container h2 {
         font-family : "Eurostile-Bold";
@@ -37,6 +38,7 @@ if ( is_page() && $post->post_parent ) {
         color : rgb(83, 86, 90);
         margin-top: 1.25em;
         margin-bottom: 3em;
+        padding-right: 0;
     }
     .pflx-all-text-link-container a {
         color : #aca8aa;
@@ -52,34 +54,8 @@ if ( is_page() && $post->post_parent ) {
         height: 0;
         margin-left: 1em;
     }
-    <?php 
-    if ( $child ) { ?>
-
-    @media (min-width: 767.98px) { 
-        .pflx-all-text-paragraph-container p {
-            padding-right: 0;
-        } 
-    }
-    @media (min-width: 991.98px) { 
-        .pflx-all-text-paragraph-container p {
-            padding-right: 1em;
-        }
-     }
-    @media (min-width: 1199.98px) {  }
-
-    @media (min-width: 1399.98px) { 
-        .pflx-all-text-paragraph-container p {
-            padding-right: 2em;
-        }
-     }
-    @media (min-width: 1899.98px) { 
-        .pflx-all-text-paragraph-container p {
-            padding-right: 3em;
-        }
-    }
-    <?php } ?>
+    
 </style>
-<section id="section_pflx-all-text-wrapper">
     <div class="container-fluid">
         <div class="p-4 ps-md-5 pe-md-5 mb-4">
             <div class="col-lg-12 px-0">

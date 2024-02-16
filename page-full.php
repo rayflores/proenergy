@@ -51,6 +51,12 @@ the_post();
 				if( get_row_layout() === 'powerflx_text_with_table' ) :
 					include 'modules/powerflx-text-table/powerflx-text-table.php';	
 				endif;
+				if( get_row_layout() === 'coming_soon' ) :
+					include 'modules/coming-soon/coming-soon.php';	
+				endif;
+				if( get_row_layout() === 'powerflx_text_unordered_list' ) :
+					include 'modules/powerflx-ulist/powerflx-ulist.php';	
+				endif;
 			endwhile;
 		endif;
 	endif;
