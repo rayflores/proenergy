@@ -99,6 +99,7 @@ $bil_link = get_sub_field('powerflx_bil_link') !== '' ? get_sub_field('powerflx_
     }
     .showcase .showcase-img {
         min-height: 40rem;
+        background-position: center;
         background-size: cover;
     }
     /* .pflx-bil-image-mask {
@@ -121,7 +122,7 @@ $bil_link = get_sub_field('powerflx_bil_link') !== '' ? get_sub_field('powerflx_
         transform: translateX(-100%);
     } */
 </style>
-<section id="section_pflx-bil-wrapper" class="pt-5 pb-5 my-5 showcase">
+<section id="section_pflx-bil-wrapper" class="mt-5 showcase">
 <div class="container-fluid p-0">
     <div class="row g-0">
         <div class="col-5 pflx-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($bil_image_id)); ?>');">

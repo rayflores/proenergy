@@ -17,6 +17,7 @@ $bullet_color = get_sub_field('powerflx_bir_bullet_color') !== '' ? get_sub_fiel
 <style>
     .showcase .showcase-img {
         min-height: 40rem;
+        background-position: center;
         background-size: cover;
     }
     /* .pflx-bir-image-mask {
@@ -124,7 +125,7 @@ $bullet_color = get_sub_field('powerflx_bir_bullet_color') !== '' ? get_sub_fiel
         margin-left: 1em;
     }
 </style>
-<section id="section_pflx-bir-wrapper" class="showcase">
+<section id="section_pflx-bir-wrapper" class="showcase mt-5">
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-lg-5 text-white order-lg-2 showcase-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($bir_image_id)); ?>');">
