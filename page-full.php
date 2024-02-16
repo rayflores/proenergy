@@ -18,6 +18,9 @@ the_post();
 				if( get_row_layout() === 'powerflx_header' ) :
 					include 'modules/powerflx-header/powerflx-header.php';	
 				endif;
+				if( get_row_layout() === 'powerflx_header_small' ) :
+					include 'modules/powerflx-header/powerflx-header-small.php';	
+				endif;
 				if ( !$run_once ) :
 				?>
 				<section id="section_breadcrumbs" class="pt-5 ps-5">

@@ -374,6 +374,9 @@ header {
 	#breadcrumbs {
 		ol {
 			li {
+				&.breadcrumb-item + .breadcrumb-item::before {
+					content: "//";
+				}
 				a {
 					color: #A3A8AA;
 				}

@@ -7,6 +7,11 @@
 $all_text_header = get_sub_field( 'all_text_header' );
 $all_text_paragraph = get_sub_field( 'all_text_paragraph' );
 $all_text_link = get_sub_field( 'all_text_link' );
+global $post;
+$child = false;
+if ( is_page() && $post->post_parent ) {
+    $child = true;
+}
 ?>
 <style>
     .pflx-all-text-header-container h2 {
@@ -47,6 +52,12 @@ $all_text_link = get_sub_field( 'all_text_link' );
         height: 0;
         margin-left: 1em;
     }
+    <?php 
+    if ( $child ) { ?>
+        .pflx-all-text-paragraph-container p {
+            padding-right: 22em;
+        }
+    <?php } ?>
 </style>
 <section id="section_pflx-all-text-wrapper">
     <div class="container-fluid">
