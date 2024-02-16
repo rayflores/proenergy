@@ -45,7 +45,9 @@ the_post();
 				if( get_row_layout() === 'powerflx_bil' ) :
 					include 'modules/powerflx-bil/powerflx-bil.php';	
 				endif;
-				
+				if( get_row_layout() === 'powerflx_three_bullets' ) :
+					include 'modules/powerflx-three-bullets/powerflx-three-bullets.php';	
+				endif;
 			endwhile;
 		endif;
 	endif;

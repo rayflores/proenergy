@@ -6,7 +6,7 @@
  */
 $all_text_header = get_sub_field( 'all_text_header' );
 $all_text_paragraph = get_sub_field( 'all_text_paragraph' );
-$all_text_link = get_sub_field( 'all_text_link' );
+$all_text_link = get_sub_field( 'all_text_link' ) ? get_sub_field( 'all_text_link' ) : '';
 global $post;
 $child = false;
 if ( is_page() && $post->post_parent ) {
@@ -69,9 +69,11 @@ if ( is_page() && $post->post_parent ) {
                 <div class="pflx-all-text-paragraph-container">
                     <p class="col-7"><?php echo $all_text_paragraph; ?></p>
                 </div>
+                <?php if ( '' !== $all_text_link ) : ?>
                 <div class="pflx-all-text-link-container">
                     <a class="pflx-atl" href="<?php echo $all_text_link['url']; ?>" target="<?php echo $all_text_link['target']; ?>"><?php echo $all_text_link['title']; ?></a>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
