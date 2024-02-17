@@ -63,6 +63,9 @@ the_post();
 				if( get_row_layout() === 'powerflx_just_text' ) :
 					include 'modules/powerflx-just-text/powerflx-just-text.php';	
 				endif;
+				if( get_row_layout() === 'powerflx_blank_right_bullet' ) :
+					include 'modules/powerflx-brb/powerflx-blank-right-bullet.php';	
+				endif;
 			endwhile;
 		endif;
 	endif;
