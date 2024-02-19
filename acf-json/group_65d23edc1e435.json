@@ -153,6 +153,159 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_65d383ba1d7aa": {
+                    "key": "layout_65d383ba1d7aa",
+                    "name": "aboutus_people",
+                    "label": "About Us People",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65d384091d7ae",
+                            "label": "About Us Person Top Text",
+                            "name": "ab_person_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d383ba1d7ab",
+                            "label": "About Us Person Name",
+                            "name": "ab_person_name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d387c61d7b1",
+                            "label": "About Us Person Name Color",
+                            "name": "about_us_person_name_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#862633",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65d383ba1d7ad",
+                            "label": "About Us Person Title",
+                            "name": "ab_person_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d3848e1d7af",
+                            "label": "About Us Person Experience",
+                            "name": "ab_person_experience",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d383ba1d7ac",
+                            "label": "About Us Person Paragraph",
+                            "name": "ab_person_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65d384a31d7b0",
+                            "label": "About Us Person Profile Image",
+                            "name": "ab_person_profile_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65d25a4038c0b": {
                     "key": "layout_65d25a4038c0b",
                     "name": "aboutus_quote",
@@ -1652,5 +1805,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708355384
+    "modified": 1708361749
 }

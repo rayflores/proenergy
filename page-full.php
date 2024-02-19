@@ -110,6 +110,9 @@ the_post();
 				if( get_row_layout() === 'aboutus_just_text' ) :
 					include 'modules/about-us/about-us-just-text/about-us-just-text.php';	
 				endif;
+				if( get_row_layout() === 'aboutus_people' ) :
+					include 'modules/about-us/about-us-people/about-us-people-person.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aboutus_modules' )
 	// end !front_page()
