@@ -23,7 +23,7 @@ $ab_person_profile_image_srcset = get_image_srcset( $ab_person_profile_image_id 
 <section id="section_about-us-people-person-wrapper" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: rgba(163,168,170,0.2);">
     <style>
         #section_about-us-people-person-wrapper {
-            max-height: 30em;
+            max-height: 24.985em;
         }
         .<?php echo $ab_uuid; ?> .ab-person-top-text-container::before {
             background: #a3a8aa;
