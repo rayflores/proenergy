@@ -59,7 +59,7 @@ $ab_all_text_link = get_sub_field('ab_all_text_link') ? get_sub_field('ab_all_te
                     <?php
                     endif;
                     if ( '' !== $ab_all_text_paragraph ) : ?>
-                    <div class="ab_all-text-paragraph-container col-lg-7">
+                    <div class="ab_all-text-paragraph-container col-8">
                         <p><?php echo $ab_all_text_paragraph; ?></p>
                     </div>
                     <?php endif; ?>
