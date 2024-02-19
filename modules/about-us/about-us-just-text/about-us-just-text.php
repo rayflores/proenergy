@@ -85,7 +85,7 @@ $ab_just_text_text_color = get_sub_field( 'ab_just_text_text_color' ) ? get_sub_
                         $just_text_two_columns_right = get_sub_field( 'just_text_two_columns_right' ) ? get_sub_field( 'just_text_two_columns_right' ) : '';
                         ?>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-5">
                                 <div class="ab-just-text-column-1-container">
                                     <p><?php echo $just_text_two_columns_left; ?></p>
                                 </div>
