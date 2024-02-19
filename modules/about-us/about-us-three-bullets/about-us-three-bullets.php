@@ -4,7 +4,7 @@
  * Description: Template for About Us Three Bullets Module.
  */
 ?>
-<section id="section_about-us-three-bullets" class="m-5 pb-5">
+<section id="section_about-us-three-bullets" class="mx-5 mb-5 pb-5">
 <style>
     .ab-single-bullet-percentage {
         font-family : "Eurostile-Bold";
