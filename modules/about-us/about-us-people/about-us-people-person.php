@@ -42,7 +42,7 @@ $ab_person_profile_image_srcset = get_image_srcset( $ab_person_profile_image_id 
             content: attr(data-content);
             display: inline-block;
             letter-spacing: 7.5px;
-            padding-left: 25px;
+            padding-left: 35px;
             position: relative;
             line-height: 25.7px;
             text-transform: uppercase;
