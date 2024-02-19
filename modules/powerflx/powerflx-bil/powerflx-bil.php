@@ -123,31 +123,31 @@ $bil_link = get_sub_field('powerflx_bil_link') !== '' ? get_sub_field('powerflx_
     } */
 </style>
 <section id="section_pflx-bil-wrapper" class="mt-5 showcase">
-<div class="container-fluid p-0">
-    <div class="row g-0">
-        <div class="col-5 pflx-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($bil_image_id)); ?>');">
-            <div class="pflx-bil-image-mask"></div>
-        </div>
-        <div class="col-7 pflx-bil-text-container p-0 pt-5 mt-3">
-            <div class="pflx-bil-top-text col-12" data-content="<?php echo $bil_top_text !== '' ? $bil_top_text : ''; ?>"></div>
-            <div class="pflx-bil-headline pt-4">
-                <?php echo $bil_header; ?>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-5 pflx-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($bil_image_id)); ?>');">
+                <div class="pflx-bil-image-mask"></div>
             </div>
-            <div class="pflx-bil-paragraph col-10">
-                <?php echo $bil_paragraph; ?>
-            </div>
-            <div class="pflx-bil-bullet-container col-7">
-                <div class="pflx-bil-bullet-percentage pt-5">
-                    <?php echo $bil_bullet_percentage; ?>
+            <div class="col-7 pflx-bil-text-container p-0 pt-5 mt-3">
+                <div class="pflx-bil-top-text col-12" data-content="<?php echo $bil_top_text !== '' ? $bil_top_text : ''; ?>"></div>
+                <div class="pflx-bil-headline pt-4">
+                    <?php echo $bil_header; ?>
                 </div>
-                <div class="pflx-bil-bullet-text">
-                    <?php echo $bil_bullet_text; ?>
+                <div class="pflx-bil-paragraph col-10">
+                    <?php echo $bil_paragraph; ?>
                 </div>
-            </div>
-            <div class="pflx-bil-link-container mt-5">
-                <a href="<?php echo $bil_link['url']; ?>" target="<?php echo $bil_link['target']; ?>"><?php echo $bil_link['title']; ?></a>
+                <div class="pflx-bil-bullet-container col-7">
+                    <div class="pflx-bil-bullet-percentage pt-5">
+                        <?php echo $bil_bullet_percentage; ?>
+                    </div>
+                    <div class="pflx-bil-bullet-text">
+                        <?php echo $bil_bullet_text; ?>
+                    </div>
+                </div>
+                <div class="pflx-bil-link-container mt-5">
+                    <a href="<?php echo $bil_link['url']; ?>" target="<?php echo $bil_link['target']; ?>"><?php echo $bil_link['title']; ?></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>

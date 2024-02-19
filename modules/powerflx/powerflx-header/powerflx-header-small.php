@@ -12,7 +12,7 @@ if ( is_page() && $post->post_parent ) {
     $child = true;
 }
 ?>
-<section id="section_pflx-header-wrapper" class="masthead <?php echo ( $child ) ? '' : 'parent'; ?>" style="background: url('<?php echo esc_url(wp_get_attachment_url($header_image_id)); ?>') no-repeat center center;background-size: cover;">
+<section id="section_pflx-header-wrapper" class="small masthead <?php echo ( $child ) ? '' : 'parent'; ?>" style="background: url('<?php echo esc_url(wp_get_attachment_url($header_image_id)); ?>') no-repeat center center;background-size: cover;">
 <style>
     .masthead {
         padding-top: 12rem;

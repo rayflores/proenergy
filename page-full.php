@@ -16,10 +16,10 @@ the_post();
 			$run_once = false;
 			while( have_rows( 'proenergy_powerflx_modules' ) ) : the_row();
 				if( get_row_layout() === 'powerflx_header' ) :
-					include 'modules/powerflx-header/powerflx-header.php';	
+					include 'modules/powerflx/powerflx-header/powerflx-header.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_header_small' ) :
-					include 'modules/powerflx-header/powerflx-header-small.php';	
+					include 'modules/powerflx/powerflx-header/powerflx-header-small.php';	
 				endif;
 				if ( !$run_once ) :
 				?>
@@ -37,38 +37,78 @@ the_post();
 				<?php
 				endif;
 				if( get_row_layout() === 'powerflx_all_text' ) :
-					include 'modules/powerflx-all-text/powerflx-all-text.php';	
+					include 'modules/powerflx/powerflx-all-text/powerflx-all-text.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_bir' ) :
-					include 'modules/powerflx-bir/powerflx-bir.php';	
+					include 'modules/powerflx/powerflx-bir/powerflx-bir.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_bil' ) :
-					include 'modules/powerflx-bil/powerflx-bil.php';	
+					include 'modules/powerflx/powerflx-bil/powerflx-bil.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_three_bullets' ) :
-					include 'modules/powerflx-three-bullets/powerflx-three-bullets.php';	
+					include 'modules/powerflx/powerflx-three-bullets/powerflx-three-bullets.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_text_with_table' ) :
-					include 'modules/powerflx-text-table/powerflx-text-table.php';	
+					include 'modules/powerflx/powerflx-text-table/powerflx-text-table.php';	
 				endif;
 				if( get_row_layout() === 'coming_soon' ) :
 					include 'modules/coming-soon/coming-soon.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_text_unordered_list' ) :
-					include 'modules/powerflx-ulist/powerflx-ulist.php';	
+					include 'modules/powerflx/powerflx-ulist/powerflx-ulist.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_text_right_slant_image' ) :
-					include 'modules/powerflx-slant-right/powerflx-slant-right.php';	
+					include 'modules/powerflx/powerflx-slant-right/powerflx-slant-right.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_just_text' ) :
-					include 'modules/powerflx-just-text/powerflx-just-text.php';	
+					include 'modules/powerflx/powerflx-just-text/powerflx-just-text.php';	
 				endif;
 				if( get_row_layout() === 'powerflx_blank_right_bullet' ) :
-					include 'modules/powerflx-brb/powerflx-blank-right-bullet.php';	
+					include 'modules/powerflx/powerflx-brb/powerflx-blank-right-bullet.php';	
 				endif;
 			endwhile;
 		endif;
-	endif;
+		if ( have_rows( 'proenergy_aboutus_modules' ) ) :
+			$run_once = false;
+			while( have_rows( 'proenergy_aboutus_modules' ) ) : the_row();
+				if( get_row_layout() === 'aboutus_header_lg' ) :
+					include 'modules/about-us/about-us-header/aboutus-header-lg.php';	
+				endif;
+				if ( !$run_once ) :
+				?>
+				<section id="section_breadcrumbs" class="pt-5 ps-5">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 ">
+								<?php 
+								get_the_breadcrumbs(); 
+								$run_once = true; ?>
+							</div>
+						</div>
+					</div>
+				</section>
+				<?php
+				endif;
+				if( get_row_layout() === 'aboutus_all_text' ) :
+					include 'modules/about-us/aboutus-all-text/aboutus-all-text.php';	
+				endif;
+				if( get_row_layout() === 'aboutus_quote' ) :
+					include 'modules/about-us/about-us-quote/about-us-quote.php';	
+				endif;
+				if( get_row_layout() === 'aboutus_bil' ) :
+					include 'modules/about-us/about-us-bil/about-us-bil.php';	
+				endif;
+				if( get_row_layout() === 'aboutus_bir' ) :
+					include 'modules/about-us/about-us-bir/about-us-bir.php';	
+				endif;
+				if( get_row_layout() === 'hero' ) :
+					include 'modules/hero/hero.php';	
+				endif;
+			endwhile;
+		endif; // end have_rows( 'proenergy_aboutus_modules' )
+	// end !front_page()
+	endif; 
+	/*** end !front_page() ***/ 
 	if ( have_rows( 'pe_home_flexible_content' ) ) :
 		while( have_rows( 'pe_home_flexible_content' ) ) : the_row();
 			if ( get_row_layout() == 'hero' ) :
