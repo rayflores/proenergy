@@ -85,11 +85,12 @@ $ab_just_text_text_color = get_sub_field( 'ab_just_text_text_color' ) ? get_sub_
             text-decoration: none;
         }
         .<?php echo $ab_uuid; ?> .ab-just-text-link-container a::after {
-            <?php if ( '#ffffff' === $ab_just_text_text_color ) : ?>
-                content: url('<?php echo get_stylesheet_directory_uri();?>/images/right-arrow-white.png');
-            <?php else : ?>
-                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
-            <?php endif; ?>
+            <?php 
+                $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' . '");"';
+                if ( '#ffffff' === $ab_just_text_text_color ) :
+                    $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow-white.png' . '");"';
+                endif; ?>
+            content: <?php echo $content; ?>;
             display: inline-block;
             width: 40px;
             height: 0;
