@@ -322,6 +322,99 @@
                             "default_value": "#53565A",
                             "enable_opacity": 0,
                             "return_format": "string"
+                        },
+                        {
+                            "key": "field_65d364b2c8adb",
+                            "label": "Need To Extra Text Columns",
+                            "name": "need_to_extra_text_columns",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_65d36439c8ad8",
+                            "label": "Just Text Two Columns",
+                            "name": "ab_just_text_two_columns",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_65d364b2c8adb",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65d36463c8ad9",
+                                    "label": "Just Text Two Columns Left",
+                                    "name": "just_text_two_columns_left",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "49",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_65d36439c8ad8"
+                                },
+                                {
+                                    "key": "field_65d36481c8ada",
+                                    "label": "Just Text Two Columns Right",
+                                    "name": "just_text_two_columns_right",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_65d36439c8ad8"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -1439,5 +1532,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708350669
+    "modified": 1708352776
 }
