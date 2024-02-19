@@ -14,6 +14,11 @@ $ab_just_text_paragraph = '';
 $ab_just_text_paragraph = get_sub_field( 'ab_just_text_paragraph' ) ? get_sub_field( 'ab_just_text_paragraph' ) : '';
 $ab_just_text_text_color = '';
 $ab_just_text_text_color = get_sub_field( 'ab_just_text_text_color' ) ? get_sub_field( 'ab_just_text_text_color' ) : '';
+
+$content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' . '");"';
+if ( '#ffffff' === $ab_just_text_text_color ) :
+    $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow-white.png' . '");"';
+endif; 
 ?>
 <section id="section_about-us-just-text-wrapper" class="p-0 <?php echo $ab_uuid; ?>" style="background-color: <?php echo $ab_just_text_bg_color; ?>">
     <style>
@@ -84,12 +89,8 @@ $ab_just_text_text_color = get_sub_field( 'ab_just_text_text_color' ) ? get_sub_
             color: <?php echo $ab_just_text_text_color; ?>;
             text-decoration: none;
         }
+
         .<?php echo $ab_uuid; ?> .ab-just-text-link-container a::after {
-            <?php 
-                $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' . '");"';
-                if ( '#ffffff' === $ab_just_text_text_color ) :
-                    $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow-white.png' . '");"';
-                endif; ?>
             content: <?php echo $content; ?>;
             display: inline-block;
             width: 40px;

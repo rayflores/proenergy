@@ -67,7 +67,7 @@ the_post();
 					include 'modules/powerflx/powerflx-brb/powerflx-blank-right-bullet.php';	
 				endif;
 			endwhile;
-		endif;
+		endif; // end have_rows( 'proenergy_powerflx_modules' )
 		if ( have_rows( 'proenergy_aboutus_modules' ) ) :
 			$run_once = false;
 			while( have_rows( 'proenergy_aboutus_modules' ) ) : the_row();
