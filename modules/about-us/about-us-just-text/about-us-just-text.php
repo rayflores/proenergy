@@ -77,6 +77,29 @@ $ab_just_text_text_color = get_sub_field( 'ab_just_text_text_color' ) ? get_sub_
                     </div>
                 </div>
             </div>
+            <?php
+            if ( true === get_sub_field( 'need_to_extra_text_columns' ) ) : 
+                if ( have_rows( 'ab_just_text_two_columns' ) ) :
+                    while( have_rows( 'ab_just_text_two_columns' ) ) : the_row();
+                        $just_text_two_columns_left = get_sub_field( 'just_text_two_columns_left' ) ? get_sub_field( 'just_text_two_columns_left' ) : '';
+                        $just_text_two_columns_right = get_sub_field( 'just_text_two_columns_right' ) ? get_sub_field( 'just_text_two_columns_right' ) : '';
+                        ?>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="ab-just-text-column-1-container">
+                                    <p><?php echo $just_text_two_columns_left; ?></p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="ab-just-text-column-2-container">
+                                    <p><?php echo $just_text_two_columns_right; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                    endwhile;
+                endif;
+            endif; ?>
         </div>
     </div>
 </section>
