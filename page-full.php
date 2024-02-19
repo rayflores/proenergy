@@ -107,6 +107,9 @@ the_post();
 				if( get_row_layout() === 'aboutus_three_bullets' ) :
 					include 'modules/about-us/about-us-three-bullets/about-us-three-bullets.php';	
 				endif;
+				if( get_row_layout() === 'aboutus_just_text' ) :
+					include 'modules/about-us/about-us-just-text/about-us-just-text.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aboutus_modules' )
 	// end !front_page()
