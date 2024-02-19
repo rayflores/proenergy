@@ -62,7 +62,7 @@ $ab_just_text_text_color = get_sub_field( 'ab_just_text_text_color' ) ? get_sub_
     </style>
     <div class="container-fluid">
         <div class="ab-just-text-top-text-container pt-5" data-content="<?php echo $ab_just_text_top_text; ?>"></div>
-        <div class="p-4 ps-md-5 pe-md-5">
+        <div class="p-4 ps-md-5 pe-md-5 pb-5">
             <div class="row">
                 <div class="col-12">
                     <div class="ab-just-text-header-container pt-3">
