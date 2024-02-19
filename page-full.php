@@ -74,6 +74,9 @@ the_post();
 				if( get_row_layout() === 'aboutus_header_lg' ) :
 					include 'modules/about-us/about-us-header/aboutus-header-lg.php';	
 				endif;
+				if( get_row_layout() === 'aboutus_header_small' ) :
+					include 'modules/about-us/about-us-header/aboutus-header-small.php';	
+				endif;
 				if ( !$run_once ) :
 				?>
 				<section id="section_breadcrumbs" class="pt-5 ps-5">
