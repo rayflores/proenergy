@@ -104,8 +104,8 @@ the_post();
 				if( get_row_layout() === 'aboutus_bir' ) :
 					include 'modules/about-us/about-us-bir/about-us-bir.php';	
 				endif;
-				if( get_row_layout() === 'hero' ) :
-					include 'modules/hero/hero.php';	
+				if( get_row_layout() === 'aboutus_three_bullets' ) :
+					include 'modules/about-us/about-us-three-bullets/about-us-three-bullets.php';	
 				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aboutus_modules' )
