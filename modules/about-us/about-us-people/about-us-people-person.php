@@ -19,37 +19,34 @@ $ab_person_paragraph = get_sub_field( 'ab_person_paragraph' ) ? get_sub_field( '
 $ab_person_profile_image_id = '';
 $ab_person_profile_image_id = get_sub_field( 'ab_person_profile_image' ) ? get_sub_field( 'ab_person_profile_image' ) : '';
 $ab_person_profile_image_srcset = get_image_srcset( $ab_person_profile_image_id );
+$ab_person_bg_color = '';
+$ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab_person_bg_color' ) : '';
+
 ?>
-<section id="section_about-us-people-person-wrapper" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: rgba(163,168,170,0.2);">
+<section id="section_about-us-people-person" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: rgba(163,168,170,0.2);">
     <style>
-        #section_about-us-people-person-wrapper {
+        #section_about-us-people-person {
             max-height: 24.985em;
         }
         .<?php echo $ab_uuid; ?> .ab-person-top-text-container::before {
-            background: #a3a8aa;
+            background: linear-gradient(90deg, <?php echo $ab_person_bg_color; ?> 50%, transparent 50%);
             content: '';
             display: inline-block;
             height: 1px;
-            left: -15px;
+            padding-right: 40px;
             position: relative;
-            top: 50%;
-            width: 1.5%;
-            z-index: 1;
+            vertical-align: middle;
         }
-        .<?php echo $ab_uuid; ?> .ab-person-top-text-container::after {
-            background-color: rgba(163, 168, 170, 0);
+        .<?php echo $ab_uuid; ?> .ab-person-top-text-container {
             color: #a3a8aa;
-            content: attr(data-content);
-            display: inline-block;
+            content: '';
             letter-spacing: 7.5px;
-            padding-left: 35px;
             position: relative;
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
             font-family: "Eurostile-Normal";
             font-size: 12px;
-            color: #a3a8aa;
         }
         .<?php echo $ab_uuid; ?> .ab-person-name-container h2 {
             font-family : "Eurostile-Bold";
@@ -86,10 +83,12 @@ $ab_person_profile_image_srcset = get_image_srcset( $ab_person_profile_image_id 
             background-size: cover;
         }
     </style>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-9 order-lg-1 showcase-text">
-                <div class="ab-person-top-text-container pt-5 mt-2" data-content="<?php echo $ab_person_top_text; ?>"></div>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-9 showcase-text">
+                <div class="ab-person-top-text-container pt-5">
+                    <?php echo $ab_person_top_text; ?>
+                </div>
                 <div class="ab-person-name-container ms-5 mt-5">
                     <h2><?php echo $ab_person_name; ?></h2>
                 </div>
@@ -103,9 +102,9 @@ $ab_person_profile_image_srcset = get_image_srcset( $ab_person_profile_image_id 
                     <p><?php echo $ab_person_paragraph; ?></p>
                 </div>
             </div>
-            <div class="col-lg-3 text-white order-lg-2 showcase-img">
+            <div class="col-lg-3 showcase-img">
                 <div class="ab-person-image-container">
-                    <img src="<?php echo esc_url( wp_get_attachment_url( $ab_person_profile_image_id ) ); ?>" srcset="<?php echo esc_attr( $ab_person_profile_image_srcset ); ?>" alt="<?php echo $ab_person_name; ?>" class="img-fluid">
+                    <img src="<?php echo esc_url( wp_get_attachment_url( $ab_person_profile_image_id ) ); ?>" srcset="<?php echo esc_attr( $ab_person_profile_image_srcset ); ?>" alt="<?php echo $ab_person_name; ?>" class="img-fluid" />
                 </div>
             </div>
         </div>

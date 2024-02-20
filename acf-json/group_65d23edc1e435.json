@@ -160,6 +160,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_65d51adbb1386",
+                            "label": "About Us Person Background Color",
+                            "name": "ab_person_bg_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "rgba(163,168,170,0.2)",
+                            "enable_opacity": 1,
+                            "return_format": "string"
+                        },
+                        {
                             "key": "field_65d384091d7ae",
                             "label": "About Us Person Top Text",
                             "name": "ab_person_top_text",
@@ -1805,5 +1823,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708361749
+    "modified": 1708464931
 }

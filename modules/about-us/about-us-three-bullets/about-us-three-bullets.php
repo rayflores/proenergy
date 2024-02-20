@@ -24,7 +24,7 @@
     }
 
 </style>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="row g-0">
             <?php            
             if( have_rows('ab_three_bullets') ) : 
