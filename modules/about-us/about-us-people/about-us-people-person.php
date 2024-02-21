@@ -23,10 +23,10 @@ $ab_person_bg_color = '';
 $ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab_person_bg_color' ) : '';
 
 ?>
-<section id="section_about-us-people-person" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: <?php echo $ab_person_bg_color; ?>;">
+<section id="section_<?php echo $ab_uuid; ?>" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: <?php echo $ab_person_bg_color; ?>;">
     <style>
-        #section_about-us-people-person {
-
+        #section_<?php echo $ab_uuid; ?> {
+            border-bottom: 1px solid <?php echo $ab_person_bg_color; ?>;
         }
         .<?php echo $ab_uuid; ?> .ab-person-top-text-container::before {
             background: linear-gradient(90deg, <?php echo $ab_person_bg_color; ?> 50%, transparent 50%);
