@@ -692,3 +692,16 @@ function get_image_alt_text($image_id) {
 
     return $alt_text;
 }
+/**
+ * Filter Layout Title for About Us People Module
+ */
+add_filter('acf/fields/flexible_content/layout_title/key=field_65d23edc24ef1', 'panel_title', 20, 4);
+function panel_title($title, $field, $layout, $i) {
+	if ( 'layout_65d383ba1d7aa' == $layout['key'] ) {
+		if (get_sub_field('ab_person_name')) {
+			$title = $layout['label'] . ' -- <strong>'.get_sub_field('ab_person_name').'</strong>';
+		}
+		return $title;
+	}
+	return $title;
+}
