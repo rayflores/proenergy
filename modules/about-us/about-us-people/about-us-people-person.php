@@ -81,6 +81,7 @@ $ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab
         .showcase-person .showcase-img {
             min-height: 30.75rem;
             background-size: cover;
+            background-position: center center;
         }
     </style>
     <div class="container-fluid p-0">
