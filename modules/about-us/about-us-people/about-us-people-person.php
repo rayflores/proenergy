@@ -23,10 +23,10 @@ $ab_person_bg_color = '';
 $ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab_person_bg_color' ) : '';
 
 ?>
-<section id="section_about-us-people-person" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: rgba(163,168,170,0.2);">
+<section id="section_about-us-people-person" class="p-0 <?php echo $ab_uuid; ?> showcase-person" style="background-color: <?php echo $ab_person_bg_color; ?>;">
     <style>
         #section_about-us-people-person {
-            max-height: 24.985em;
+
         }
         .<?php echo $ab_uuid; ?> .ab-person-top-text-container::before {
             background: linear-gradient(90deg, <?php echo $ab_person_bg_color; ?> 50%, transparent 50%);
@@ -79,13 +79,13 @@ $ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab
             color : #a3a8aa;
         }
         .showcase-person .showcase-img {
-            min-height: 50.75rem;
+            min-height: 30.75rem;
             background-size: cover;
         }
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-lg-9 showcase-text">
+            <div class="col-9 showcase-text">
                 <div class="ab-person-top-text-container pt-5">
                     <?php echo $ab_person_top_text; ?>
                 </div>
@@ -102,10 +102,7 @@ $ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab
                     <p><?php echo $ab_person_paragraph; ?></p>
                 </div>
             </div>
-            <div class="col-lg-3 showcase-img">
-                <div class="ab-person-image-container">
-                    <img src="<?php echo esc_url( wp_get_attachment_url( $ab_person_profile_image_id ) ); ?>" srcset="<?php echo esc_attr( $ab_person_profile_image_srcset ); ?>" alt="<?php echo $ab_person_name; ?>" class="img-fluid" />
-                </div>
+            <div class="col-3 showcase-img" style="background-image: url('<?php echo esc_url( wp_get_attachment_url( $ab_person_profile_image_id ) ); ?>');">
             </div>
         </div>
     </div>
