@@ -116,6 +116,9 @@ the_post();
 				if( get_row_layout() === 'aboutus_bir_plain' ) :
 					include 'modules/about-us/about-us-bir/about-us-bir-plain.php';	
 				endif;
+				if( get_row_layout() === 'coming_soon' ) :
+					include 'modules/coming-soon/coming-soon.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aboutus_modules' )
 	// end !front_page()
