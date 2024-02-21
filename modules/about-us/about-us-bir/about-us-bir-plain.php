@@ -11,9 +11,12 @@ $ab_birp_image_id = get_sub_field('ab_birp_image') !== '' ? get_sub_field('ab_bi
 $ab_birp_image_srcset = get_image_srcset($ab_birp_image_id);
 ?>
 <style>
+    #section_ab-birp-wrapper {
+        background-color: rgba(163,168,170,0.2);
+    }
     .showcase .showcase-ab-birp-img {
-        min-height: 40rem;
-        background-position: center;
+        min-height: 36rem;
+        background-position: center center;
         background-size: cover;
     }
     /* .ab-birp-image-mask {
@@ -35,37 +38,25 @@ $ab_birp_image_srcset = get_image_srcset($ab_birp_image_id);
     .reveal.animating .ab-birp-image-mask{
         transform: translateX(100%);
     } */
-    .ab-birp-top-text-container {
-        border: 0;
-        color: #a3a8aa;
-        height: 1.5em;
-        line-height: 1em;
-        margin-left: -80px;
-        outline: 0;
-        position: relative;
-        text-align: left;
-    }
     .ab-birp-top-text-container::before {
-        background: #a3a8aa;
+        background: linear-gradient(90deg, rgba(163,168,170,0.2) 50%, transparent 50%);
         content: '';
-        height: 1px;
-        left: 0;
-        position: absolute;
-        top: 50%;
-        width: 8%;
-        z-index: 1;
-    }
-    .ab-birp-top-text-container::after {
-        background-color: #fcfcfa;
-        color: #a3a8aa;
-        content: attr(data-content);
         display: inline-block;
-        letter-spacing: 0.1em;
-        padding-left: 80px;
+        height: 1px;
+        padding-right: 40px;
         position: relative;
-        line-height: 1.5em;
+        vertical-align: middle;
+    }
+    .ab-birp-top-text-container {
+        color: #a3a8aa;
+        content: '';
+        letter-spacing: 7.5px;
+        position: relative;
+        line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
+        font-family: "Eurostile-Normal";
+        font-size: 12px;
     }
     .ab-birp-header-container h2 {
         font-family : "Eurostile-Bold";
@@ -107,16 +98,16 @@ $ab_birp_image_srcset = get_image_srcset($ab_birp_image_id);
 <section id="section_ab-birp-wrapper" class="showcase p-0">
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-lg-5 text-white order-lg-2 showcase-ab-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($ab_birp_image_id)); ?>');">
+            <div class="col-4 text-white order-lg-2 showcase-ab-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($ab_birp_image_id)); ?>');">
             </div>
-            <div class="col-lg-7 order-lg-1 showcase-text my-auto">
+            <div class="col-8 order-lg-1 showcase-text my-auto">
                 <div class="ab-birp-top-text-container">
                     <?php echo $ab_birp_top_text; ?>
                 </div>
-                <div class="ab-birp-header-container">
+                <div class="ab-birp-header-container ps-5">
                     <h2><?php echo $ab_birp_header; ?></h2>
                 </div>
-                <div class="ab-birp-paragraph-container pt-3">
+                <div class="ab-birp-paragraph-container ps-5 pt-3">
                     <p><?php echo $ab_birp_paragraph; ?></p>
                 </div>
                 <div class="ab-birp-link-container ps-5 py-4">
