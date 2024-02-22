@@ -28,6 +28,12 @@ $ab_btn_header = get_sub_field('ab_btn_header') !== '' ? get_sub_field('ab_btn_h
             font-family: "Eurostile-Normal";
             font-size: 14px;
         }
+        .ab_btn-header {
+            font-family: "Eurostile-Bold";
+            font-size: 35px;
+            line-height: 36px;
+            color: #53565A;
+        }
         .ab_btn-card-container {
             background-color: rgba(163,168,170,0.2);
             width: 100%;
