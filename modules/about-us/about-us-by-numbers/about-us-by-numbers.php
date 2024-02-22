@@ -30,6 +30,7 @@ $ab_btn_header = get_sub_field('ab_btn_header') !== '' ? get_sub_field('ab_btn_h
         }
         .ab_btn-card-container {
             background-color: rgba(163,168,170,0.2);
+            width: 100%;
           }
           .ab_btn-card-number-container {
             font-family: "Eurostile-Bold";
@@ -60,20 +61,31 @@ $ab_btn_header = get_sub_field('ab_btn_header') !== '' ? get_sub_field('ab_btn_h
                 </div>
             </div>
         </div>
-        <div class="row g-5 justify-content-evenly">
+        <div class="row g-0 justify-content-center">
 
             <?php 
+            $counter = 0;
+            $padding = '';
             if ( have_rows('ab_btn_cards') ) : 
                 while ( have_rows('ab_btn_cards') ) : the_row();
+                $counter++;
+                if ( $counter == 3 ) {
+                    $padding = 'pe-4';
+                    $counter = 0;
+                } else {
+                    $padding = '';
+                }
                 $ab_btn_card_number = get_sub_field('ab_btn_card_number') !== '' ? get_sub_field('ab_btn_card_number') : '';
                 $ab_btn_card_text = get_sub_field('ab_btn_card_text') !== '' ? get_sub_field('ab_btn_card_text') : '';
                 ?>
-                <div class="ab_btn-card-container col-3 me-4 px-4 py-5">
-                    <div class="ab_btn-card-number-container">
-                        <?php echo $ab_btn_card_number; ?>
-                    </div>
-                    <div class="ab_btn-card-text-container">
-                        <?php echo $ab_btn_card_text; ?>
+                <div class="ab_btn-cards col-sm-4 col-xs-12 ps-4 pb-4 <?php echo $padding; ?>">
+                    <div class="ab_btn-card-container p-5 h-100">
+                        <div class="ab_btn-card-number-container">
+                            <?php echo $ab_btn_card_number; ?>
+                        </div>
+                        <div class="ab_btn-card-text-container">
+                            <?php echo $ab_btn_card_text; ?>
+                        </div>
                     </div>
                 </div>
                 <?php
