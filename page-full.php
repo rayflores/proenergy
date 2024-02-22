@@ -119,6 +119,9 @@ the_post();
 				if( get_row_layout() === 'aboutus_text_location_map' ) :
 					include 'modules/about-us/about-us-text-map/about-us-text-map.php';	
 				endif;
+				if( get_row_layout() === 'about_us_by_the_numbers' ) :
+					include 'modules/about-us/about-us-by-numbers/about-us-by-numbers.php';	
+				endif;
 				if( get_row_layout() === 'coming_soon' ) :
 					include 'modules/coming-soon/coming-soon.php';	
 				endif;
