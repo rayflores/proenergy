@@ -93,7 +93,7 @@ the_post();
 				<?php
 				endif;
 				if( get_row_layout() === 'aboutus_all_text' ) :
-					include 'modules/about-us/aboutus-all-text/aboutus-all-text.php';	
+					include 'modules/about-us/about-us-all-text/about-us-all-text.php';	
 				endif;
 				if( get_row_layout() === 'aboutus_quote' ) :
 					include 'modules/about-us/about-us-quote/about-us-quote.php';	
@@ -115,6 +115,9 @@ the_post();
 				endif;
 				if( get_row_layout() === 'aboutus_bir_plain' ) :
 					include 'modules/about-us/about-us-bir/about-us-bir-plain.php';	
+				endif;
+				if( get_row_layout() === 'aboutus_text_location_map' ) :
+					include 'modules/about-us/about-us-text-map/about-us-text-map.php';	
 				endif;
 				if( get_row_layout() === 'coming_soon' ) :
 					include 'modules/coming-soon/coming-soon.php';	
