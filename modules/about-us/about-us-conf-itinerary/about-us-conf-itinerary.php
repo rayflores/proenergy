@@ -8,20 +8,66 @@ $ab_conf_itinerary_day = get_sub_field( 'ab_conf_itinerary_day' ) ? get_sub_fiel
 $ab_conf_itinerary_footnotes = get_sub_field( 'ab_conf_itinerary_footnotes' ) ? get_sub_field( 'ab_conf_itinerary_footnotes' ) : '';
 ?>
 <section id="section_ab-conf-itinerary" class="p-0">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
+    <style>
+        .ab-conf-itinerary-label-container::before {
+        background: linear-gradient(90deg, rgba(163,168,170) 90%, transparent 90%);
+        content: '';
+        display: inline-block;
+        height: 1px;
+        padding-right: 55px;
+        position: relative;
+        vertical-align: middle;
+    }
+    .ab-conf-itinerary-label-container {
+        color: #a3a8aa;
+        content: '';
+        letter-spacing: 7.5px;
+        position: relative;
+        line-height: 36px;
+        text-transform: uppercase;
+        z-index: 0;
+        font-family: "Eurostile-Bold";
+        font-size: 14px;
+    }
+    .ab-conf-itinerary-day-container {
+        color: #003A70;
+        font-family: "Eurostile-Bold";
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .ab-conf-itinerary-name-container {
+        color: #53565A;
+        font-family: "MyriadPro-Regular";
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .ab-conf-itinerary-title-container {
+        color: #53565A;
+        font-family: "MyriadPro-Regular";
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .ab-conf-itinerary-footnotes-container {
+        color: #A3A8AA;
+        font-family: "MyriadPro-Italic";
+        font-size: 18px;
+        line-height: 29px;
+    }
+    </style>    
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-12 ps-5">
                 <div class="ab-conf-itinerary-label-container">
                     <?php echo $ab_conf_itinerary_label; ?>
                 </div>
-                <div class="ab-conf-itinerary-day-container">
+                <div class="ab-conf-itinerary-day-container ms-3 ps-5">
                     <?php echo $ab_conf_itinerary_day; ?>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <table class="table table-striped table-borderless">
+        <div class="row g-0">
+            <div class="col-7 p-5 ms-5">
+                <table class="table table-striped table-borderless ms-2">
                     <tbody>
                     <?php
                     if ( have_rows( 'ab_conf_itinerary_items' ) ) :
@@ -46,9 +92,12 @@ $ab_conf_itinerary_footnotes = get_sub_field( 'ab_conf_itinerary_footnotes' ) ? 
                     endif; ?>
                     </tbody>
                 </table>
-                <div class="ab-conf-itinerary-footnotes-container">
-                    <?php echo $ab_conf_itinerary_footnotes; ?>
-                </div>
+                <?php
+                if ( get_sub_field( 'ab_conf_itinerary_footnotes' ) ) : ?>
+                    <div class="ab-conf-itinerary-footnotes-container py-5 ps-2">
+                        <?php echo $ab_conf_itinerary_footnotes; ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
