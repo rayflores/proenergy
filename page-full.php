@@ -122,6 +122,9 @@ the_post();
 				if( get_row_layout() === 'about_us_by_the_numbers' ) :
 					include 'modules/about-us/about-us-by-numbers/about-us-by-numbers.php';	
 				endif;
+				if( get_row_layout() === 'about_us_conference_itinerary' ) :
+					include 'modules/about-us/about-us-conf-itinerary/about-us-conf-itinerary.php';	
+				endif;
 				if( get_row_layout() === 'coming_soon' ) :
 					include 'modules/coming-soon/coming-soon.php';	
 				endif;

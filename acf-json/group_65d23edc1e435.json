@@ -2209,6 +2209,141 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_65d81e2904390": {
+                    "key": "layout_65d81e2904390",
+                    "name": "about_us_conference_itinerary",
+                    "label": "About Us Conference Itinerary",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65d81e3604392",
+                            "label": "AB Conf Itinerary Label",
+                            "name": "ab_conf_itinerary_label",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d81e4e04393",
+                            "label": "AB Conf Itinerary Day",
+                            "name": "ab_conf_itinerary_day",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d81e5904394",
+                            "label": "AB Conf Itinerary Items",
+                            "name": "ab_conf_itinerary_items",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65d81e7c04395",
+                                    "label": "Itinerary Item Name",
+                                    "name": "itinerary_item_name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "49",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65d81e5904394"
+                                },
+                                {
+                                    "key": "field_65d81e8604396",
+                                    "label": "Itinerary Item Time",
+                                    "name": "itinerary_item_time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "49",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65d81e5904394"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65d81f4b6762c",
+                            "label": "AB Conf Itinerary Footnotes",
+                            "name": "ab_conf_itinerary_footnotes",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -2246,5 +2381,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708571714
+    "modified": 1708663977
 }

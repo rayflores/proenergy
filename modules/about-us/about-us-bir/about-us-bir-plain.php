@@ -98,21 +98,27 @@ $ab_birp_image_srcset = get_image_srcset($ab_birp_image_id);
 <section id="section_ab-birp-wrapper" class="showcase p-0">
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-4 text-white order-lg-2 showcase-ab-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($ab_birp_image_id)); ?>');">
+            <div class="col-4 text-white order-2 showcase-ab-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($ab_birp_image_id)); ?>');">
             </div>
-            <div class="col-8 order-lg-1 showcase-text my-auto">
+            <div class="col-8 order-1 showcase-text my-auto">
+                <?php 
+                if ( !empty($ab_birp_top_text) ) : ?>
                 <div class="ab-birp-top-text-container">
                     <?php echo $ab_birp_top_text; ?>
                 </div>
+                <?php endif; ?>
                 <div class="ab-birp-header-container ps-5">
                     <h2><?php echo $ab_birp_header; ?></h2>
                 </div>
                 <div class="ab-birp-paragraph-container ps-5 pt-3">
                     <p><?php echo $ab_birp_paragraph; ?></p>
                 </div>
+                <?php 
+                if ( !empty($ab_birp_link) ) : ?>
                 <div class="ab-birp-link-container ps-5 py-4">
                     <a class="ab-birp-link" href="<?php echo $ab_birp_link['url']; ?>" target="<?php echo $ab_birp_link['target']; ?>"><?php echo $ab_birp_link['title']; ?></a>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

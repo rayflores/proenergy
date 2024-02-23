@@ -109,6 +109,7 @@ $nav-link-font-size: 1em;
 $navbar-padding-y: 0;
 $navbar-nav-link-padding-x: 1.75rem;
 $gutter-x: 0;
+$table-striped-order: even;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../node_modules/bootstrap/scss/variables';
@@ -171,7 +172,7 @@ $gutter-x: 0;
 /**
  * General
  */
-
+ $table-striped-order: even;
 body {
 	/* If WP-Adminbar is visible */
 	&.admin-bar {
