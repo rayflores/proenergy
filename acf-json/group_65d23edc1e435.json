@@ -2344,6 +2344,211 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_65d8a00ce8376": {
+                    "key": "layout_65d8a00ce8376",
+                    "name": "about_us_conference_session",
+                    "label": "About Us Conference Session",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65d8a02ce8378",
+                            "label": "AB Conf Session Header",
+                            "name": "ab_conf_session_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65d8a09ce8379",
+                            "label": "AB Conf Session Paragraph",
+                            "name": "ab_conf_session_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65d8a0bae837a",
+                            "label": "AB Conf Session Parts",
+                            "name": "ab_conf_session_parts",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Part",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65d8a0dce837b",
+                                    "label": "Top Part Text",
+                                    "name": "top_part_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65d8a0bae837a"
+                                },
+                                {
+                                    "key": "field_65d8a116e837c",
+                                    "label": "Part Day",
+                                    "name": "part_day",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65d8a0bae837a"
+                                },
+                                {
+                                    "key": "field_65d8a125e837d",
+                                    "label": "Part Day Itinerary",
+                                    "name": "part_day_itinerary",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "row",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Itinerary",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_65d8a15be837e",
+                                            "label": "Day Itinerary Time",
+                                            "name": "day_itinerary_time",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_65d8a125e837d"
+                                        },
+                                        {
+                                            "key": "field_65d8a188e837f",
+                                            "label": "Day Itinerary Details",
+                                            "name": "day_itinerary_details",
+                                            "aria-label": "",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "layout": "row",
+                                            "min": 0,
+                                            "max": 0,
+                                            "collapsed": "",
+                                            "button_label": "Add Details",
+                                            "rows_per_page": 20,
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_65d8a1eae8380",
+                                                    "label": "Itinerary Details Text",
+                                                    "name": "itinerary_details_text",
+                                                    "aria-label": "",
+                                                    "type": "textarea",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "rows": "",
+                                                    "placeholder": "",
+                                                    "new_lines": "",
+                                                    "parent_repeater": "field_65d8a188e837f"
+                                                }
+                                            ],
+                                            "parent_repeater": "field_65d8a125e837d"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_65d8a0bae837a"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -2381,5 +2586,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708663977
+    "modified": 1708696525
 }
