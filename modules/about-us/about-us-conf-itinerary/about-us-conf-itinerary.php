@@ -54,7 +54,7 @@ $ab_conf_itinerary_footnotes = get_sub_field( 'ab_conf_itinerary_footnotes' ) ? 
         line-height: 29px;
     }
     </style>    
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 pt-5">
         <div class="row g-0">
             <div class="col-12 ps-5">
                 <div class="ab-conf-itinerary-label-container">
