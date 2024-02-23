@@ -6,7 +6,7 @@
 $ab_conf_session_header = get_sub_field( 'ab_conf_session_header' ) ? get_sub_field( 'ab_conf_session_header' ) : '';
 $ab_conf_session_paragraph = get_sub_field( 'ab_conf_session_paragraph' ) ? get_sub_field( 'ab_conf_session_paragraph' ) : '';
 ?>
-<section id="section_ab-conf-session" class="p-0">
+<section id="section_ab-conf-session" class="p-0" style="background-color: rgba(163,168,170, 0.2);">
     <style>
         .ab-conf-top-part-text-container::before {
             background: linear-gradient(90deg, rgba(163,168,170) 90%, transparent 90%);
@@ -51,13 +51,13 @@ $ab_conf_session_paragraph = get_sub_field( 'ab_conf_session_paragraph' ) ? get_
     </style>    
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-12 ps-5">
-                <div class="ab-conf-session-header-container ms-5">
+            <div class="col-12 ps-5 pt-5 mt-5">
+                <div class="ab-conf-session-header-container ms-5 ps-3">
                     <?php echo $ab_conf_session_header; ?>
                 </div>
             </div>
-            <div class="col-12 ps-5">
-                <div class="ab-conf-session-paragraph ms-5">
+            <div class="col-12 ps-5 pb-4 mb-4">
+                <div class="ab-conf-session-paragraph ms-5 ps-3">
                     <?php echo $ab_conf_session_paragraph; ?>
                 </div>
             </div>
