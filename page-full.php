@@ -128,6 +128,9 @@ the_post();
 				if( get_row_layout() === 'about_us_conference_session' ) :
 					include 'modules/about-us/about-us-conf-session/about-us-conf-session.php';	
 				endif;
+				if( get_row_layout() === 'about_us_conference_tracks' ) :
+					include 'modules/about-us/about-us-conf-tracks/about-us-conf-tracks.php';	
+				endif;
 				if( get_row_layout() === 'coming_soon' ) :
 					include 'modules/coming-soon/coming-soon.php';	
 				endif;
