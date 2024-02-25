@@ -134,6 +134,9 @@ the_post();
 				if( get_row_layout() === 'coming_soon' ) :
 					include 'modules/coming-soon/coming-soon.php';	
 				endif;
+				if( get_row_layout() === 'about_us_registration_form' ) :
+					include 'modules/about-us/about-us-reg-form/about-us-reg-form.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aboutus_modules' )
 	// end !front_page()
