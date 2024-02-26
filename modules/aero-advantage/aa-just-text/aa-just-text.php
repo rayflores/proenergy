@@ -116,53 +116,16 @@ endif;
                 </div>
             </div>
             <?php
-            if ( true === get_sub_field( 'need_to_extra_text_columns' ) ) : 
-                if ( have_rows( 'aa_just_text_two_columns' ) ) :
-                    while( have_rows( 'aa_just_text_two_columns' ) ) : the_row();
-                        $just_text_two_columns_left = get_sub_field( 'just_text_two_columns_left' ) ? get_sub_field( 'just_text_two_columns_left' ) : '';
-                        $just_text_two_columns_right = get_sub_field( 'just_text_two_columns_right' ) ? get_sub_field( 'just_text_two_columns_right' ) : '';
-                        ?>
-                        <div class="row">
-                            <div class="col-5">
-                                <div class="aa-just-text-column-1-container">
-                                    <p><?php echo $just_text_two_columns_left; ?></p>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="aa-just-text-column-2-container">
-                                    <p><?php echo $just_text_two_columns_right; ?></p>
-                                </div>
-                            </div>
-                        </div>
-                        <?php
-                    endwhile;
-                endif;
-            endif; 
-            if ( true === get_sub_field( 'need_a_bullet_point') ) : 
-                if ( '' !== get_sub_field( 'just_text_bullet_point_heading' ) ) : ?>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="aa-just-text-bullet-point-heading-container pt-3">
-                                <h1><?php echo get_sub_field( 'just_text_bullet_point_heading' ); ?></h1>
-                                <div class="aa-just-text-bullet-point-description"><?php echo get_sub_field( 'just_text_bullet_point_description' ); ?></div>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
-                endif;
-            endif; 
-            if ( true === get_sub_field( 'need_a_just_text_link' ) ) : 
-                if ( '' !== get_sub_field( 'just_text_link') ) : 
-                $aa_just_text_link = get_sub_field( 'just_text_link'); ?>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="aa-just-text-link-container py-5">
-                            <a class="aa-just-text-link" href="<?php echo $aa_just_text_link['url']; ?>" target="<?php echo $aa_just_text_link['target']; ?>"><?php echo $aa_just_text_link['title']; ?></a>
-                        </div>
+            if ( '' !== get_sub_field( 'aa_just_text_link') ) : 
+            $aa_just_text_link = get_sub_field( 'aa_just_text_link'); ?>
+            <div class="row">
+                <div class="col-12">
+                    <div class="aa-just-text-link-container py-5">
+                        <a class="aa-just-text-link" href="<?php echo $aa_just_text_link['url']; ?>" target="<?php echo $aa_just_text_link['target']; ?>"><?php echo $aa_just_text_link['title']; ?></a>
                     </div>
                 </div>
-                <?php endif;
-            endif; ?>
+            </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
