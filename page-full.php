@@ -143,7 +143,7 @@ the_post();
 			$run_once = false;
 			while( have_rows( 'proenergy_aeroadvantage_modules' ) ) : the_row();
 				if( get_row_layout() === 'aeroadvantage_header_lg' ) :
-					include 'modules/about-us/aa-header/aa-header-lg.php';	
+					include 'modules/aero-advantage/aa-header/aa-header-lg.php';	
 				endif;
 				if( get_row_layout() === 'aeroadvantage_header_small' ) :
 					include 'modules/aero-advantage/aa-header/aa-header-small.php';	
