@@ -86,7 +86,7 @@ endif;
             font-family: "MyriadPro-Italic";
             font-size: 18px;
             line-height: 25px;
-            color: <?php echo $aa_just_text_text_color; ?>;
+            color: #A3A8AA;
             text-decoration: none;
         }
 
