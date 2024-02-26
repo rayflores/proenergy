@@ -84,7 +84,7 @@ $ab_conf_session_paragraph = get_sub_field( 'ab_conf_session_paragraph' ) ? get_
                         $day_itinerary_time = get_sub_field( 'day_itinerary_time' ) ? get_sub_field( 'day_itinerary_time' ) : '';
                         ?>
                         <div class="row g-0">
-                            <div class="day-itinerary-details-container col-12 p-5 pt-3 ms-5 d-flex">
+                            <div class="day-itinerary-details-container col-11 p-5 pt-3 ms-5 d-flex w-90">
                                <div class="col-2 ps-3">
                                     <div class="ab-conf-session-day-itinerary-time-container">
                                         <?php echo $day_itinerary_time; ?>
@@ -118,8 +118,7 @@ $ab_conf_session_paragraph = get_sub_field( 'ab_conf_session_paragraph' ) ? get_
                         <?php
                         endwhile;
                     endif;
-                endwhile;
-            endif; ?>
-        </div>
+            endwhile;
+        endif; ?>
     </div>
 </section>

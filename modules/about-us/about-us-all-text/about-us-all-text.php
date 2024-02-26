@@ -49,8 +49,8 @@ $ab_all_text_link = get_sub_field('ab_all_text_link') ? get_sub_field('ab_all_te
     }
     
 </style>
-    <div class="pt-2">
-        <div class="row">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
             <div class="ab_all-text-wrapper col-12 px-5 pt-3 pb-4">
                 <div class="ab_all-text-container col-12 pb-5 ps-3">
                     <?php
