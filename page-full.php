@@ -139,6 +139,41 @@ the_post();
 				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aboutus_modules' )
+		if ( have_rows( 'proenergy_aeroadvantage_modules' ) ) :
+			$run_once = false;
+			while( have_rows( 'proenergy_aeroadvantage_modules' ) ) : the_row();
+				if( get_row_layout() === 'aeroadvantage_header_lg' ) :
+					include 'modules/about-us/aa-header/aa-header-lg.php';	
+				endif;
+				if( get_row_layout() === 'aeroadvantage_header_small' ) :
+					include 'modules/aero-advantage/aa-header/aa-header-small.php';	
+				endif;
+				if ( !$run_once ) :
+				?>
+				<section id="section_breadcrumbs" class="pt-5 ps-5">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 ">
+								<?php 
+								get_the_breadcrumbs(); 
+								$run_once = true; ?>
+							</div>
+						</div>
+					</div>
+				</section>
+				<?php
+				endif;
+				if( get_row_layout() === 'aeroadvantage_all_text' ) :
+					include 'modules/aero-advantage/aa-all-text/aa-all-text.php';	
+				endif;
+				if( get_row_layout() === 'aeroadvantage_bir' ) :
+					include 'modules/aero-advantage/aa-bir/aa-bir.php';	
+				endif;
+				if( get_row_layout() === 'aeroadvantage_bil' ) :
+					include 'modules/aero-advantage/aa-bil/aa-bil.php';	
+				endif;
+			endwhile;
+		endif; // end have_rows( 'proenergy_aeroadvantage_modules' )
 	// end !front_page()
 	endif; 
 	/*** end !front_page() ***/ 
