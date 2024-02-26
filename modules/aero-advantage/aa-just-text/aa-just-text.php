@@ -16,9 +16,6 @@ $aa_just_text_text_color = '';
 $aa_just_text_text_color = get_sub_field( 'aa_just_text_text_color' ) ? get_sub_field( 'aa_just_text_text_color' ) : '';
 
 $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' . '");"';
-if ( '#ffffff' === $aa_just_text_text_color ) :
-    $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow-white.png' . '");"';
-endif; 
 ?>
 <section id="section_aa-just-text-wrapper" class="p-0 <?php echo $aa_uuid; ?>" style="background-color: <?php echo $aa_just_text_bg_color; ?>">
     <style>

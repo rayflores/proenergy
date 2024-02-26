@@ -84,7 +84,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         font-family : "MyriadPro-Italic";
         font-size : 18px;
         line-height : 25px;
-        color : #53565A;
+        color : #a3a8aa;
         color : rgb(83, 86, 90);
     }
     .aa-birp-link::after{
