@@ -172,6 +172,15 @@ the_post();
 				if( get_row_layout() === 'aeroadvantage_bil' ) :
 					include 'modules/aero-advantage/aa-bil/aa-bil.php';	
 				endif;
+				if( get_row_layout() === 'aeroadvantage_bir_plain' ) :
+					include 'modules/aero-advantage/aa-bir/aa-bir-plain.php';	
+				endif;
+				if( get_row_layout() === 'aeroadvantage_three_bullets' ) :
+					include 'modules/aero-advantage/aa-three-bullets/aa-three-bullets.php';	
+				endif;
+				if( get_row_layout() === 'aeroadvantage_just_text' ) :
+					include 'modules/aero-advantage/aa-just-text/aa-just-text.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aeroadvantage_modules' )
 	// end !front_page()

@@ -262,7 +262,7 @@
                         {
                             "key": "field_65dc11caecd36",
                             "label": "AeroAdvantage BIR Link",
-                            "name": "aa_bir_text",
+                            "name": "aa_bir_link",
                             "aria-label": "",
                             "type": "link",
                             "instructions": "",
@@ -472,6 +472,314 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_65dc8351ad39a": {
+                    "key": "layout_65dc8351ad39a",
+                    "name": "aeroadvantage_bir_plain",
+                    "label": "AeroAdvantage Bullet Image Right Plain",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65dc8395ad39c",
+                            "label": "AeroAdvantage BIRP Top Text",
+                            "name": "aa_birp_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dc8425ad39d",
+                            "label": "AeroAdvantage BIRP Header",
+                            "name": "aa_birp_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dc8446ad39e",
+                            "label": "AeroAdvantage BIRP Paragraph",
+                            "name": "aa_birp_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65dc846aad39f",
+                            "label": "AeroAdvantage BIRP Link",
+                            "name": "aa_birp_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_65dc8489ad3a0",
+                            "label": "AeroAdvantage BIRP Image",
+                            "name": "aa_birp_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65dc85987087f": {
+                    "key": "layout_65dc85987087f",
+                    "name": "aeroadvantage_three_bullets",
+                    "label": "AeroAdvantage Three Bullets",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65dc85c970881",
+                            "label": "AeroAdvantage Three Bullets",
+                            "name": "aa_three_bullets",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Bullet",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65dc85ed70882",
+                                    "label": "AeroAdvantage Single Bullet Percentage",
+                                    "name": "aa_single_bullet_percentage",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "49",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dc85c970881"
+                                },
+                                {
+                                    "key": "field_65dc861b70883",
+                                    "label": "AeroAdvantage Single Bullet Text",
+                                    "name": "aa_single_bullet_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "49",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dc85c970881"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65dc8b0254a3f": {
+                    "key": "layout_65dc8b0254a3f",
+                    "name": "aeroadvantage_just_text",
+                    "label": "AeroAdvantage Just Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65dc8b2254a41",
+                            "label": "AA Just Text Background Color",
+                            "name": "aa_just_text_bg_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#862633",
+                            "enable_opacity": 1,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65dc8bc554a42",
+                            "label": "AA Just Text Top Text",
+                            "name": "aa_just_text_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dc8be154a43",
+                            "label": "AA Just Text Header",
+                            "name": "aa_just_text_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dc8bf954a44",
+                            "label": "AA Just Text Paragraph",
+                            "name": "aa_just_text_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65dc8fdc54a45",
+                            "label": "AA Just Text Text Color",
+                            "name": "aa_just_text_text_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ffffff",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65dc900654a46",
+                            "label": "AA Just Text Link",
+                            "name": "aa_just_text_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -509,5 +817,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708922056
+    "modified": 1708954025
 }
