@@ -16,6 +16,9 @@ $aa_tb_banner_text = get_sub_field('aa_tb_banner_text') ? get_sub_field('aa_tb_b
             letter-spacing: 0;
             line-height: 1.5em;
         }
+        #section_areoadvantage_tb ul {
+            padding-left: 1rem;
+        }
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
