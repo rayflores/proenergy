@@ -781,6 +781,193 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_65dd645e85339": {
+                    "key": "layout_65dd645e85339",
+                    "name": "aeroadvantage_just_text_list",
+                    "label": "AeroAdvantage Just Text With List",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65dd645e8533a",
+                            "label": "AA Just Text Background Color",
+                            "name": "aa_just_text_list_bg_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "rgba(163, 168, 170, 0.2);",
+                            "enable_opacity": 1,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65dd645e8533b",
+                            "label": "AA Just Text Top Text",
+                            "name": "aa_just_text_list_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dd645e8533c",
+                            "label": "AA Just Text Header",
+                            "name": "aa_just_text_list_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dd645e8533d",
+                            "label": "AA Just Text Paragraph",
+                            "name": "aa_just_text_list_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65dd645e8533e",
+                            "label": "AA Just Text Text Color",
+                            "name": "aa_just_text_list_text_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#53565A",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65dd645e8533f",
+                            "label": "AA Just Text Link",
+                            "name": "aa_just_text_list_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_65dd64b485340",
+                            "label": "AA Just Text List Items",
+                            "name": "aa_just_text_list_items",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Item",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65dd64ce85341",
+                                    "label": "AA Just Text List Item Title",
+                                    "name": "aa_just_text_list_item_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dd64b485340"
+                                },
+                                {
+                                    "key": "field_65dd66cb88cb4",
+                                    "label": "AA Just Text List Item Description",
+                                    "name": "aa_just_text_list_item_desc",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_65dd64b485340"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65dcfa9eda8c4": {
                     "key": "layout_65dcfa9eda8c4",
                     "name": "aeroadvantage_top_benefits",
@@ -891,5 +1078,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708999508
+    "modified": 1709008624
 }
