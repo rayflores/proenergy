@@ -1,0 +1,44 @@
+<?php
+/**
+ * Module Name: AeroAdvantage Top Benefits
+ * Description: Template for AeroAdvantage Top Benefits Module.
+ */
+$aa_tb_banner_text = get_sub_field('aa_tb_banner_text') ? get_sub_field('aa_tb_banner_text') : '';
+?>
+<section id="section_areoadvantage_tb" class="p-0 showcase">
+    <style>
+        .aa-tb-banner {
+            background: linear-gradient(-60deg, #FFF 15%, #862633 15%);
+        }
+        .aa-tb-banner h2 {
+            font-family: 'Eurostile-Bold';
+            font-size: 2.88em;
+            letter-spacing: 0;
+            line-height: 1.5em;
+        }
+    </style>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-3 ps-5 aa-tb-banner">
+                <h2 class="text-white">
+                    <?php echo $aa_tb_banner_text; ?>
+                </h2>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-12 pt-5 ps-5">
+                <ul>
+                <?php
+                if ( have_rows('aa_tb_list_items') ) :
+                    while( have_rows('aa_tb_list_items') ) : the_row();
+                        $aa_tb_list_item = get_sub_field('aa_tb_li_item') ? get_sub_field('aa_tb_li_item') : '';
+                        ?>
+                        <li class=""><?php echo $aa_tb_list_item; ?></li>
+                        <?php 
+                    endwhile;
+                endif; ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
