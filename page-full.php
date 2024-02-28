@@ -187,6 +187,9 @@ the_post();
 				if( get_row_layout() === 'aeroadvantage_top_benefits' ) :
 					include 'modules/aero-advantage/aa-top-benefits/aa-top-benefits.php';	
 				endif;
+				if( get_row_layout() === 'aeroadvantage_case_study' ) :
+					include 'modules/aero-advantage/aa-case-study/aa-case-study.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aeroadvantage_modules' )
 	// end !front_page()

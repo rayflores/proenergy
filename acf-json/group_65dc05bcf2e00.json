@@ -1041,6 +1041,246 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_65dde3d43a8a8": {
+                    "key": "layout_65dde3d43a8a8",
+                    "name": "aeroadvantage_case_study",
+                    "label": "AeroAdvantage Case Study",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65dde3f73a8aa",
+                            "label": "AA Case Study Top Text",
+                            "name": "aa_case_study_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dde4153a8ab",
+                            "label": "AA Case Study Header",
+                            "name": "aa_case_study_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65dde4223a8ac",
+                            "label": "AA Case Study Paragraph",
+                            "name": "aa_case_study_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65dde4723a8ad",
+                            "label": "AA Case Study Left Desc",
+                            "name": "aa_case_study_left_desc",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65dde4a13a8ae",
+                            "label": "AA Case Study Left Bullets",
+                            "name": "aa_case_study_left_bullets",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65dde4bd3a8af",
+                                    "label": "AA Case Study Left Bullet Percentage",
+                                    "name": "aa_case_study_left_bullet_percentage",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dde4a13a8ae"
+                                },
+                                {
+                                    "key": "field_65dde4d63a8b0",
+                                    "label": "AA Case Study Left Bullet Description",
+                                    "name": "aa_case_study_left_bullet_desc",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dde4a13a8ae"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65dde4fc3a8b1",
+                            "label": "AA Case Study Right Bullets",
+                            "name": "aa_case_study_right_bullets",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_65dde5213a8b3",
+                                    "label": "AA Case Study Right Bullet Percentage",
+                                    "name": "aa_case_study_right_bullet_percentage",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dde4fc3a8b1"
+                                },
+                                {
+                                    "key": "field_65dde5143a8b2",
+                                    "label": "AA Case Study Right Bullet Description",
+                                    "name": "aa_case_study_right_bullet_desc",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_65dde4fc3a8b1"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_65dde5823a8b4",
+                            "label": "AA Case Study Right Highlights",
+                            "name": "aa_case_study_right_highlights",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -1078,5 +1318,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709008624
+    "modified": 1709050042
 }
