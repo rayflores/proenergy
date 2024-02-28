@@ -168,6 +168,18 @@ $featured_image_id = get_post_thumbnail_id();
 				color : #53565A;
 				color : rgb(83, 86, 90);
 			}
+			.card-footer a::after {
+    			content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+				width: 40px;
+				height: 0;
+				margin-left: 1em;
+			}
+			.card-footer a {
+				font-family : "MyriadPro-Italic";
+				font-size : 18px;
+				line-height : 25px;
+				color : #A3A8AA;
+			}
 		</style>
 		<div class="container-fluid p-0">
 			<div class="row g-0">	
