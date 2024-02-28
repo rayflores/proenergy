@@ -159,6 +159,7 @@ $featured_image_id = get_post_thumbnail_id();
 				letter-spacing : 0.23px;
 				color : #53565A;
 				color : rgb(83, 86, 90);
+				min-height: 5rem;
 			}
 			.card-text {
 				font-family : "MyriadPro-Regular";
@@ -202,8 +203,8 @@ $featured_image_id = get_post_thumbnail_id();
 				// @TODO: Add the loop here
 				?>
 				<div class="col-6 p-5">
-					<div class="card">
-						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-top" alt="">
+					<div class="card border-0 rounded-0">
+						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-none" alt="">
 						<div class="card-body">
 							<h6 class="card-subtitle my-3 post-date">November 21, 2023</h6>
 							<h5 class="card-title mb-2">PROENERGY Unveils New<br/>48-MW PE6000 Turbine</h5>
@@ -215,12 +216,12 @@ $featured_image_id = get_post_thumbnail_id();
 					</div>
 				</div>
 				<div class="col-6 p-5">
-					<div class="card">
-						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-top" alt="">
+					<div class="card border-0 rounded-0">
+						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-none" alt="">
 						<div class="card-body">
-							<h6 class="card-subtitle my-3 post-date">November 21, 2023</h6>
-							<h5 class="card-title mb-2">PROENERGY Unveils New<br/>48-MW PE6000 Turbine</h5>
-							<p class="card-text mb-4">PROENERGY unveiled a new, 48-MW aeroderivative<br/>turbine that provides firm power generation for more<br/>than 40,000* American homes.</p>
+							<h6 class="card-subtitle my-3 post-date">OCTOBER 12, 2023</h6>
+							<h5 class="card-title mb-2">PROENERGY Awarded Total Care Service<br/>Agreement for Sharm El Sheikh and Port<br/>Said Power Plants in Egypt</h5>
+							<p class="card-text mb-4">Egyptian Electricity Holding Company (EEHC) has<br/>awarded PROENERGY a total care service agreement<br/>(TCSA) for eight LM6000 gas turbines.</p>
 							<div class="card-footer bg-transparent border-0 p-0">
 								<a href="#" class="news_at-link card-link mb-4">Continue Reading</a>
 							</div>
@@ -228,12 +229,12 @@ $featured_image_id = get_post_thumbnail_id();
 					</div>
 				</div>
 				<div class="col-6 p-5">
-					<div class="card">
-						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-top" alt="">
+					<div class="card border-0 rounded-0">
+						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-none" alt="">
 						<div class="card-body">
-							<h6 class="card-subtitle my-3 post-date">November 21, 2023</h6>
-							<h5 class="card-title mb-2">PROENERGY Unveils New<br/>48-MW PE6000 Turbine</h5>
-							<p class="card-text mb-4">PROENERGY unveiled a new, 48-MW aeroderivative<br/>turbine that provides firm power generation for more<br/>than 40,000* American homes.</p>
+							<h6 class="card-subtitle my-3 post-date">MAY 01, 2023</h6>
+							<h5 class="card-title mb-2">WattBridge Now World&rquo;s Largest LM6000<br/>Fleet Owner as the 288-MW Brotman<br/>Facility Begins Commercial Operations</h5>
+							<p class="card-text mb-4">PROENERGY Services announced today<br/>commissioning of the WattBridge Brotman<br/>Generating Station in Brazoria County, Texas.</p>
 							<div class="card-footer bg-transparent border-0 p-0">
 								<a href="#" class="news_at-link card-link mb-4">Continue Reading</a>
 							</div>
@@ -241,12 +242,12 @@ $featured_image_id = get_post_thumbnail_id();
 					</div>
 				</div>
 				<div class="col-6 p-5">
-					<div class="card">
-						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-top" alt="">
+					<div class="card border-0 rounded-0">
+						<img src="<?php echo esc_url(wp_get_attachment_url($featured_image_id)); ?>" class="card-img-none" alt="">
 						<div class="card-body">
-							<h6 class="card-subtitle my-3 post-date">November 21, 2023</h6>
-							<h5 class="card-title mb-2">PROENERGY Unveils New<br/>48-MW PE6000 Turbine</h5>
-							<p class="card-text mb-4">PROENERGY unveiled a new, 48-MW aeroderivative<br/>turbine that provides firm power generation for more<br/>than 40,000* American homes.</p>
+							<h6 class="card-subtitle my-3 post-date">FEBRUARY 08, 2023</h6>
+							<h5 class="card-title mb-2">PROENERGY Commissions the 288-MW<br/>Mark One Facility, the Fourth WattBridge<br/>Generating Station in Texas</h5>
+							<p class="card-text mb-4">PROENERGY Services announced today <br/>commissioning of the WattBridge Brotman Generating<br/>Station in Brazoria County, Texas.</p>
 							<div class="card-footer bg-transparent border-0 p-0">
 								<a href="#" class="news_at-link card-link mb-4">Continue Reading</a>
 							</div>
