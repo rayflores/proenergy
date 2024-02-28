@@ -206,6 +206,17 @@ $featured_image_id = get_post_thumbnail_id();
 				</div>
 			</div>
 		</div>
+		<script>
+			const years = document.querySelectorAll('.newstimeline ul li');
+			years.forEach(year => {
+				year.addEventListener('click', () => {
+					years.forEach(y => {
+						y.classList.remove('active-year');
+					});
+					year.classList.add('active-year');
+				});
+			});
+		</script>
 	</section>
 
 	<section id="section_archive_posts">
