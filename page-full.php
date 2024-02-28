@@ -12,6 +12,7 @@ the_post();
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'content' ); ?>>
 	<?php
 	if ( ! is_front_page() ) : 
+		// If not front page, display breadcrumbs
 		if ( have_rows( 'proenergy_powerflx_modules' ) ) :
 			$run_once = false;
 			while( have_rows( 'proenergy_powerflx_modules' ) ) : the_row();

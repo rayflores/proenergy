@@ -1,0 +1,102 @@
+{
+    "key": "group_65deb28393040",
+    "title": "ProEnergy Four Pages",
+    "fields": [
+        {
+            "key": "field_65deb2848fb4c",
+            "label": "ProEnergy Four Pages",
+            "name": "proenergy_four_pages",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_65deb2c11cd2c": {
+                    "key": "layout_65deb2c11cd2c",
+                    "name": "proenergy_four_pages_news",
+                    "label": "ProEnergy Four Pages News",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65deb2f635ede": {
+                    "key": "layout_65deb2f635ede",
+                    "name": "proenergy_four_pages_careers",
+                    "label": "ProEnergy Four Pages Careers",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65deb30935edf": {
+                    "key": "layout_65deb30935edf",
+                    "name": "proenergy_four_pages_locations",
+                    "label": "ProEnergy Four Pages Locations",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65deb32835ee0": {
+                    "key": "layout_65deb32835ee0",
+                    "name": "proenergy_four_pages_contact",
+                    "label": "ProEnergy Four Pages Contact",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "630"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "632"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "634"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "636"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1709093863
+}
