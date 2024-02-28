@@ -55,7 +55,7 @@ $featured_image_id = get_post_thumbnail_id();
                 color: rgb(83, 86, 90);
             }
 
-            .loc_at-link . {
+            .loc_at-link {
                 color: #53565A;
                 font-family: "Eurostile-Bold";
                 font-size: 18px;
