@@ -159,7 +159,7 @@ $featured_image_id = get_post_thumbnail_id();
 				letter-spacing : 0.23px;
 				color : #53565A;
 				color : rgb(83, 86, 90);
-				min-height: 5rem;
+				min-height: 6.8rem;
 			}
 			.card-text {
 				font-family : "MyriadPro-Regular";
