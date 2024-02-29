@@ -57,7 +57,7 @@ if ( "rgb(255, 255, 255)" === $sus_jt_text_color ) {
         }
         .<?php echo $sus_uuid; ?> .sus-just-text-paragraph-container p {
             font-family : "MyriadPro-Regular";
-            font-size : 18px;
+            font-size : 17px;
             line-height : 25px;
             color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(83,86,90)'; ?>;
             margin-top: 1.25em;
