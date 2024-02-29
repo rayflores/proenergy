@@ -516,6 +516,46 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_65e01533b6701",
+                            "label": "Sus BIL Bullet Percentage",
+                            "name": "sus_bil_bullet_percentage",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e01546b6702",
+                            "label": "Sus BIL Bullet Text",
+                            "name": "sus_bil_bullet_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "",
@@ -632,5 +672,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709184128
+    "modified": 1709184347
 }
