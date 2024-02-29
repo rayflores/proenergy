@@ -12,6 +12,7 @@ $sus_jt_header = '';
 $sus_jt_header = get_sub_field( 'sus_jt_header' ) ? get_sub_field( 'sus_jt_header' ) : '';
 $sus_jt_paragraph = '';
 $sus_jt_paragraph = get_sub_field( 'sus_jt_paragraph' ) ? get_sub_field( 'sus_jt_paragraph' ) : '';
+$sus_jt_link = '';
 $sus_jt_link = get_sub_field( 'sus_jt_link' ) ? get_sub_field( 'sus_jt_link' ) : '';
 $sus_jt_text_color = '';
 $sus_jt_text_color = get_sub_field( 'sus_jt_text_color' ) ? get_sub_field( 'sus_jt_text_color' ) : '';
@@ -96,9 +97,7 @@ if ( "rgb(255, 255, 255)" === $sus_jt_text_color ) {
                     </div>
                 </div>
             </div>
-            <?php 
-            if ( '' !== get_sub_field( 'sus_jt_link') ) : 
-            $sus_jt_link = get_sub_field( 'sus_jt_link'); ?>
+            <?php if ( '' !== $sus_jt_link ) : ?>
             <div class="row g-0">
                 <div class="col-12">
                     <div class="sus-jt-link-container pb-5 ps-3">
