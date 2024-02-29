@@ -326,6 +326,46 @@
                             "new_lines": ""
                         },
                         {
+                            "key": "field_65e013a45e296",
+                            "label": "Sus BIR Bullet Percentage",
+                            "name": "sus_bir_bullet_percentage",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e013d25e297",
+                            "label": "Sus BIR Bullet Text",
+                            "name": "sus_bir_bullet_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_65e0093f72600",
                             "label": "Sus BIR Link",
                             "name": "sus_bir_link",
@@ -592,5 +632,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709181855
+    "modified": 1709184128
 }
