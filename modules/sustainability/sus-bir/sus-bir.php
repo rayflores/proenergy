@@ -94,14 +94,14 @@ $sus_bir_bullet_color = get_sub_field('sus_bir_bullet_color') !== '' ? get_sub_f
         color : rgb(83, 86, 90);
     }
     .sus-bir-bullet-percentage{
-        color: <?php echo $bullet_color; ?>;
+        color: #862633;
         font-family : "Eurostile-Bold";
         font-size : 45px;
         line-height : 54.85px;
         text-transform : uppercase;
     }
     .sus-bir-bullet-text{
-        color: <?php echo $bullet_color; ?>;
+        color: #862633;
         font-family: 'Eurostile-Normal';
         font-size : 24px;
         line-height : 31.1px;
