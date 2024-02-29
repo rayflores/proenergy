@@ -502,22 +502,6 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_65e0093f88f87",
-                            "label": "Sus BIL Link",
-                            "name": "sus_bil_link",
-                            "aria-label": "",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
-                        },
-                        {
                             "key": "field_65e01533b6701",
                             "label": "Sus BIL Bullet Percentage",
                             "name": "sus_bil_bullet_percentage",
@@ -556,6 +540,22 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
+                        },
+                        {
+                            "key": "field_65e0093f88f87",
+                            "label": "Sus BIL Link",
+                            "name": "sus_bil_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -672,5 +672,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709184347
+    "modified": 1709184440
 }
