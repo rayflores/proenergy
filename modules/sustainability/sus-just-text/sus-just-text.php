@@ -52,13 +52,13 @@ if ( "rgb(255, 255, 255)" === $sus_jt_text_color ) {
             font-size : 35px;
             line-height : 36px;
             letter-spacing : 0.35px;
-            color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(163, 168, 170)'; ?>;
+            color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(83,86,90)'; ?>;
         }
         .<?php echo $sus_uuid; ?> .sus-just-text-paragraph-container p {
             font-family : "MyriadPro-Regular";
             font-size : 18px;
             line-height : 25px;
-            color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(163, 168, 170)'; ?>;
+            color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(83,86,90)'; ?>;
             margin-top: 1.25em;
             margin-bottom: 3em;
             padding-right: 0;
