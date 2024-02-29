@@ -31,7 +31,7 @@ $sus_uuid = wp_unique_id( 'sus-three-bullets-' );
             if( have_rows('sust_three_bullets') ) : 
                 while( have_rows('sust_three_bullets') ) : the_row();
                 $sus_single_bullet_percentage = get_sub_field('sus_single_bullet_percentage') !== '' ? get_sub_field('sus_single_bullet_percentage') : '';
-                $sus_single_bullet_text = get_sub_field('powerflx_bullet_text') !== '' ? get_sub_field('powerflx_bullet_text') : '';
+                $sus_single_bullet_text = get_sub_field('sus_single_bullet_text') !== '' ? get_sub_field('sus_single_bullet_text') : '';
                 ?>
                     <div class="sus-bullet col-4">
                         <div class="sus-bullet-percentage"><?php echo $sus_single_bullet_percentage; ?></div>
