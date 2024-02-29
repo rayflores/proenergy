@@ -19,7 +19,7 @@ $sus_all_text_link = get_sub_field('sus_all_text_link') ? get_sub_field('sus_all
     }
     .sus-all-text-paragraph-container p {
         font-family : "MyriadPro-Regular";
-        font-size : 18px;
+        font-size : 17px;
         line-height : 25px;
         color : #53565A;
         color : rgb(83, 86, 90);
