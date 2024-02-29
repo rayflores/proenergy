@@ -597,11 +597,13 @@ function remove_wp_editor_pages()
 function remove_wp_featured_image_metabox()
 {
 	global $post;
-	$template_file = get_page_template_slug($post->ID);
-	$template_slugs = array( 'page-news.php', 'page-careers.php', 'page-locations.php', 'page-contact.php' );
-	if ( !in_array( $template_file, $template_slugs ) ) {
-		remove_meta_box('postimagediv', 'page', 'side');
-	}
+	if ( !is_null($post) ) :
+		$template_file = get_page_template_slug($post->ID);
+		$template_slugs = array( 'page-news.php', 'page-careers.php', 'page-locations.php', 'page-contact.php' );
+		if ( !in_array( $template_file, $template_slugs ) ) {
+			remove_meta_box('postimagediv', 'page', 'side');
+		}
+	endif;
 }
 add_action('admin_head', 'remove_wp_featured_image_metabox');
 /**

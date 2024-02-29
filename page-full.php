@@ -193,6 +193,47 @@ the_post();
 				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aeroadvantage_modules' )
+		if ( have_rows( 'proenergy_learningcenter_modules' ) ) :
+			$run_once = false;
+			while( have_rows( 'proenergy_learningcenter_modules' ) ) : the_row();
+				if( get_row_layout() === 'lc_header_lg' ) :
+					include 'modules/learningcenter/lc-header/lc-header-lg.php';	
+				endif;
+				if( get_row_layout() === 'lc_header_small' ) :
+					include 'modules/learningcenter/lc-header/lc-header-small.php';	
+				endif;
+				if ( !$run_once ) :
+				?>
+				<section id="section_breadcrumbs" class="pt-5 ps-5">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 ">
+								<?php 
+								get_the_breadcrumbs(); 
+								$run_once = true; ?>
+							</div>
+						</div>
+					</div>
+				</section>
+				<?php
+				endif;
+				if( get_row_layout() === 'lc_all_text' ) :
+					include 'modules/learningcenter/lc-all-text/lc-all-text.php';	
+				endif;
+				if( get_row_layout() === 'lc_bir' ) :
+					include 'modules/learningcenter/lc-bir/lc-bir.php';	
+				endif;
+				if( get_row_layout() === 'lc_bil' ) :
+					include 'modules/learningcenter/lc-bil/lc-bil.php';	
+				endif;
+				if( get_row_layout() === 'lc_just_text' ) :
+					include 'modules/learningcenter/lc-just-text/lc-just-text.php';	
+				endif;
+				if( get_row_layout() === 'lc_faq_module' ) :
+					include 'modules/learningcenter/lc-faqs/lc-faqs.php';	
+				endif;
+			endwhile;
+		endif; // end have_rows( 'proenergy_learningcenter_modules' )
 	// end !front_page()
 	endif; 
 	/*** end !front_page() ***/ 
