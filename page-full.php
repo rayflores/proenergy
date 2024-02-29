@@ -234,28 +234,69 @@ the_post();
 				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_learningcenter_modules' )
+		if ( have_rows( 'proenergy_sustainability_modules' ) ) :
+			$run_once = false;
+			while( have_rows( 'proenergy_sustainability_modules' ) ) : the_row();
+				if( get_row_layout() === 'sus_header_lg' ) :
+					include 'modules/sustainability/sus-header/sus-header-lg.php';	
+				endif;
+				if( get_row_layout() === 'sus_header_small' ) :
+					include 'modules/sustainability/sus-header/sus-header-small.php';	
+				endif;
+				if ( !$run_once ) :
+				?>
+				<section id="section_breadcrumbs" class="pt-5 ps-5">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 ">
+								<?php 
+								get_the_breadcrumbs(); 
+								$run_once = true; ?>
+							</div>
+						</div>
+					</div>
+				</section>
+				<?php
+				endif;
+				if( get_row_layout() === 'sus_all_text' ) :
+					include 'modules/sustainability/sus-all-text/sus-all-text.php';	
+				endif;
+				if( get_row_layout() === 'sus_bir' ) :
+					include 'modules/sustainability/sus-bir/sus-bir.php';	
+				endif;
+				if( get_row_layout() === 'sus_bil' ) :
+					include 'modules/sustainability/sus-bil/sus-bil.php';	
+				endif;
+				if( get_row_layout() === 'sus_just_text' ) :
+					include 'modules/sustainability/sus-just-text/sus-just-text.php';	
+				endif;
+				if( get_row_layout() === 'sus_three_bullets' ) :
+					include 'modules/sustainability/sus-three-bullets/sus-three-bullets.php';	
+				endif;
+			endwhile;
+		endif; // end have_rows( 'proenergy_learningcenter_modules' )
 	// end !front_page()
 	endif; 
 	/*** end !front_page() ***/ 
 	if ( have_rows( 'pe_home_flexible_content' ) ) :
 		while( have_rows( 'pe_home_flexible_content' ) ) : the_row();
 			if ( get_row_layout() == 'hero' ) :
-				include 'modules/hero/hero.php';
+				include 'modules/home/hero/hero.php';
 			endif;
 			if( get_row_layout() == 'all_text' ) :
-				include 'modules/all-text/all-text.php';
+				include 'modules/home/all-text/all-text.php';
 			endif;
 			if( get_row_layout() === 'bulleted_image_right' ) :
-				include 'modules/bullet-right/bulleted-image-right.php';
+				include 'modules/home/bullet-right/bulleted-image-right.php';
 			endif;
 			if( get_row_layout() === 'bulleted_image_left' ) :
-				include 'modules/bullet-left/bulleted-image-left.php';	
+				include 'modules/home/bullet-left/bulleted-image-left.php';	
 			endif;
 			if( get_row_layout() === 'header_band' ) :
-				include 'modules/header-band/header-band.php';	
+				include 'modules/home/header-band/header-band.php';	
 			endif;
 			if( get_row_layout() === 'tabbed_bulleted_image_left' ) :
-				include 'modules/tabbed-bil/tabbed-bil.php';	
+				include 'modules/home/tabbed-bil/tabbed-bil.php';	
 			endif;
 			
 		endwhile;
