@@ -781,6 +781,144 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_65e08a59b9a2b": {
+                    "key": "layout_65e08a59b9a2b",
+                    "name": "aeroadvantage_just_text_high_links",
+                    "label": "AeroAdvantage Just Text with Highlighted Links",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65e08a59b9a2c",
+                            "label": "AA JT HL Background Color",
+                            "name": "aa_jt_hl_background_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#862633",
+                            "enable_opacity": 1,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65e08a59b9a2d",
+                            "label": "AA JT HL Top Text",
+                            "name": "aa_jt_hl_top_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e08a59b9a2e",
+                            "label": "AA JT HL Header",
+                            "name": "aa_jt_hl_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e08a59b9a2f",
+                            "label": "AA JT HL Paragraph",
+                            "name": "aa_jt_hl_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_65e08a59b9a30",
+                            "label": "AA JT HL Text Color",
+                            "name": "aa_jt_hl_text_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ffffff",
+                            "enable_opacity": 0,
+                            "return_format": "string"
+                        },
+                        {
+                            "key": "field_65e08a59b9a31",
+                            "label": "AA JT HL Link",
+                            "name": "aa_jt_hl_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_65e08afbb9a32",
+                            "label": "AA JT HL Link 2",
+                            "name": "aa_jt_hl_link_two",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65dd645e85339": {
                     "key": "layout_65dd645e85339",
                     "name": "aeroadvantage_just_text_list",
@@ -1305,7 +1443,7 @@
             {
                 "param": "page_parent",
                 "operator": "==",
-                "value": "39"
+                "value": "762"
             }
         ]
     ],
@@ -1318,5 +1456,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709050042
+    "modified": 1709214988
 }
