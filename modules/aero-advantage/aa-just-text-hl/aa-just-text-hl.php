@@ -28,10 +28,10 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             content: '';
             display: inline-block;
             height: 1px;
-            left: -15px;
+            left: 0;
             position: relative;
-            top: 50%;
-            width: 1.5%;
+            vertical-align: middle;
+            width: 30px;
             z-index: 1;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-top-text-container::after {
@@ -124,7 +124,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-8">
                     <div class="aa-jt-hl-paragraph-container pt-3">
                         <p><?php echo $aa_jt_hl_paragraph; ?></p>
                     </div>

@@ -1589,6 +1589,40 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_65e15fb6229cb": {
+                    "key": "layout_65e15fb6229cb",
+                    "name": "aeroadvantage_banner_header",
+                    "label": "AeroAdvantage Banner Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65e15fb9229cd",
+                            "label": "AA BH Page Title",
+                            "name": "aa_bh_page_title",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -1626,5 +1660,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709256713
+    "modified": 1709269038
 }
