@@ -8,7 +8,7 @@ $aa_bh_page_title = get_sub_field( 'aa_bh_page_title' ) ? get_sub_field( 'aa_bh_
 ?>
 <style>
     #menu-top-menu {
-        display: none;
+        display: none!important;
     }
     .aa-banner-header-text-container::before {
             background: #ffffff;
