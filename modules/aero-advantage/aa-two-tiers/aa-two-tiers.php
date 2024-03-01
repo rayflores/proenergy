@@ -100,7 +100,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
         </div>
         <div class="row g-0">
             <div class="col-12 px-5">
-                <div class="aa_two-tiers-table-container table-responsive">
+                <div class="aa_two-tiers-table table-responsive">
                     <table class="table align-middle text-light table-bordered border-dark border-opacity-25">
                         <thead>
                             <tr>
