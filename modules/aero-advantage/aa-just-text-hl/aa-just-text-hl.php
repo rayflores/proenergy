@@ -117,6 +117,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             font-size : 24px;
             line-height : 27px;
             letter-spacing : 0.24px;
+            padding: 0;
             color : #862633;
         }
     </style>
