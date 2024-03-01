@@ -104,7 +104,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                     <table class="table align-middle text-light table-bordered border-dark border-opacity-25">
                         <thead>
                             <tr>
-                                <th rowspan="2" class="table-active align-middle text-center" style="">
+                                <th rowspan="2" class="table-active align-middle text-center">
                                     Tier 01
                                 </th>
                                 <th class="table-active text-grey">
