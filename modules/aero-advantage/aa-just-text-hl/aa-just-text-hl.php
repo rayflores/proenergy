@@ -112,6 +112,13 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             height: 0;
             margin-left: 1em;
         }
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-paragraph-container p.bullet-top {
+            font-family : "Eurostile-Bold";
+            font-size : 24px;
+            line-height : 27px;
+            letter-spacing : 0.24px;
+            color : #862633;
+        }
     </style>
     <div class="container-fluid p-0">
         <div class="aa-jt-hl-top-text-container pt-5" data-content="<?php echo $aa_jt_hl_top_text; ?>"></div>
