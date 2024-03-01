@@ -73,7 +73,12 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
         height: 0;
         margin-left: 1em;
     }
-    
+    th.text-grey {
+        font-family: "Eurostile-Bold";
+        color: #A3A8AA;
+        letter-spacing: 5px;
+        padding-left: 60px!important;
+    }
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
@@ -99,68 +104,66 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                     <table class="table align-middle text-light table-bordered border-dark border-opacity-25">
                         <thead>
                             <tr>
-                                <th rowspan="2" class="table-active align-middle text-center text-light" style="">
-                                    TIER 01
+                                <th rowspan="2" class="table-active align-middle text-center" style="">
+                                    Tier 01
                                 </th>
-                                <th class="table-active text-center text-light">
+                                <th class="table-active text-grey">
                                     TURBINE
                                 </th>
-                                <th class="table-active text-center text-light">
+                                <th class="table-active text-grey">
                                     PACKAGE
                                 </th>
                             </tr>
                             <tr>
-                                <th class="text-dark">
+                                <th class="text-dark ps-5">
                                     <ul>
                                         <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
+                                        <li>Thermocouples ignition systems</li>
+                                        <li>Accelerometers</li>
+                                        <li>Actuators</li>
+                                        <li>Cables</li>
+                                        <li>Pumps</li>
                                     </ul>
                                 </th>
-                                <th class="text-dark">
+                                <th class="text-dark ps-5">
                                     <ul>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
+                                        <li>Vibration system parts</li>
+                                        <li>Generator spares</li>
+                                        <li>Off-engine cables</li>
+                                        <li>Generator lube oil systems</li>
+                                        <li>Fuel systems</li>
+                                        <li>Turbine lube oil systems</li>
                                     </ul>
                                 </th>
                             </tr>
                             <tr>
-                                <th rowspan="2" class="table-active align-middle text-center text-light" style="width: 25%">
-                                    TIER 02
+                                <th rowspan="2" class="table-active align-middle text-center text-dark" style="width: 25%">
+                                    Tier 02
                                 </th>
-                                <th class="table-active text-center text-light">
+                                <th class="table-active text-grey">
                                     SPARES
                                 </th>
-                                <th class="table-active text-center text-light">
+                                <th class="table-active text-grey">
                                     CUSTOM
                                 </th>
                             </tr>
                             <tr>
-                                <th class="text-dark">
+                                <th class="text-dark ps-5">
                                     <ul>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
+                                        <li>Everything in Tier 1</li>
+                                        <li>HPT Stage 1 blades and nozzles</li>
+                                        <li>HPT Stage 2 blades and nozzles</li>
+                                        <li>HPT Stage 1 and 2 shrouds</li>
+                                        <li>LPT Stage 1 blades and nozzles</li>
                                     </ul>
                                 </th>
-                                <th class="text-dark">
+                                <th class="text-dark ps-5">
                                     <ul>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
-                                        <li>Check valves</li>
+                                        <li>Controls</li>
+                                        <li>Starter motors</li>
+                                        <li>Valves</li>
+                                        <li>Valve drivers</li>
+                                        <li>Reduction gear boxes</li>
                                     </ul>
                                 </th>
                             </tr>
