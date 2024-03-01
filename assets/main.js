@@ -105,10 +105,10 @@ import * as bootstrap from 'bootstrap';
 		$(document).ready(function() {
 			$('.dropdown-here').hover(function() {
 			  $(this).addClass('show');
-			  $(this).find('.dropdown-menu').addClass('show').fadeIn(500);
+			  $(this).find('.mega-container').addClass('show').fadeIn(500);
 			}, function() {
 			  $(this).removeClass('show');
-			  $(this).find('.dropdown-menu').removeClass('show');
+			  $(this).find('.mega-container').removeClass('show');
 			}).on('click', function(e) {
 				$('li').removeClass('current-menu-item');
 				$(this).find('.dropdown-toggle').addClass('active');
