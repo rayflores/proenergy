@@ -758,3 +758,18 @@ function panel_title($title, $field, $layout, $i)
 	}
 	return $title;
 }
+// Add Default Color Pallette for ACF Color Picker
+function pe_acf_input_admin_footer() { ?>
+	<script type="text/javascript">
+	(function($) {
+		acf.add_filter('color_picker_args', function( args, $field ){
+
+			// add the hexadecimal codes here for the colors you want to appear as swatches
+			args.palettes = ['#53565A', '#862633','rgba(168,163,170,0.2)', '#FFFFFF']
+		// return colors
+		return args;
+		});
+	})(jQuery);
+	</script>
+	<?php }
+	add_action('acf/input/admin_footer', 'pe_acf_input_admin_footer');

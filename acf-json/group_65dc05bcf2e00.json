@@ -758,7 +758,7 @@
                                 "id": ""
                             },
                             "default_value": "#ffffff",
-                            "enable_opacity": 0,
+                            "enable_opacity": 1,
                             "return_format": "string"
                         },
                         {
@@ -1050,7 +1050,7 @@
                                 "id": ""
                             },
                             "default_value": "#ffffff",
-                            "enable_opacity": 0,
+                            "enable_opacity": 1,
                             "return_format": "string"
                         },
                         {
@@ -1645,9 +1645,9 @@
         ],
         [
             {
-                "param": "page_parent",
+                "param": "page_template",
                 "operator": "==",
-                "value": "762"
+                "value": "page-full.php"
             }
         ]
     ],
@@ -1660,5 +1660,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709269038
+    "modified": 1709272700
 }
