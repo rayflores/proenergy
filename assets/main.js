@@ -101,5 +101,18 @@ import * as bootstrap from 'bootstrap';
 				$('ul.dropdown-menu.mega-container').css('top', '100px');
 			}
 		});
+
+		$(document).ready(function() {
+			$('.dropdown-here').hover(function() {
+			  $(this).addClass('show');
+			  $(this).find('.dropdown-menu').addClass('show').fadeIn(500);
+			}, function() {
+			  $(this).removeClass('show');
+			  $(this).find('.dropdown-menu').removeClass('show');
+			}).on('click', function(e) {
+				$('li').removeClass('current-menu-item');
+				$(this).find('.dropdown-toggle').addClass('active');
+			});
+	  });
 	});
 })();

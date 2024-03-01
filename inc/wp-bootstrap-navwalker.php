@@ -40,7 +40,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 			if ( 1 === $depth && $args->has_children ) {
 				$output .= '<ul role="menu" class="dropdown-menu mega-inside">';
 			} elseif ( 0 === $depth && $args->has_children ) {
-				$output .= '<ul role="menu" class="dropdown-menu mega-container">';
+				$output .= '<ul role="menu" class="dropdown-menu mega-container pe-5">';
 			} else {
 				$output .= '<ul role="menu" class="dropdown-menu">';
 			}
@@ -73,7 +73,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$output .= '<li role="presentation" class="divider">';
 			} elseif ( 0 === strcasecmp( $item->attr_title, 'dropdown-header' ) && 1 === $depth ) {
 				// $output .= '<li role="presentation" class="dropdown-mega-header">' . esc_attr( $item->title );
-				$output .= '<li role="presentation" class="dropdown-mega-header">' . $item->title;
+				$output .= '<li role="presentation" class="dropdown-mega-header"><a href="' . $item->url . '">' . $item->title . '</a>';
 			} elseif ( 0 === strcasecmp( $item->attr_title, 'disabled' ) ) {
 				$output .= '<li role="presentation" class="disabled"><a href="#">' . esc_attr( $item->title ) . '</a>';
 			} else {
@@ -86,7 +86,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$classes[]   = 'menu-item-' . $item->ID;
 				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
 				if ( $args->has_children ) {
-					$class_names .= ' dropdown-here dropdown-megamenu';
+					$class_names .= ' dropdown-here dropdown-megamenu h-100 d-flex align-items-center';
 				}
 				if ( preg_grep( '/^current/', $classes ) ) {
 					$atts['aria-current'] = 'page';
@@ -110,7 +110,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				// If item has_children add atts to a.
 				if ( $args->has_children && 0 === $depth ) {
 					$atts['href']           = $item->url;
-					$atts['data-bs-toggle'] = 'dropdown';
+					//$atts['data-bs-toggle'] = 'dropdown';
 					$atts['class']          = 'nav-link dropdown-toggle';
 					$atts['aria-expanded']  = 'false';
 				} else {

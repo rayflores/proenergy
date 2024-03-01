@@ -47,7 +47,7 @@
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(
 							array(
-								'menu_class'     => 'navbar-nav main-menu justify-content-between',
+								'menu_class'     => 'navbar-nav main-menu justify-content-between h-100 align-items-center',
 								'container'      => '',
 								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
 								'walker'         => new WP_Bootstrap_Navwalker(),
