@@ -18,8 +18,10 @@ $aa_jt_hl_link = '';
 $aa_jt_hl_link = get_sub_field( 'aa_jt_hl_link' ) ? get_sub_field( 'aa_jt_hl_link' ) : '';
 $aa_jt_hl_link_two = '';
 $aa_jt_hl_link_two = get_sub_field( 'aa_jt_hl_link_two' ) ? get_sub_field( 'aa_jt_hl_link_two' ) : '';
-
 $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' . '");"';
+if ( 'rgb(134,38,51)' === $aa_jt_hl_background_color ) :
+    $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow-white.png' . '");"';
+endif;
 ?>
 <section id="section_aa-jt-hl-wrapper" class="p-0 <?php echo $aa_uuid; ?>" style="background-color: <?php echo $aa_jt_hl_background_color; ?>">
     <style>
@@ -89,11 +91,13 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             background-color: <?php echo $aa_jt_hl_background_color; ?>;
             min-height: 5rem;
         }
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container.darker,
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container.darker {
-            background-color: rgba(163,168,170,0.5);
+            background-color: rgba(0,0,0,0.2);
         }
-         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container.darker a {
-            color: #53565A;
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container.darker a,
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container.darker a {
+            color: #ffffff;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container a,
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container a {
@@ -144,7 +148,12 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         $aa_jt_hl_link = get_sub_field( 'aa_jt_hl_link'); ?>
         <div class="row g-0">
             <div class="col-6">
-                <div class="aa-jt-hl-link-container d-flex align-items-center ps-5">
+                <?php
+                $add_class = '';
+                if ( 'rgb(134,38,51)' === $aa_jt_hl_background_color ) : 
+                    $add_class = 'darker'; 
+                endif; ?>
+                <div class="aa-jt-hl-link-container d-flex align-items-center ps-5 <?php echo $add_class; ?>">
                     <a class="aa-jt-hl-link" href="<?php echo $aa_jt_hl_link['url']; ?>" target="<?php echo $aa_jt_hl_link['target']; ?>"><?php echo $aa_jt_hl_link['title']; ?></a>
                 </div>
             </div>
