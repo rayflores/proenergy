@@ -194,6 +194,9 @@ the_post();
 				if( get_row_layout() === 'aeroadvantage_just_text_high_links' ) :
 					include 'modules/aero-advantage/aa-just-text-hl/aa-just-text-hl.php';	
 				endif;
+				if( get_row_layout() === 'aeroadvantage_jt_half_list' ) :
+					include 'modules/aero-advantage/aa-just-text-half/aa-just-text-half.php';	
+				endif;
 			endwhile;
 		endif; // end have_rows( 'proenergy_aeroadvantage_modules' )
 		if ( have_rows( 'proenergy_learningcenter_modules' ) ) :
