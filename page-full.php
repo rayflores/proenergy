@@ -152,6 +152,9 @@ the_post();
 				if( get_row_layout() === 'aeroadvantage_banner_header' ) :
 					include 'modules/aero-advantage/aa-header/aa-banner-header.php';	
 				endif;
+				if( get_row_layout() === 'aeroadvantage_two_tiers' ) :
+					include 'modules/aero-advantage/aa-two-tiers/aa-two-tiers.php';	
+				endif;
 				if ( !$run_once ) :
 				?>
 				<section id="section_breadcrumbs" class="pt-5 ps-5">

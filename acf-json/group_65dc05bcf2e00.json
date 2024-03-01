@@ -87,6 +87,40 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_65e15fb6229cb": {
+                    "key": "layout_65e15fb6229cb",
+                    "name": "aeroadvantage_banner_header",
+                    "label": "AeroAdvantage Banner Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65e15fb9229cd",
+                            "label": "AA BH Page Title",
+                            "name": "aa_bh_page_title",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "post_status": "",
+                            "taxonomy": "",
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65dc0dd62e729": {
                     "key": "layout_65dc0dd62e729",
                     "name": "aeroadvantage_all_text",
@@ -1590,18 +1624,18 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_65e15fb6229cb": {
-                    "key": "layout_65e15fb6229cb",
-                    "name": "aeroadvantage_banner_header",
-                    "label": "AeroAdvantage Banner Header",
+                "layout_65e1d277ec00d": {
+                    "key": "layout_65e1d277ec00d",
+                    "name": "aeroadvantage_two_tiers",
+                    "label": "AeroAdvantage Two Tiers",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_65e15fb9229cd",
-                            "label": "AA BH Page Title",
-                            "name": "aa_bh_page_title",
+                            "key": "field_65e1d290ec00f",
+                            "label": "AA Two Tiers Top Text",
+                            "name": "aa_two_tiers_top_text",
                             "aria-label": "",
-                            "type": "post_object",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1610,15 +1644,51 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": "",
-                            "post_status": "",
-                            "taxonomy": "",
-                            "return_format": "id",
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "bidirectional": 0,
-                            "ui": 1,
-                            "bidirectional_target": []
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e1d2a0ec010",
+                            "label": "AA Two Tiers Header",
+                            "name": "aa_two_tiers_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_65e1d2adec011",
+                            "label": "AA Two Tiers Paragraph",
+                            "name": "aa_two_tiers_paragraph",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
                         }
                     ],
                     "min": "",
@@ -1660,5 +1730,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709272700
+    "modified": 1709298436
 }
