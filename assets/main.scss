@@ -176,8 +176,7 @@ body {
 	/* If WP-Adminbar is visible */
 	&.admin-bar {
 		#header {
-			top: 32px;
-			.fixed-top {
+			&.fixed-top {
 				top: var(--wp-admin--admin-bar--height);
 			}
 		}
@@ -228,9 +227,6 @@ img {
 header {
 	#header {
 		height: 100px;
-		position: fixed;
-		top: 0;
-		z-index: 100;
 		transition: height .3s;
 		.search-form {
 			min-width: 250px;
@@ -384,10 +380,6 @@ header {
 }
 
 /* Main */
-
-#main {
-	margin-top: 100px;
-}
 #main.container {
 	padding: 0;
 }

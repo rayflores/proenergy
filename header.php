@@ -21,10 +21,10 @@
 <a href="#main" class="visually-hidden-focusable"><?php esc_html_e( 'Skip to main content', 'my-theme' ); ?></a>
 
 <div id="wrapper">
-	<header>
+	<header class="bg-light">
 		<nav id="header" class="navbar navbar-expand-md container-fluid <?php echo esc_attr( $navbar_scheme ); if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
-			<div class="container-fluid px-5 position-relative h-100">
-				<a class="navbar-brand col-3" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<div class="container position-relative h-100">
+				<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php
 						$header_logo = get_theme_mod( 'header_logo' ); // Get custom meta-value.
 
@@ -47,7 +47,7 @@
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(
 							array(
-								'menu_class'     => 'navbar-nav main-menu justify-content-between h-100 align-items-center',
+								'menu_class'     => 'navbar-nav main-menu justify-content-end h-100 align-items-center p-0',
 								'container'      => '',
 								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
 								'walker'         => new WP_Bootstrap_Navwalker(),
@@ -69,7 +69,7 @@
 			</div><!-- /.container -->
 		</nav><!-- /#header -->
 		<nav class="navbar second-navbar navbar-expand-md container-fluid navbar-light justify-content-end">
-			<div class="position-relative h-100">
+			<div class="container position-relative h-100">
 				<div class="col-6 top-small-menu-nav">
 						<?php
 							// Loading WordPress Custom Menu (theme_location).

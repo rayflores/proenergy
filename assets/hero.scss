@@ -1,7 +1,6 @@
 #section_hero-wrapper {
     height: 570px;
     position: relative;
-    width: 100%;
     z-index: 0;
     @include media-breakpoint-down(lg) {
         height: 400px;
@@ -25,7 +24,6 @@
             font-size: clamp(2em, 8vw, 6em);
             letter-spacing: 15px;
             line-height: 0.8;
-            padding: 0 0 75px 80px;
             position: absolute;
             text-transform: uppercase;
             z-index: 1;

@@ -19,13 +19,11 @@ if ( !$hero_image_or_video ) : ?>
 ?>
 <section id="section_hero-wrapper" style="background-image: url('<?php echo $hero_image_url; ?>');">
 <?php endif; ?>
-        <div class="row">
-            <div class="hero-container col-lg-12">
-                <div class="hero-headline col-lg-12">
-                    <div class="hero-headline-text col-lg-6">
-                        <?php echo $hero_headline; ?>
-                    </div>
-                </div>   
-            </div>
+        <div class="container">
+            <div class="hero-headline col-lg-12 pb-5">
+                <div class="hero-headline-text col-lg-6">
+                    <?php echo $hero_headline; ?>
+                </div>
+            </div>   
         </div>
 </section>
