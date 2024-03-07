@@ -17,7 +17,7 @@
 			<div class="container-fluid px-5">
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 justify-content-md-center g-0">
 				<?php if ( is_active_sidebar( 'third_widget_area' ) ) : ?>
-						<div class="col-md-4">
+						<div class="col-md-4 d-flex align-items-center widget1">
 							<?php
 								dynamic_sidebar( 'third_widget_area' );
 
@@ -31,7 +31,7 @@
 					<?php
 						endif;
 					?>
-					<div class="col-md-4"></div>
+					<div class="col-md-4 d-flex align-items-center widget2"></div>
 					<?php
 						if ( has_nav_menu( 'footer-menu' ) ) : // See function register_nav_menus() in functions.php
 							/*
@@ -53,7 +53,7 @@
 
 						if ( is_active_sidebar( 'right_widget_area' ) ) :
 					?>
-						<div class="col-md-4">
+						<div class="col-md-4 widget3">
 							<?php
 								dynamic_sidebar( 'right_widget_area' );
 

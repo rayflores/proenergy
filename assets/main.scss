@@ -410,11 +410,17 @@ header {
 
 #footer {
 	background-color: #53565A;
-	p {
-		color: #FFFFFF;
-		margin-top: 10px;
+	.widget3 {
+		p {
+			color: #FFFFFF;
+			font-family: "eurostile", sans-serif;
+			font-size: 15px;
+			margin-top: 10px;
+			span {
+				font-weight: 700;
+			}
+		}
 	}
-
 	.menu-item {
 		a {
 			&[aria-current='page'] {
