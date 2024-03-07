@@ -18,20 +18,21 @@ $aa_bh_page_title = get_sub_field( 'aa_bh_page_title' ) ? get_sub_field( 'aa_bh_
             left: 0;
             position: relative;
             vertical-align: middle;
-            width: 30px;
+            width: 22.5px;
             z-index: 1;
     }
     .aa-banner-header-container {
         min-height: 75px;
     }
     .aa-banner-header-container span{
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 14px;
+        font-weight: 700;
         line-height : 36px;
-        letter-spacing : 7px;
+        letter-spacing : 0.5em;
         text-transform : uppercase;
         color : #FFFFFF;
-        padding-left: 25px;
+        padding-left: 22.5px;
     }
 </style>
 <section id="section_aa-banner-header-wrapper" class="" style="background-color: #862633;">
