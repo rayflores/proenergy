@@ -18,7 +18,7 @@ $aa_bh_page_title = get_sub_field( 'aa_bh_page_title' ) ? get_sub_field( 'aa_bh_
             left: 0;
             position: relative;
             vertical-align: middle;
-            width: 22.5px;
+            width: 52px;
             z-index: 1;
     }
     .aa-banner-header-container {
@@ -32,7 +32,7 @@ $aa_bh_page_title = get_sub_field( 'aa_bh_page_title' ) ? get_sub_field( 'aa_bh_
         letter-spacing : 0.5em;
         text-transform : uppercase;
         color : #FFFFFF;
-        padding-left: 22.5px;
+        padding-left: 28px;
     }
 </style>
 <section id="section_aa-banner-header-wrapper" class="" style="background-color: #862633;">

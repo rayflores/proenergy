@@ -33,33 +33,33 @@ endif;
             left: 0;
             position: relative;
             vertical-align: middle;
-            width: 30px;
+            width: 52px;
             z-index: 1;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-top-text-container::after {
-            background-color: rgba(163, 168, 170, 0);
-            color: #a3a8aa;
             content: attr(data-content);
             display: inline-block;
-            letter-spacing: 7.5px;
-            padding-left: 22px;
+            letter-spacing: 0.5em;
+            padding-left: 28px;
             position: relative;
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
+            font-weight: 700;
             color: <?php echo $aa_jt_hl_text_color; ?>
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-header-container h2 {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 35px;
+            font-weight: 700;
             line-height : 36px;
-            letter-spacing : 0.35px;
+            letter-spacing : 0.01em;
             color : <?php echo $aa_jt_hl_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-paragraph-container p {
-            font-family : "MyriadPro-Regular";
+            font-family : "myriad-pro", sans-serif;
             font-size : 18px;
             line-height : 25px;
             color : <?php echo $aa_jt_hl_text_color; ?>;
@@ -73,17 +73,18 @@ endif;
             color: <?php echo $aa_jt_hl_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-bullet-point-heading-container h1 {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 45px;
+            font-weight: 700;
             line-height : 54.85px;
             text-transform : uppercase;
             color : <?php echo $aa_jt_hl_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-bullet-point-description {
-            font-family : "Eurostile-Normal";
+            font-family : "eurostile", sans-serif;
             font-size : 24px;
             line-height : 31.1px;
-            letter-spacing : 0.24px;
+            letter-spacing : 0.01em;
             color : <?php echo $aa_jt_hl_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container,
@@ -101,26 +102,34 @@ endif;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container a,
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container a {
-            font-family: "MyriadPro-Italic";
+            font-family: "myriad-pro", sans-serif;
             font-size: 18px;
+            font-style: italic;
             line-height: 25px;
             color: #A3A8AA;
             text-decoration: none;
         }
 
-        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container a::after,
-        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container a::after {
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container a::after {
             content: <?php echo $content; ?>;
             display: inline-block;
             width: 40px;
             height: 0;
             margin-left: 1em;
         }
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container a::after {
+            content: url("<?php echo get_stylesheet_directory_uri();?>/images/right-arrow-white.png");
+            display: inline-block;
+            width: 40px;
+            height: 0;
+            margin-left: 1em;
+        }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-paragraph-container p.bullet-top {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 24px;
+            font-weight: 700;
             line-height : 27px;
-            letter-spacing : 0.24px;
+            letter-spacing : normal;
             padding: 0;
             color : #862633;
         }
@@ -128,16 +137,16 @@ endif;
     <div class="container-fluid p-0">
         <div class="aa-jt-hl-top-text-container pt-5" data-content="<?php echo $aa_jt_hl_top_text; ?>"></div>
         <div class="p-4 ps-md-5 pe-md-5 pb-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="aa-jt-hl-header-container pt-3">
+            <div class="row g-0">
+                <div class="col-12 ps-4">
+                    <div class="aa-jt-hl-header-container pt-3 ps-2">
                         <h2><?php echo $aa_jt_hl_header; ?></h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-8">
-                    <div class="aa-jt-hl-paragraph-container pt-3">
+            <div class="row g-0">
+                <div class="col-8 ps-4">
+                    <div class="aa-jt-hl-paragraph-container pt-3 ps-2">
                         <p><?php echo $aa_jt_hl_paragraph; ?></p>
                     </div>
                 </div>
@@ -154,7 +163,7 @@ endif;
                     $add_class = 'darker'; 
                 endif; ?>
                 <div class="aa-jt-hl-link-container d-flex align-items-center ps-5 <?php echo $add_class; ?>">
-                    <a class="aa-jt-hl-link" href="<?php echo $aa_jt_hl_link['url']; ?>" target="<?php echo $aa_jt_hl_link['target']; ?>"><?php echo $aa_jt_hl_link['title']; ?></a>
+                    <a class="aa-jt-hl-link ps-4 ms-2" href="<?php echo $aa_jt_hl_link['url']; ?>" target="<?php echo $aa_jt_hl_link['target']; ?>"><?php echo $aa_jt_hl_link['title']; ?></a>
                 </div>
             </div>
         <?php 
@@ -162,7 +171,7 @@ endif;
         $aa_jt_hl_link = get_sub_field( 'aa_jt_hl_link_two'); ?>
             <div class="col-6">
                 <div class="aa-jt-hl-link-two-container d-flex align-items-center ps-5 darker">
-                    <a class="aa-jt-hl-link-two" href="<?php echo $aa_jt_hl_link_two['url']; ?>" target="<?php echo $aa_jt_hl_link_two['target']; ?>"><?php echo $aa_jt_hl_link_two['title']; ?></a>
+                    <a class="aa-jt-hl-link-two ps-4 ms-2" href="<?php echo $aa_jt_hl_link_two['url']; ?>" target="<?php echo $aa_jt_hl_link_two['target']; ?>"><?php echo $aa_jt_hl_link_two['title']; ?></a>
                 </div>
             </div>
         </div>
