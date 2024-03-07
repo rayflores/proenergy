@@ -8,7 +8,7 @@
 </head>
 
 <?php
-	$navbar_scheme   = get_theme_mod( 'navbar_scheme', 'navbar-light bg-light' ); // Get custom meta-value.
+	// $navbar_scheme   = get_theme_mod( 'navbar_scheme', 'navbar-light bg-light' ); // Get custom meta-value.
 	$navbar_position = get_theme_mod( 'navbar_position', 'static' ); // Get custom meta-value.
 
 	$search_enabled  = get_theme_mod( 'search_enabled', '1' ); // Get custom meta-value.
@@ -22,9 +22,9 @@
 
 <div id="wrapper">
 	<header class="bg-light">
-		<nav id="header" class="navbar navbar-expand-md container-fluid <?php echo esc_attr( $navbar_scheme ); if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
-			<div class="container position-relative h-100">
-				<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+		<nav id="header" class="navbar navbar-expand-md container-fluid navbar-light bg-light <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
+			<div class="container ps-3 position-relative h-100">
+				<a class="navbar-brand mx-0" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php
 						$header_logo = get_theme_mod( 'header_logo' ); // Get custom meta-value.
 
@@ -69,13 +69,13 @@
 			</div><!-- /.container -->
 		</nav><!-- /#header -->
 		<nav class="navbar second-navbar navbar-expand-md container-fluid navbar-light justify-content-end">
-			<div class="container position-relative h-100">
-				<div class="col-6 top-small-menu-nav">
+			<div class="container position-relative h-100 pe-0 justify-content-end">
+				<div class="col-6 top-small-menu-nav p-0">
 						<?php
 							// Loading WordPress Custom Menu (theme_location).
 							wp_nav_menu(
 								array(
-									'menu_class'     => 'navbar-nav top-menu ',
+									'menu_class'     => 'navbar-nav top-menu justify-content-end',
 									'container'      => '',
 									'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
 									'walker'         => new WP_Bootstrap_Navwalker(),

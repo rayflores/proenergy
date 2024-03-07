@@ -46,6 +46,8 @@ $gray-900: #212529;
 // Color vars
 $red: #862633;
 $blue: #003A70;
+$progrey: #53565A;
+$progrey-light: #A3A8AA;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #d63384;
@@ -79,28 +81,16 @@ $cyan: #0dcaf0;
 	src: url('../fonts/MyriadPro-Regular.otf') format('opentype');
 	font-style: normal;
 }
-@font-face {
-	font-family: 'MyriadPro-Italic';
-	src: url('../fonts/MyriadPro-it.otf') format('opentype');
-	font-weight: normal;
-	font-style: italic;
-}
+
 @font-face {
 	font-family: 'MyriadPro-Semiboldit';
 	src: url('../fonts/MyriadPro-Semiboldit.otf') format('opentype');
 	font-weight: 600;
 	font-style: italic;
 }
-$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-	'Liberation Sans', sans-serif;
-$font-family-serif: Georgia, 'Times New Roman', Times, serif;
 $font-family-helvetica: 'HelveticaNeue', sans-serif;
-$font-family-euro-bold: 'Eurostile-Bold', sans-serif;
-$font-family-euro-normal: 'Eurostile-Normal', sans-serif;
-$font-family-myriadpro: 'MyriadPro-Regular', sans-serif;
-$font-family-myriadpro-italic: 'MyriadPro-Italic', sans-serif;
-$font-family-myriadpro-italic-semibold: 'MyriadPro-Semiboldit', sans-serif;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font-family-eurostile: 'eurostile', sans-serif;
+$font-family-myriadpro: 'myriad-pro', sans-serif;
 $font-family-base: $font-family-myriadpro;
 
 $link-decoration: none;
@@ -244,16 +234,22 @@ header {
 				.nav-link {
 					color: rgba(83, 86, 90, 0.5);
 					font-family: $font-family-myriadpro;
+					font-weight: 400;
+					font-style: normal;
 					&.show,
 					&.active {
 						color: #53565A;
-						font-family: $font-family-euro-bold;
+						font-family: $font-family-eurostile;
+						font-weight: 700;
+						font-style: normal;
 					}
 				}
 				.current-menu-item {
 					.nav-link {
 						color: #53565A;
-						font-family: $font-family-euro-bold;
+						font-family: $font-family-eurostile;
+						font-weight: 700;
+						font-style: normal;
 					}
 				}
 				.dropdown-toggle {
@@ -281,8 +277,15 @@ header {
 							.dropdown-mega-header{
 								width: 275px;
 								a {
-									color: #53565A;
-									font-family: "Eurostile-Bold";
+									color: $progrey;
+									font-family: "eurostile", sans-serif;
+									font-weight: 700;
+									font-style: normal;
+									&:hover,
+									&:active,
+									&.active {
+										color: $red;
+									}
 								}
 								.mega-inside {
 									align-items: flex-start;
@@ -298,14 +301,22 @@ header {
 										a {
 
 											&.dropdown-item {
-												color: #a3a8aa;
-												font-family: "MyriadPro-Regular";
+												color: $progrey-light;
+												font-family: "myriad-pro", sans-serif;
+												font-weight: 400;
+												font-style: normal;
 												padding-left: 0;
 											}
+											&:active,
 											&.active {
 												background-color: transparent;
 												background-image: none;
-												color: #53565A;
+												color: $blue;
+											}
+											&:hover {
+												background-color: transparent;
+												background-image: none;
+												color: $blue;
 											}
 										}
 									}
@@ -319,29 +330,39 @@ header {
 	}
 	.second-navbar {
 		background-image: none;
-		max-width: 450px;
 		position: fixed;
 		right: 0;
 		top: 100px;
 		z-index: 99;
 		.top-small-menu-nav {
-			background-color: rgba($color: #666, $alpha: 0.8);
 			padding-bottom: 10px;
 			padding-top: 10px;
 			width: 100%;
 			ul {
 				&.top-menu {
 					li {
-						border-right: 1px rgba($color: #fff, $alpha: 0.5) solid;
-						&:last-child {
-							border-right: none;
+						background-color: rgba(83, 86, 90, 0.8);
+						position: relative;
+						&:first-child::after {
+							display: none;
+						}
+						&::after {
+							content: "";
+							display: block;
+							height: 50%;
+							width: 1px;
+							background-color: rgba(255,255,255,0.5);
+							position: absolute;
+							top: 25%;
 						}
 						.nav-link {
 							color: #fff;
 							font-family: $font-family-myriadpro;
+							font-weight: 400;
 							font-size: 12px;
 							letter-spacing: 1px;
-							padding: 3px 25px;
+							padding: 1rem;
+							text-align: center;
 							text-transform: uppercase;
 						}
 					}
@@ -366,7 +387,9 @@ header {
 					a {
 						&.nav-link {
 							&.active {
-								font-family: $font-family-euro-bold;
+								font-family: $font-family-eurostile;
+								font-weight: 700;
+								font-style: normal;
 							}
 						}
 					}
@@ -414,7 +437,7 @@ header {
 				&:last-child{
 					a {
 						span {
-							font-family : "MyriadPro-Italic";
+							font-family : "myriad-pro", sans-serif;
 							font-size : 18px;
 							line-height : 25px;
 							color : #862633;

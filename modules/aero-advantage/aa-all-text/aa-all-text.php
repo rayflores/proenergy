@@ -10,8 +10,9 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
 <section id="section_aa_all-text">
 <style>
     .aa_all-text-container h2 {
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 35px;
+        font-weight: 700;
         line-height : 36px;
         letter-spacing : 0.35px;
         color : #53565A;
@@ -19,14 +20,16 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
     }
     .aa_at-link {
         color : #53565A;
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 18px;
+        font-weight: 700;
         line-height : 28px;
         letter-spacing : 0.18px;
     }
     .aa_all-text-paragraph-container p {
-        font-family : "MyriadPro-Regular";
+        font-family : "myriad-pro", sans-serif;
         font-size : 18px;
+        font-weight: 400;
         line-height : 25px;
         color : #53565A;
         color : rgb(83, 86, 90);
@@ -35,8 +38,10 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
     }
     .ab-all-text-link-container a {
         color : #aca8aa;
-        font-family : "MyriadPro-Italic";
+        font-family : "myriad-pro", sans-serif;
         font-size : 1.125em;
+        font-style: italic;
+        font-weight: 400;
         line-height : 28px;
         letter-spacing : 0.18px;
     }

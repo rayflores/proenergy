@@ -92,7 +92,8 @@ import * as bootstrap from 'bootstrap';
 				}
 			});
 		}
-		$('.nav-link.dropdown-toggle').on('show.bs.dropdown', function () {
+		$('li.dropdown-here').on('show.bs.dropdown', function () {
+			console.log( "dropped" );
 			var theWidth = $(window).width();
 			var theTop = $(window).scrollTop();
 			if ( theTop >= 220 && theWidth > 767 ) {
@@ -104,14 +105,28 @@ import * as bootstrap from 'bootstrap';
 
 		$(document).ready(function() {
 			$('.dropdown-here').hover(function() {
+				var theWidth = $(window).width();
+				var theTop = $(window).scrollTop();
+				var theContainer = $(this).next('ul.dropdown-menu.mega-container');
+				console.log('theTop: ' + theTop + ' theWidth: ' + theWidth);
+
 			  $(this).addClass('show');
 			  $(this).find('.mega-container').addClass('show').fadeIn(500);
+			  if ( theTop >= 220  ) {
+				console.log('top>=220');
+				$(this).find('.mega-container').css('top', '60px');
+				} else {
+					console.log('top<220');
+					$(this).find('.mega-container').css('top', '100px');
+				}
+
 			  	if ($(this).hasClass('show') && 'About Us' == $(this).children().first().attr('title')) {
 					var aboutUs = $(this).children().first();
 					var megaContainer = aboutUs.next('.mega-container');
-					megaContainer.addClass('d-flex justify-content-around');
+					megaContainer.addClass('d-flex justify-content-end');
 					//megaContainer.find('li').addClass('text-center');
 				}
+
 			}, function() {
 			  $(this).removeClass('show');
 			  $(this).find('.mega-container').removeClass('show');

@@ -559,6 +559,7 @@ function themes_starter_scripts_loader()
 	$theme_version = (int) current_time('timestamp');
 
 	// 1. Styles.
+	wp_enqueue_style('fontscss', '//use.typekit.net/hdk0uqo.css');
 	wp_enqueue_style('style', get_theme_file_uri('style.css'), array(), $theme_version, 'all');
 	wp_enqueue_style('main', get_theme_file_uri('build/main.css'), array(), $theme_version, 'all'); // main.scss: Compiled Framework source + custom styles.
 

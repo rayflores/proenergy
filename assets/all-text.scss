@@ -11,21 +11,25 @@
             padding-left: 80px;
             .all-text-headline {
                 color: #53565A;
-                font-family: 'Eurostile-Bold';
+                font-family: 'eurostile', sans-serif;
                 font-size: 2.25em;
+                font-weight: 700;
                 letter-spacing: 0;
                 margin-bottom: 0.5em;
             }
             .all-text-description {
-                font-family: 'MyriadPro-Regular';
+                font-family: 'myriad-pro', sans-serif;
                 font-size: 1.125em;
+                font-weight: 400;
             }
             a {
                 &.at-link {
                     color: #A3A8AA;
                     display: inline-block;
-                    font-family: 'MyriadPro-Italic';
+                    font-family: 'myriad-pro', sans-serif;
                     font-size: 1.125em;
+                    font-style: italic;
+                    font-weight: 400;
                     margin-top: 30px;
                     &::after{
                         content: url('../images/right-arrow.png');
