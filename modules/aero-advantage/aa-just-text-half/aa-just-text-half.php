@@ -28,34 +28,35 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             height: 1px;
             left: 0;
             position: relative;
-            width: 30px;
+            width: 52px;
             z-index: 1;
             vertical-align: middle;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-top-text-container::after {
-            background-color: rgba(163, 168, 170, 0);
             color: #a3a8aa;
             content: attr(data-content);
             display: inline-block;
             letter-spacing: 7.5px;
-            padding-left: 20px;
+            padding-left: 28px;
             position: relative;
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
+            font-weight: 700;
             color: <?php echo $aa_jt_half_text_color; ?>
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-header-container h2 {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 35px;
+            font-weight: 700;
             line-height : 36px;
             letter-spacing : 0.35px;
             color : <?php echo $aa_jt_half_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-paragraph-container p {
-            font-family : "MyriadPro-Regular";
+            font-family : "myriad-pro", sans-serif;
             font-size : 18px;
             line-height : 25px;
             color : <?php echo $aa_jt_half_text_color; ?>;
@@ -69,8 +70,9 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             color: <?php echo $aa_jt_half_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-bullet-point-heading-container h1 {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 45px;
+            font-weight: 700;
             line-height : 54.85px;
             text-transform : uppercase;
             color : <?php echo $aa_jt_half_text_color; ?>;
@@ -79,7 +81,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             font-family : "Eurostile-Normal";
             font-size : 24px;
             line-height : 31.1px;
-            letter-spacing : 0.24px;
+            letter-spacing : normal;
             color : <?php echo $aa_jt_half_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-link-container,
@@ -137,15 +139,15 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 <div class="row g-0">
                     <div class="col-12 p-0">
                     <div class="aa-jt-half-top-text-container pt-5" data-content="<?php echo $aa_jt_half_top_text; ?>"></div>
-                        <div class="aa-jt-half-header-container pt-5 ps-5">
-                            <h2><?php echo $aa_jt_half_header; ?></h2>
+                        <div class="aa-jt-half-header-container pt-5 ps-5 ms-4">
+                            <h2 class="ps-2"><?php echo $aa_jt_half_header; ?></h2>
                         </div>
                     </div>
                 </div>
                 <div class="row g-0">
                     <div class="col-12 p-0">
-                        <div class="aa-jt-half-paragraph-container pt-3 ps-5">
-                            <p><?php echo $aa_jt_half_paragraph; ?></p>
+                        <div class="aa-jt-half-paragraph-container pt-3 ps-5 ms-4">
+                            <p class="ps-2 pe-4"><?php echo $aa_jt_half_paragraph; ?></p>
                         </div>
                     </div>
                 </div>
