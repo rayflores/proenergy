@@ -116,6 +116,10 @@ endif;
             width: 40px;
             height: 0;
             margin-left: 1em;
+            transition: 0.3s;
+        }
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-container a:hover::after {
+            margin-left: 1.5em;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container a::after {
             content: url("<?php echo get_stylesheet_directory_uri();?>/images/right-arrow-white.png");
@@ -123,6 +127,10 @@ endif;
             width: 40px;
             height: 0;
             margin-left: 1em;
+            transition: 0.3s;
+        }
+        .<?php echo $aa_uuid; ?> .aa-jt-hl-link-two-container a:hover::after {
+            margin-left: 1.5em;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-paragraph-container p.bullet-top {
             font-family : "eurostile", sans-serif;

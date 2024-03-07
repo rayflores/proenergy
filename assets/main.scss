@@ -226,11 +226,14 @@ header {
 		}
 		&.navbar-expand-md {
 			.navbar-nav {
-				// .nav-item:hover {
-				//  	.dropdown-menu {
-				// 		display: block;
-			  	// 	}
-				// }
+				.nav-item:hover {
+					a {
+						color: #53565A;
+						font-family: $font-family-eurostile;
+						font-weight: 700;
+						font-style: normal;
+					}
+				}
 				.nav-link {
 					color: rgba(83, 86, 90, 0.5);
 					font-family: $font-family-myriadpro;
