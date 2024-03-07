@@ -14,7 +14,7 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
         font-size : 35px;
         font-weight: 700;
         line-height : 36px;
-        letter-spacing : 0.35px;
+        letter-spacing : 0.01em;
         color : #53565A;
         color : rgb(83, 86, 90);
     }
@@ -43,7 +43,6 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
         font-style: italic;
         font-weight: 400;
         line-height : 28px;
-        letter-spacing : 0.18px;
     }
     .ab-all-text-link-container a::after {
         content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
@@ -60,12 +59,12 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
                 <div class="aa_all-text-container col-12 pb-5 ps-3">
                     <?php
                     if ( '' !== $aa_all_text_header ) : ?>
-                    <h2 class="aa_all-text-header"><?php echo $aa_all_text_header; ?></h2>
+                    <h2 class="aa_all-text-header ps-2"><?php echo $aa_all_text_header; ?></h2>
                     <?php
                     endif;
                     if ( '' !== $aa_all_text_paragraph ) : ?>
                     <div class="aa_all-text-paragraph-container col-12">
-                        <p><?php echo $aa_all_text_paragraph; ?></p>
+                        <p class="ps-2"><?php echo $aa_all_text_paragraph; ?></p>
                     </div>
                     <?php endif; ?>
                     <?php 
