@@ -153,11 +153,11 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 </div>
             </div>
             <div class="col-6">
-                <div class="row g-0 overlay">
+                <div class="row g-0 overlay h-100">
                     <div class="col-12 p-0">
                         <div class="aa-jt-half-list-container mt-5 pt-5 pb-5 ps-5">
                             <?php if ( have_rows( 'aa_jt_half_list_items' ) ) : ?>
-                                <h5 class="aa-jt-half-right-header"><?php echo $aa_jt_half_right_header; ?></h5>
+                                <h5 class="aa-jt-half-right-header pt-4"><?php echo $aa_jt_half_right_header; ?></h5>
                                 <ul>
                                     <?php while ( have_rows( 'aa_jt_half_list_items' ) ) : the_row(); 
                                         $index = get_row_index();
