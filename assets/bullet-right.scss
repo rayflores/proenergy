@@ -50,7 +50,7 @@
         color: #53565A;
         font-family: 'eurostile', sans-serif;
         font-size: 2.25em;
-        font-weight: 700;
+        font-weight: 800;
         letter-spacing: 0;
         margin-bottom: 0.5em;
         padding-left: 80px;
@@ -66,25 +66,28 @@
     }
     .bir-nb-percentage{
         font-family: 'eurostile', sans-serif;
-        font-size: 2.25em;
-        font-weight: 700;
+        font-size: 3.75em;
+        font-weight: 800;
         letter-spacing: 0;
         line-height: 0.75em;
         text-transform: uppercase;
     }
     .bir-nb-percentage-header{
         font-family: 'eurostile';
-        font-size: 1.125em;
-        font-weight: 700;
+        font-size: 2em;
+        font-weight: 400;
         letter-spacing: 0;
     }
     .bir-nb-link{
         color: #A3A8AA;
         font-family: 'myriad-pro', sans-serif;
-        font-size: 1.125em;
+        font-size: 1.5em;
         font-style: italic;
         font-weight: 400;
         margin-top: 30px;
+    }
+    img.image-bg {
+        min-height: 577px;
     }
     .bir-image-mask {
         background: linear-gradient(117deg, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0) 45%);

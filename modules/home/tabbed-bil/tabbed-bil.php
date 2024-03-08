@@ -4,7 +4,7 @@
 */
 $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top_text') : 'none';
 ?>
-<section id="section_tabbed-bulleted-image-left" class="pt-5">
+<section id="section_tabbed-bulleted-image-left" class="py-5">
     <style>
         .container-fluid {
             padding: 0;
@@ -55,22 +55,24 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         }
         .tbil-tab-active {
             color: #003A70;
-            font-family: 'Eurostile-Bold';
-            font-size: 0.875em;
+            font-family: 'eurostile', sans-serif;
+            font-size: 1.17em;
+            font-weight: 700;
             letter-spacing: 0.5em;
             text-transform: uppercase;
         }
         .tbil-headline {
             color: #53565A;
-            font-family: 'Eurostile-Bold';
-            font-size: 2.25em;
+            font-family: 'eurostile', sans-serif;
+            font-size: 2.92em;
+            font-weight: 800;
             line-height: 0.75em;
             text-align: left;
         }
         .tbil-paragraph {
             color: #53565A;
-            font-family: 'Eurostile';
-            font-size: 1.25em;
+            font-family: 'myriad-pro', sans-serif;
+            font-size: 1.5em;
             line-height: 1.5em;
             text-align: left;
             padding-top: 1em;
@@ -78,22 +80,24 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         }
         .tbil-nb-percentage{
             color: <?php echo $bullet_color; ?>;
-            font-family: 'Eurostile-Bold';
-            font-size: 2.25em;
+            font-family: 'eurostile', sans-serif;
+            font-size: 3.75em;
+            font-weight: 800;
             letter-spacing: 0;
             line-height: 0.75em;
             text-transform: uppercase;
         }   
         .tbil-nb-percentage-header{
             color: <?php echo $bullet_color; ?>;
-            font-family: 'Eurostile-Bold';
-            font-size: 1.125em;
+            font-family: 'eurostile', sans-serif;
+            font-size: 2em;
             letter-spacing: 0;
         }   
         .tbil-nb-link{
             color: #A3A8AA;
-            font-family: 'Eurostile';
-            font-size: 1.125em;
+            font-family: 'myriad-pro', sans-serif;
+            font-size: 1.5em;
+            font-style: italic;
             line-height: 1.5em;
             text-align: center;
             padding-top: 1em;
@@ -110,6 +114,9 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         }
         .nav-tabs .nav-link {
             border: 0;
+            font-family: 'eurostile', sans-serif;
+            font-size: 1.33em;
+            font-weight: 700;
             margin-bottom: 0;
         }
         .nav-tabs li .nav-link{
@@ -143,8 +150,8 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             </div>
         </div>
         <div class="row g-0">
-            <div id="tabbed-bil-tabs" class="pb-4">
-                <ul class="nav nav-tabs col-6 justify-content-end" id="tabbed-bil" role="tablist">
+            <div id="tabbed-bil-tabs" class="pb-5">
+                <ul class="nav nav-tabs col-7 justify-content-end" id="tabbed-bil" role="tablist">
                     <?php 
                     if (have_rows( 'tbil_tabs' ) ) : 
                         while ( have_rows( 'tbil_tabs' ) ) : the_row();
@@ -188,10 +195,10 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                             <img src="<?php echo esc_url(wp_get_attachment_url($tbil_image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover">
                         </div>
                         <div class="col-6 px-5">
-                            <div class="tbil-tab-active pb-5">
+                            <div class="tbil-tab-active pt-5">
                                 <?php echo $tbil_tab_label; ?>
                             </div>
-                            <h2 class="tbil-headline"><?php echo $tbil_header_text; ?></h2>
+                            <h2 class="tbil-headline pt-3"><?php echo $tbil_header_text; ?></h2>
                             <?php if ( $tbil_paragraph !== '' ) : ?>
                             <p class="tbil-paragraph"><?php echo $tbil_paragraph; ?></p>
                             <?php endif; ?>

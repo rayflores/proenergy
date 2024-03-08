@@ -18,8 +18,9 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
         }
         .hb-headline {
             color: <?php echo $headline_color; ?>;
-            font-family: 'Eurostile-Bold';
-            font-size: 2.25em;
+            font-family: 'eurostile', sans-serif;
+            font-size: 2.92em;
+            font-weight: 800;
             line-height: 0.75em;
             text-align: left;
             padding-top: 2em;
@@ -32,7 +33,7 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
         }
         .hb-paragraph {
             color: #53565A;
-            font-family: 'Eurostile';
+            font-family: 'eurostile', sans-serif;
             font-size: 1.25em;
             line-height: 1.5em;
             text-align: center;
@@ -85,8 +86,8 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
     </style>
     <div class="container-fluid">
         <div class="row g-0 align-items-center">
-            <div class="col-12 pt-5 pb-5 mt-4 mb-4 ms-2 ps-4">
-                <h2 class="hb-headline pt-5 pb-5 mt-5 mb-5 ps-5"><?php echo $headline; ?></h2>
+            <div class="col-12 pt-5 pb-5 mt-4 mb-4 ps-2">
+                <h2 class="hb-headline pt-5 pb-5 mt-5 mb-5 ms-5 ps-4"><?php echo $headline; ?></h2>
                 <?php if ( $paragraph !== '' ) : ?>
                 <p class="hb-paragraph"><?php echo $paragraph; ?></p>
                 <?php endif; ?>
