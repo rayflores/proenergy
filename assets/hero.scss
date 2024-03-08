@@ -20,7 +20,7 @@
     .hero-headline {
             bottom: 0;
             color: #ffffff;
-            font-family: 'eurostile';
+            font-family: 'eurostile', sans-serif;
             font-size: clamp(2em, 8vw, 6em);
             letter-spacing: clamp(0.313rem, 0.005rem + 1.244vw, 0.938rem);
             line-height: 0.8;
@@ -28,8 +28,8 @@
             text-transform: uppercase;
             z-index: 1;
             span {
-                font-family: 'eurostile';
-                font-weight: 700;
+                font-family: 'eurostile', sans-serif;
+                font-weight: 800;
             }
         }
     &::before {
