@@ -13,7 +13,7 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
 ?>
 <section id="section_bulleted-image-right" class="" style="background-color: <?php echo $section_bg; ?>">
     </style>
-        <div class="pt-2">
+        <div class="pt-5">
             <div class="row g-0">
                 <div class="col-12 bir-text-container">
                     <div class="bir-top-text col-6" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>">

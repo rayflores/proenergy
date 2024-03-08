@@ -17,7 +17,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
             left: 0;
             position: relative;
             vertical-align: middle;
-            width: 30px;
+            width: 52px;
             z-index: 1;
         }
         .aa-tt-top-text-container::after {
@@ -25,33 +25,36 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
             color: #a3a8aa;
             content: attr(data-content);
             display: inline-block;
-            letter-spacing: 7.5px;
-            padding-left: 35px;
+            letter-spacing: 0.5em;
+            padding-left: 28px;
             position: relative;
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
+            font-weight: 700;
             color: <?php echo $aa_jt_hl_text_color; ?>
         }
     .aa_two-tiers-container h2 {
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 35px;
+        font-weight: 700;
         line-height : 36px;
-        letter-spacing : 0.35px;
+        letter-spacing : 0.01em;
         color : #53565A;
         color : rgb(83, 86, 90);
     }
     .aa_tt-link {
         color : #53565A;
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 18px;
+        font-weight: 700;
         line-height : 28px;
-        letter-spacing : 0.18px;
+        letter-spacing : 0.01em;
     }
     .aa_two-tiers-paragraph-container p {
-        font-family : "MyriadPro-Regular";
+        font-family : "myriad-pro", sans-serif;
         font-size : 18px;
         line-height : 25px;
         color : #53565A;
@@ -61,10 +64,11 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
     }
     .aa-two-tiers-link-container a {
         color : #aca8aa;
-        font-family : "MyriadPro-Italic";
+        font-family : "myriad-pro", sans-serif;
         font-size : 1.125em;
+        font-style: italic;
         line-height : 28px;
-        letter-spacing : 0.18px;
+        letter-spacing : 0.01em;
     }
     .aa-two-tiers-link-container a::after {
         content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
@@ -74,9 +78,11 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
         margin-left: 1em;
     }
     th.text-grey {
-        font-family: "Eurostile-Bold";
+        font-family: "eurostile", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
         color: #A3A8AA;
-        letter-spacing: 5px;
+        letter-spacing: 0.05em;
         padding-left: 60px!important;
     }
 </style>

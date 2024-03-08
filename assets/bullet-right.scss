@@ -16,17 +16,19 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 50px;
+        width: 52px;
         height: 1px;
         background: #A3A8AA;
         z-index: 1;
     }
     .bir-top-text::after{
-        background-color: #fcfcfa;
         color: #A3A8AA;
         content: attr(data-content);
         display: inline-block;
-        letter-spacing: 1em;
+        font-family: "eurstile", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5em;
         padding-left: 80px;
         position: relative;
         line-height: 1.5em;
@@ -39,6 +41,10 @@
         width: 40px;
         height: 0;
         margin-left: 1em;
+        transition: 0.3s;
+    }
+    a.bir-nb-link:hover::after{
+        margin-left: 1.5em;
     }
     .bir-headline {
         color: #53565A;

@@ -23,20 +23,22 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             position: absolute;
             top: 50%;
             left: 0;
-            width: 50px;
+            width: 52px;
             height: 1px;
             background: #A3A8AA;
             z-index: 1;
         }
         .tbil-top-text::after{
-            background-color: #fcfcfa;
             color: #A3A8AA;
             content: attr(data-content);
             display: inline-block;
+            font-family: "eurostile", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
             letter-spacing: 0.5em;
             padding-left: 80px;
             position: relative;
-            line-height: 1.5em;
+            line-height: 22px;
             text-transform: uppercase;
             z-index: 0;
         }
@@ -46,6 +48,10 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             width: 40px;
             height: 0;
             margin-left: 1em;
+            transition: 0.3s;
+        }
+        a.tbil-nb-link:hover::after{
+            margin-left: 1.5em;
         }
         .tbil-tab-active {
             color: #003A70;
