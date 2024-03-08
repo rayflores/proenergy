@@ -9,6 +9,9 @@
             padding-top: 2em;
             padding-bottom: 2em;
             padding-left: 80px;
+            @include media-breakpoint-down(md) {
+                padding-left: 20px;
+            }
             .all-text-headline {
                 color: #53565A;
                 font-family: 'eurostile', sans-serif;
