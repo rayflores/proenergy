@@ -50,7 +50,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             z-index: 0;
         }
         a.bil-nb-link::after{
-            content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+            content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-gray.svg');
             display: inline-block;
             width: 40px;
             height: 0;
@@ -63,7 +63,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         .bil-headline {
             color: #53565A;
             font-family: "eurostile", sans-serif;
-            font-size: 2.92em;
+            font-size: clamp(1.625rem, 1.009rem + 2.488vw, 2.875rem);
             font-weight: 800;
             letter-spacing: 0;
             margin-bottom: 0.5em;
@@ -114,9 +114,6 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             -webkit-transtition: transform 5s ease-out;
             transition: transform 5s ease-out;
         }
-        img.image-bg {
-            min-height: 577px;
-        }
         .reveal {
             position: relative;
             overflow: hidden;
@@ -127,14 +124,60 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         .bil-top-text-spacer {
             height: 88px;
         }
+        img.image-bg {
+            min-height: 577px;
+        }
+        @media screen and (max-width: 768px) {
+            .bil-top-text::before{
+                width: 20px;
+            }
+            .bil-top-text::after{
+                font-size: 14px;
+                letter-spacing: 0.25em;
+                padding-left: 40px;
+            }
+            .bil-headline {
+                line-height: 26px;
+                padding-left: 40px;
+            }
+            .bil-paragraph {
+                font-size: 1.0em;
+                line-height: 1.25em;
+                padding-left: 40px;
+            }
+            .bil-bullets {
+                padding-left: 40px;
+            }
+            .bil-nb-percentage {
+                font-size: 1.75em;
+                line-height: 0.75em;
+            }
+            .bil-nb-percentage-header {
+                font-size: 1em;
+                line-height: 1.25em;
+            }
+            .bil-nb-link {
+                font-size: 1em;
+            }
+            .bil-top-text-spacer {
+                height: 44px;
+            }
+            a.bil-nb-link::after{
+                width: 20px;
+            }
+            img.image-bg {
+                min-height: 288px;
+            }
+            
+        }
     </style>
         <div class="container-fluid">
             <div class="row g-0">
-                <div class="col-5 bil-image p-0 reveal">
+                <div class="col-lg-5 col-md-12 bil-image p-0 reveal">
                     <div class="bil-image-mask"></div>
                     <img src="<?php echo esc_url(wp_get_attachment_url($image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover image-bg">
                 </div>
-                <div class="col-7 bil-text-container p-0">
+                <div class="col-lg-7 col-md-12 bil-text-container p-0">
                     <div class="bil-top-text-spacer col-12"></div>
                     <div class="bil-top-text col-12" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>"></div>
                     <div class="bil-headline pt-4">
@@ -148,14 +191,14 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
                         if (have_rows('bil_numbered_bullet') ): ?>
                         <div class="bil-bullets">
                             <?php while (have_rows('bil_numbered_bullet') ) : the_row(); ?>
-                            <div class="bil-bullet pt-5">
+                            <div class="bil-bullet pt-4 pt-lg-5">
                                 <div class="bil-nb-percentage">
                                     <?php echo get_sub_field('bil_nb_percentage') !== '' ? get_sub_field('bil_nb_percentage') : ''; ?>
                                 </div>
                                 <div class="bil-nb-percentage-header">
                                     <?php echo get_sub_field('bil_nb_percentage_header') !== '' ? get_sub_field('bil_nb_percentage_header') : ''; ?>
                                 </div>
-                                <div class="bil-nb-bullet-link pt-3">
+                                <div class="bil-nb-bullet-link pt-2 pt-lg-3">
                                     <?php
                                     if ( get_sub_field('bil_nb_bullet_link') !== '' ) : ?>
                                         <?php $bullet_link = get_sub_field('bil_nb_bullet_link') !== '' ? get_sub_field('bil_nb_bullet_link') : ''; ?>
