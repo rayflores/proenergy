@@ -124,10 +124,10 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-5 aa-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_bil_image_id)); ?>');">
+            <div class="col-12 col-md-5 aa-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_bil_image_id)); ?>');">
                 <div class="aa-bil-image-mask"></div>
             </div>
-            <div class="col-7 aa-bil-text-container p-0 pt-5 mt-3">
+            <div class="col-12 col-md-7 aa-bil-text-container p-0 pt-5 mt-3">
                 <div class="aa-bil-top-text col-12" data-content="<?php echo $aa_bil_top_text !== '' ? $aa_bil_top_text : ''; ?>"></div>
                 <div class="aa-bil-headline pt-4">
                     <?php echo $aa_bil_header; ?>
