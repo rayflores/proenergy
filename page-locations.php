@@ -80,7 +80,7 @@ $featured_image_id = get_post_thumbnail_id();
                 text-decoration: none;
             }
             .loc-link::after {
-                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-grey.svg');
                 display: inline-block;
                 width: 40px;
                 height: 0;

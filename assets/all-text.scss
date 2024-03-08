@@ -2,16 +2,20 @@
     .row {
         margin: 0;
     }
+
     .all-text-wrapper {
         background-color: #ffffff;
         color: #53565A;
+
         .all-text-container {
             padding-top: 2em;
             padding-bottom: 2em;
             padding-left: 80px;
+
             @include media-breakpoint-down(md) {
                 padding-left: 20px;
             }
+
             .all-text-headline {
                 color: #53565A;
                 font-family: 'eurostile', sans-serif;
@@ -20,11 +24,13 @@
                 letter-spacing: 0;
                 margin-bottom: 0.5em;
             }
+
             .all-text-description {
                 font-family: 'myriad-pro', sans-serif;
                 font-size: 1.125em;
                 font-weight: 400;
             }
+
             a {
                 &.at-link {
                     color: #A3A8AA;
@@ -34,14 +40,16 @@
                     font-style: italic;
                     font-weight: 400;
                     margin-top: 30px;
-                    &::after{
-                        content: url('../images/right-arrow.png');
+
+                    &::after {
+                        content: url('../images/right-arrow.svg');
                         display: inline-block;
                         width: 40px;
                         height: 0;
                         margin-left: 1em;
                         transition: 0.3s;
                     }
+
                     &:hover {
                         &::after {
                             margin-left: 1.5em;

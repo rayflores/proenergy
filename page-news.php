@@ -169,7 +169,7 @@ $featured_image_id = get_post_thumbnail_id();
 				color : rgb(83, 86, 90);
 			}
 			.card-footer a::after {
-    			content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+    			content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-grey.svg');
 				width: 40px;
 				height: 0;
 				margin-left: 1em;

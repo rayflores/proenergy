@@ -109,7 +109,7 @@ $featured_image_id = get_post_thumbnail_id();
                 text-decoration: none;
             }
             .contact-1 .contact-link::after {
-                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-grey.svg');
                 display: inline-block;
                 width: 40px;
                 height: 0;
@@ -186,7 +186,7 @@ $featured_image_id = get_post_thumbnail_id();
                 text-decoration: none;
             }
             .contact-2 .contact-link::after {
-                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-grey.svg');
                 display: inline-block;
                 width: 40px;
                 height: 0;
@@ -260,7 +260,7 @@ $featured_image_id = get_post_thumbnail_id();
                 text-decoration: none;
             }
             .contact-3 .contact-link::after {
-                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
+                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-grey.svg');
                 display: inline-block;
                 width: 40px;
                 height: 0;
