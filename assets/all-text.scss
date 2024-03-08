@@ -11,6 +11,7 @@
             padding-left: 80px;
             @include media-breakpoint-down(md) {
                 padding-left: 40px;
+                padding-right: 40px;
             }
             .all-text-headline {
                 color: #53565A;
@@ -30,7 +31,7 @@
                     color: #A3A8AA;
                     display: inline-block;
                     font-family: 'myriad-pro', sans-serif;
-                    font-size: 1.125em;
+                    font-size: clamp(1rem, 0.938rem + 0.249vw, 1.125rem);
                     font-style: italic;
                     font-weight: 400;
                     margin-top: 30px;
