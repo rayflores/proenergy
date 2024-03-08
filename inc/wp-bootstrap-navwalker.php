@@ -86,7 +86,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$classes[]   = 'menu-item-' . $item->ID;
 				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
 				if ( $args->has_children ) {
-					$class_names .= ' dropdown-here dropdown-megamenu d-flex h-100 d-flex align-items-center';
+					$class_names .= ' dropdown-here dropdown-megamenu d-flex h-100 align-items-center';
 				}
 				if ( preg_grep( '/^current/', $classes ) ) {
 					$atts['aria-current'] = 'page';

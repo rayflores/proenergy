@@ -91,6 +91,28 @@ import * as bootstrap from 'bootstrap';
 					}
 				}
 			});
+		} 
+		
+		var isMobile = ajax_object.isMobile;
+		if (isMobile == '1' ) {
+			$('.nav-link').on('click', function(e) {
+				if ( $(this).hasClass('open') ) {
+				
+				} else {
+					e.preventDefault();
+					$(this).addClass('open');
+
+				}
+			});
+			$('.dropdown-mega-header a').on('click', function(e) {
+				if ( $(this).hasClass('open') ) {
+				
+				} else {
+					e.preventDefault();
+					$(this).addClass('open');
+					$(this).next('.mega-inside').addClass('show').css('display', 'block');
+				}
+			});
 		}
 		$('li.dropdown-here').on('show.bs.dropdown', function () {
 			console.log( "dropped" );
@@ -140,6 +162,7 @@ import * as bootstrap from 'bootstrap';
 				$('li').removeClass('current-menu-item');
 				$(this).find('.dropdown-toggle').addClass('active');
 			});
+
 	  });
 	});
 })();
