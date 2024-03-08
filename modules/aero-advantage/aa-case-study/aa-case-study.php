@@ -78,7 +78,7 @@ $aa_case_study_right_highlights = get_sub_field('aa_case_study_right_highlights'
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-7 p-0 aa-case-study-left-side">
+            <div class="col-12 col-md-7 p-0 aa-case-study-left-side">
                 <div class="aa-case-study-top-text pt-5" data-content="<?php echo $aa_case_study_top_text; ?>"></div>
                 <div class="aa-case-study-header ps-5 pt-4"><?php echo $aa_case_study_header; ?></div>
                 <div class="aa-case-study-paragraph ps-5 pt-3"><?php echo $aa_case_study_paragraph; ?></div>
@@ -100,7 +100,7 @@ $aa_case_study_right_highlights = get_sub_field('aa_case_study_right_highlights'
                     endif; ?>
                 </div>
             </div>
-            <div class="col-5 p-5 mt-5 aa-case-study-right-bullets">
+            <div class="col-12 col-md-5 p-5 mt-3 mt-md-5 aa-case-study-right-bullets">
                 <?php
                 if ( have_rows( 'aa_case_study_right_bullets' ) ) : ?>
                     <div class="row g-0">

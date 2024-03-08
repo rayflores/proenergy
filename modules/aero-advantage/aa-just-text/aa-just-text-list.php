@@ -86,7 +86,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-7">
+            <div class="col-12 col-md-7">
                 <div class="aa-just-text-list-top-text-container pt-5" data-content="<?php echo $aa_just_text_list_top_text; ?>"></div>
                 <div class="aa-just-text-list-header-container pt-3 ps-5">
                     <h2><?php echo $aa_just_text_list_header; ?></h2>
@@ -102,7 +102,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 </div>
                 <?php endif; ?>
             </div>
-            <div class="col-5 aa-just-text-list-items-container p-5">
+            <div class="col-12 col-md-5 aa-just-text-list-items-container p-5">
                 <?php 
                 if ( have_rows('aa_just_text_list_items') ) :
                     while( have_rows('aa_just_text_list_items') ) : the_row();

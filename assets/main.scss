@@ -227,7 +227,7 @@ header {
 		&.navbar-expand-md {
 			.navbar-toggler {
 				border: none;
-				padding: 0;
+				padding: 0 12px 0 0;
 				height: 100px;
 				&:focus {
 					outline: none;
@@ -236,6 +236,23 @@ header {
 
 			}
 			.navbar-nav {
+				@include media-breakpoint-down(md) {
+					li {
+						flex-direction: column;
+						ul {
+							li {
+								&.dropdown-mega-header{
+									ul {
+										&.mega-inside {
+											li {
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 				.nav-item:hover {
 					a {
 						color: #53565A;
@@ -287,6 +304,9 @@ header {
 							padding-right: 1em;
 							top: 60px;
 							width:100%;
+							@include media-breakpoint-down(md) {
+								display: block;
+							}
 							.dropdown-mega-header{
 								width: 275px;
 								a {
@@ -391,6 +411,7 @@ header {
 	max-width: 1200px;
 }
 .navbar-brand {
+	padding-left: 16px;
 	img {
 		height: 22px;
 	}
