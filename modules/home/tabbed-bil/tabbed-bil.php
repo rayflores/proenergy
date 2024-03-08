@@ -142,6 +142,22 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         .nav-tabs li:not(:first-child) .nav-link.active::before{
             left: 50px;
         }
+        @media screen and (max-width: 768px) {
+            .tbil-top-text::before{
+                width: 20px;
+            }
+            .tbil-top-text::after { 
+                font-size: 14px;
+                letter-spacing: 0.25em;
+                padding-left: 40px;
+            }
+            .nav-tabs {
+                padding-left: 0px;
+            }
+            .nav .nav-link {
+                font-size: 1em;
+            }
+        }
     </style>
     <div class="container-fluid">
         <div class="row g-0">
@@ -150,8 +166,8 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             </div>
         </div>
         <div class="row g-0">
-            <div id="tabbed-bil-tabs" class="pb-5">
-                <ul class="nav nav-tabs col-7 justify-content-end" id="tabbed-bil" role="tablist">
+            <div id="tabbed-bil-tabs" class="pb-4 pb-md-5">
+                <ul class="nav nav-tabs col-12 col-md-7 justify-content-center justify-content-md-end" id="tabbed-bil" role="tablist">
                     <?php 
                     if (have_rows( 'tbil_tabs' ) ) : 
                         while ( have_rows( 'tbil_tabs' ) ) : the_row();
@@ -191,11 +207,11 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                 ?>
                 <div class="tab-pane fade <?php echo $bullet_active; ?>" id="<?php echo strtolower( str_replace( ' ', '-', $tbil_tab_label ) ); ?>" role="tabpanel" aria-labelledby="<?php echo strtolower( str_replace( ' ', '-', $tbil_tab_label ) ); ?>-tab">
                     <div class="row g-0 justify-content-center d-flex">
-                        <div class="col-6">
-                            <img src="<?php echo esc_url(wp_get_attachment_url($tbil_image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover">
+                        <div class="col-12 col-md-6">
+                            <img src="<?php echo esc_url(wp_get_attachment_url($tbil_image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover image-bg">
                         </div>
-                        <div class="col-6 px-5">
-                            <div class="tbil-tab-active pt-5">
+                        <div class="col-12 col-md-6 px-5">
+                            <div class="tbil-tab-active pt-3 pt-md-5">
                                 <?php echo $tbil_tab_label; ?>
                             </div>
                             <h2 class="tbil-headline pt-3"><?php echo $tbil_header_text; ?></h2>

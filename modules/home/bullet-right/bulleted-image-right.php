@@ -54,8 +54,8 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
                     </div>
                     <?php endif; ?>
                 </div>
-                <div class="col-1 d-sm-none d-md-block"></div>
-                <div class="col-12 col-md-5 order-sm-1 order-md-2 bir-image reveal">
+                <div class="col-1 order-2 d-sm-none d-md-block"></div>
+                <div class="col-12 col-md-5 order-sm-1 order-md-3 bir-image reveal">
                     <div class="bir-image-mask"></div>
                     <img src="<?php echo esc_url(wp_get_attachment_url($image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover image-bg">
                 </div>

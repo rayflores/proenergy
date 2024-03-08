@@ -85,6 +85,7 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
         }
         @media screen and (max-width: 768px){
             .hb-headline { 
+                font-size: 2.5em;
                 line-height: 1em;
             }
         }
@@ -92,10 +93,10 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
     <div class="container-fluid">
         <div class="row g-0 align-items-center">
             <div class="col-12 pt-5 pb-5 mt-4 mb-4 ps-2">
-                <h2 class="hb-headline pt-5 pb-5 mt-5 mb-5 ms-5 ps-4"><?php echo $headline; ?></h2>
-                <?php if ( $paragraph !== '' ) : ?>
+            <h2 class="hb-headline pt-5 pb-5 mt-5 mb-5 ms-md-5 ms-2 ps-4"><?php echo $headline; ?></h2>
+              <?php if ( $paragraph !== '' ) : ?>
                 <p class="hb-paragraph"><?php echo $paragraph; ?></p>
-                <?php endif; ?>
+              <?php endif; ?>
             </div>
         </div>
     </div>
