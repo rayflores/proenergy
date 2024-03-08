@@ -83,6 +83,11 @@ $paragraph = get_sub_field('hb_paragraph') !== '' ? get_sub_field('hb_paragraph'
             height: 0;
             margin-left: 1em;
         }
+        @media screen and (max-width: 768px){
+            .hb-headline { 
+                line-height: 1em;
+            }
+        }
     </style>
     <div class="container-fluid">
         <div class="row g-0 align-items-center">

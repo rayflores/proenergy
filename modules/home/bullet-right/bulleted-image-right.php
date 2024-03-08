@@ -13,15 +13,16 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
 ?>
 <section id="section_bulleted-image-right" class="" style="background-color: <?php echo $section_bg; ?>">
     </style>
-        <div class="pt-5">
-            <div class="row g-0">
+        <div class="container-fluid px-0 pt-5">
+            <!-- <div class="row g-0">
                 <div class="col-12 bir-text-container">
                     <div class="bir-top-text col-6" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="row g-0">
-                <div class="col-6 bir-text-container">
+                <div class="col-12 col-md-6 order-1 order-sm-2 bir-text-container">
+                    <div class="bir-top-text col-12 col-md-6" data-content="<?php echo $top_text !== '' ? $top_text : ''; ?>"></div>
                     <div class="bir-headline pt-4">
                         <?php echo $headline !== '' ? $headline : ''; ?>
                     </div>
@@ -53,8 +54,8 @@ $bullet_color = get_sub_field('bir_bullet_color') !== '' ? get_sub_field('bir_bu
                     </div>
                     <?php endif; ?>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-5 bir-image reveal">
+                <div class="col-1 d-sm-none d-md-block"></div>
+                <div class="col-12 col-md-5 order-sm-1 order-md-2 bir-image reveal">
                     <div class="bir-image-mask"></div>
                     <img src="<?php echo esc_url(wp_get_attachment_url($image_video_id)); ?>" srcset="<?php echo esc_attr($srcset); ?>" alt="<?php echo $alt_text; ?>" class="img-fluid h-100 object-fit-cover image-bg">
                 </div>

@@ -1,6 +1,9 @@
 #section_bulleted-image-right{
     .bir-text-container {
         padding: 0;
+        @include media-breakpoint-down(md) {
+            padding-top: 40px;
+        }
     }
     .bir-top-text {
         line-height: 1em;
@@ -20,6 +23,10 @@
         height: 1px;
         background: #A3A8AA;
         z-index: 1;
+        @include media-breakpoint-down(md) {
+        
+            width: 20px;
+        }
     }
     .bir-top-text::after{
         color: #A3A8AA;
@@ -34,14 +41,22 @@
         line-height: 1.5em;
         text-transform: uppercase;
         z-index: 0;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            letter-spacing: 0.25em;
+            padding-left: 40px;
+        }
     }
     a.bir-nb-link::after{
-        content: url('../images/right-arrow.png');
+        content: url('../images/right-arrow-gray.svg');
         display: inline-block;
         width: 40px;
         height: 0;
         margin-left: 1em;
         transition: 0.3s;
+        @include media-breakpoint-down(md) {
+            width: 20px;
+        }
     }
     a.bir-nb-link:hover::after{
         margin-left: 1.5em;
@@ -49,20 +64,35 @@
     .bir-headline {
         color: #53565A;
         font-family: 'eurostile', sans-serif;
-        font-size: 2.25em;
+        font-size: clamp(1.625rem, 1.009rem + 2.488vw, 2.875rem);
         font-weight: 800;
         letter-spacing: 0;
         margin-bottom: 0.5em;
         padding-left: 80px;
+        @include media-breakpoint-down(md) {
+            line-height: 26px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
     .bir-paragraph {
         font-family: 'myriadpro', sans-serif;
         font-size: 1.125em;
         font-weight: 400;
         padding-left: 80px;
+        @include media-breakpoint-down(md) {
+            font-size: 1.0em;
+            line-height: 1.25em;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
     .bir-numbered-bullets{
         padding-left: 80px;
+        @include media-breakpoint-down(md) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
     .bir-nb-percentage{
         font-family: 'eurostile', sans-serif;
@@ -71,12 +101,20 @@
         letter-spacing: 0;
         line-height: 0.75em;
         text-transform: uppercase;
+        @include media-breakpoint-down(md) {
+            font-size: 1.75em;
+            line-height: 0.75em;
+        }
     }
     .bir-nb-percentage-header{
         font-family: 'eurostile';
         font-size: 2em;
         font-weight: 400;
         letter-spacing: 0;
+        @include media-breakpoint-down(md) {
+            font-size: 1em;
+            line-height: 1.25em;
+        }
     }
     .bir-nb-link{
         color: #A3A8AA;
@@ -85,9 +123,15 @@
         font-style: italic;
         font-weight: 400;
         margin-top: 30px;
+        @include media-breakpoint-down(md) {
+            font-size: 1em;
+        }
     }
     img.image-bg {
         min-height: 577px;
+        @include media-breakpoint-down(md) {
+            min-height: 288px;
+        }
     }
     .bir-image-mask {
         background: linear-gradient(117deg, rgba(255,255,255,0.8) 45%, rgba(255,255,255,0) 45%);
