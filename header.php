@@ -23,7 +23,7 @@
 <div id="wrapper">
 	<header class="bg-light">
 		<nav id="header" class="navbar navbar-expand-md container-fluid navbar-light bg-light <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
-			<div class="container ps-3 position-relative h-100">
+			<div class="container ps-3 position-relative h-md-100">
 				<a class="navbar-brand mx-0" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php
 						$header_logo = get_theme_mod( 'header_logo' ); // Get custom meta-value.
@@ -42,7 +42,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div id="navbar" class="collapse navbar-collapse col-7 row h-100">
+				<div id="navbar" class="collapse navbar-collapse col-7 row h-100 bg-light">
 					<?php
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(

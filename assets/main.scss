@@ -225,6 +225,16 @@ header {
 			height: 60px;
 		}
 		&.navbar-expand-md {
+			.navbar-toggler {
+				border: none;
+				padding: 0;
+				height: 100px;
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+
+			}
 			.navbar-nav {
 				.nav-item:hover {
 					a {
