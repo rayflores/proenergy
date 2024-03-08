@@ -337,6 +337,9 @@ header {
 		right: 0;
 		top: 100px;
 		z-index: 99;
+		@include media-breakpoint-down(md) {
+			display:none;
+		}
 		.top-small-menu-nav {
 			padding-bottom: 10px;
 			padding-top: 10px;
