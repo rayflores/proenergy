@@ -64,7 +64,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         .tbil-headline {
             color: #53565A;
             font-family: 'eurostile', sans-serif;
-            font-size: 2.92em;
+            font-size: clamp(1.625rem,1.009rem + 2.488vw,2.875rem);
             font-weight: 800;
             line-height: 0.75em;
             text-align: left;
@@ -155,6 +155,23 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                 padding-left: 0px;
             }
             .nav .nav-link {
+                font-size: 1em;
+            }
+            .tbil-tab-active {
+                font-size: 0.875em;
+                letter-spacing: 0.25em;
+            }
+            .tbil-paragraph {
+                font-size: 1.0em;
+                line-height: 1.25em;
+            }
+            .tbil-nb-percentage {
+                font-size: 2.5em;
+            }
+            .tbil-nb-percentage-header {
+                font-size: 1.5em;
+            }
+            .tbil-nb-link {
                 font-size: 1em;
             }
         }
