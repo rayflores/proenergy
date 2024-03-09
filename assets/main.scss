@@ -459,6 +459,12 @@ header {
 
 #footer {
 	background-color: #53565A;
+	.widget1 {
+		img {
+			height: 28px;
+			width: 100%;
+		}
+	}
 	.widget3 {
 		p {
 			color: #FFFFFF;
