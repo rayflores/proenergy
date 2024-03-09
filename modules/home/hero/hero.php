@@ -11,7 +11,7 @@ $hero_headline = get_sub_field( 'hero_headline' );
 if ( !$hero_image_or_video ) : ?>
 <section id="section_hero-wrapper">
     <div class="hero-overlay"></div>
-        <video autoplay muted loop plasinline id="hero-video">
+        <video autoplay muted loop playsinline id="hero-video">
             <source src="<?php echo $hero_video; ?>" type="video/webm">
         </video>
 <?php else : 
