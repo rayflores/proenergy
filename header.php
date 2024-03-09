@@ -22,9 +22,9 @@
 
 <div id="wrapper">
 	<header class="bg-light">
-		<nav id="header" class="navbar navbar-expand-md container-fluid navbar-light bg-light <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
-			<div class="container-fluid position-relative h-100">
-				<a class="navbar-brand mx-0" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+		<nav id="header" class="navbar navbar-expand-md navbar-light bg-light <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
+			<div class="container-fluid">
+				<a class="navbar-brand mx-0" style="line-height: 100px;" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php
 						$header_logo = get_theme_mod( 'header_logo' ); // Get custom meta-value.
 
@@ -42,12 +42,12 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div id="navbar" class="collapse navbar-collapse justify-content-end h-100 bg-light">
+				<div id="navbar" class="collapse navbar-collapse bg-light">
 					<?php
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(
 							array(
-								'menu_class'     => 'navbar-nav main-menu justify-content-end h-100 align-items-center p-0',
+								'menu_class'     => 'navbar-nav main-menu ms-auto mb-2 mb-md-0',
 								'container'      => '',
 								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
 								'walker'         => new WP_Bootstrap_Navwalker(),
