@@ -31,13 +31,12 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         position: absolute;
         top: 50%;
         left: 0;
-        width: 5%;
+        width: 52px;
         height: 1px;
         background: #A3A8AA;
         z-index: 1;
     }
     .aa-bil-top-text::after{
-        background-color: #fcfcfa;
         color: #A3A8AA;
         content: attr(data-content);
         display: inline-block;
@@ -121,6 +120,29 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
     .reveal.animating .aa-bil-image-mask{
         transform: translateX(-100%);
     } */
+    @media screen and (max-width: 768px) {
+        .aa-bil-top-text::before{
+            width: 20px;
+        }
+        .aa-bil-top-text::after{
+            font-size: 14px;
+            letter-spacing: 0.25em;
+            padding-left: 40px;
+        }
+        .aa-bil-headline {
+            padding-left: 40px;
+        }
+        .aa-bil-paragraph {
+            padding-left: 40px;
+        }
+        .aa-bil-bullet-container {
+            padding-left: 40px;
+        }
+        .aa-bil-link-container {
+            padding-left: 40px;
+        }
+        
+    }
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">

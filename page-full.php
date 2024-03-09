@@ -24,10 +24,10 @@ the_post();
 				endif;
 				if ( !$run_once ) :
 				?>
-				<section id="section_breadcrumbs" class="pt-5 ms-5">
+				<section id="section_breadcrumbs" class="pt-3 pt-md-5 ms-4 ms-md-5">
 					<div class="container-fluid ps-2">
 						<div class="row g-0">
-							<div class="col-12 ps-4">
+							<div class="col-12 ps-2 ps-md-4">
 								<?php 
 								get_the_breadcrumbs(); 
 								$run_once = true; ?>
@@ -80,10 +80,10 @@ the_post();
 				endif;
 				if ( !$run_once ) :
 				?>
-				<section id="section_breadcrumbs" class="pt-5 ms-5">
+				<section id="section_breadcrumbs" class="pt-3 pt-md-5 ms-4 ms-md-5">
 					<div class="container-fluid ps-2">
 						<div class="row g-0">
-							<div class="col-12 ps-4">
+							<div class="col-12 ps-2 ps-md-4">
 								<?php 
 								get_the_breadcrumbs(); 
 								$run_once = true; ?>
@@ -157,10 +157,10 @@ the_post();
 				endif;
 				if ( !$run_once ) :
 				?>
-				<section id="section_breadcrumbs" class="pt-5 ms-5">
+				<section id="section_breadcrumbs" class="pt-3 pt-md-5 ms-4 ms-md-5">
 					<div class="container-fluid ps-2">
 						<div class="row g-0">
-							<div class="col-12 ps-4">
+							<div class="col-12 ps-2 ps-md-4">
 								<?php 
 								get_the_breadcrumbs(); 
 								$run_once = true; ?>
@@ -216,10 +216,10 @@ the_post();
 				endif;
 				if ( !$run_once ) :
 				?>
-				<section id="section_breadcrumbs" class="pt-5 ms-5">
+				<section id="section_breadcrumbs" class="pt-3 pt-md-5 ms-4 ms-md-5">
 					<div class="container-fluid ps-2">
 						<div class="row g-0">
-							<div class="col-12 ps-4">
+							<div class="col-12 ps-2 ps-md-4">
 								<?php 
 								get_the_breadcrumbs(); 
 								$run_once = true; ?>
@@ -257,10 +257,10 @@ the_post();
 				endif;
 				if ( !$run_once ) :
 				?>
-				<section id="section_breadcrumbs" class="pt-5 ms-5">
+				<section id="section_breadcrumbs" class="pt-3 pt-md-5 ms-4 ms-md-5">
 					<div class="container-fluid ps-2">
 						<div class="row g-0">
-							<div class="col-12 ps-4">
+							<div class="col-12 ps-2 ps-md-4">
 								<?php 
 								get_the_breadcrumbs(); 
 								$run_once = true; ?>

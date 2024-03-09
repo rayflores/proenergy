@@ -55,7 +55,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         left: 0;
         position: absolute;
         top: 50%;
-        width: 8%;
+        width: 52px;
         z-index: 1;
     }
     .aa-bir-top-text-container::after {
