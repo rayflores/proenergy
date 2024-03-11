@@ -124,6 +124,11 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         height: 0;
         margin-left: 1em;
     }
+    @media screen and (max-width: 768px) {
+        .showcase .showcase-text.inside {
+            margin-right: 0;
+        }
+    }
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
