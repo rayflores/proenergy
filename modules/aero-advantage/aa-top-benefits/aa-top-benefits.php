@@ -30,7 +30,7 @@ $aa_tb_banner_text = get_sub_field('aa_tb_banner_text') ? get_sub_field('aa_tb_b
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-12 col-md-4 ps-5 aa-tb-banner">
+            <div class="col-12 col-md-5 ps-5 aa-tb-banner">
                 <div class="aa-tb-text-container ms-3">
                     <h2 class="text-white ps-3">
                         <?php echo $aa_tb_banner_text; ?>
