@@ -27,6 +27,7 @@
         #section_aa-three-bullets {
             text-align: center;
         }
+    }
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
