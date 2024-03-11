@@ -23,7 +23,10 @@
         color : #53565A;
         color : rgb(83, 86, 90);
     }
-
+    @media screen and (max-width: 768px) {
+        #section_aa-three-bullets {
+            text-align: center;
+        }
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
