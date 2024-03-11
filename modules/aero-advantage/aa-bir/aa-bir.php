@@ -44,7 +44,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         color: #a3a8aa;
         height: 1.5em;
         line-height: 1em;
-        margin-left: -80px;
+        margin-left: -48px;
         outline: 0;
         position: relative;
         text-align: left;
@@ -60,16 +60,18 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         z-index: 1;
     }
     .aa-bir-top-text-container::after {
-        background-color: #fcfcfa;
         color: #a3a8aa;
         content: attr(data-content);
         display: inline-block;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.5em;
         padding-left: 80px;
         position: relative;
-        line-height: 1.5em;
+        line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
+        font-family: 'eurostile', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
     }
     .aa-bir-header-container h2 {
         font-family : "Eurostile-Bold";
@@ -140,24 +142,24 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
                     <div class="inside-showcase-text col-9">
                         <div class="aa-bir-top-text-container" data-content="<?php echo $aa_bir_top_text; ?>">
                         </div>
-                        <div class="aa-bir-header-container">
-                            <h2><?php echo $aa_bir_header; ?></h2>
+                        <div class="aa-bir-header-container ps-4">
+                            <h2 class="ps-2"><?php echo $aa_bir_header; ?></h2>
                         </div>
-                        <div class="aa-bir-paragraph-container pt-3">
-                            <p><?php echo $aa_bir_paragraph; ?></p>
+                        <div class="aa-bir-paragraph-container ps-4 pt-3">
+                            <p class="ps-2"><?php echo $aa_bir_paragraph; ?></p>
                         </div>
-                        <div class="aa-bir-bullet-container pt-5">
-                            <div class="aa-bir-bullet-percentage">
+                        <div class="aa-bir-bullet-container ps-4 pt-5">
+                            <div class="aa-bir-bullet-percentage ps-2">
                                 <?php echo $aa_bir_percentage; ?>
                             </div>
-                            <div class="aa-bir-bullet-text">
+                            <div class="aa-bir-bullet-text ps-2">
                                 <?php echo $aa_bir_text; ?>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="aa-bir-link-container ps-5 py-4">
-                    <a class="aa-bir-link" href="<?php echo $aa_bir_link['url']; ?>" target="<?php echo $aa_bir_link['target']; ?>"><?php echo $aa_bir_link['title']; ?></a>
+                    <a class="aa-bir-link ms-4 ps-2" href="<?php echo $aa_bir_link['url']; ?>" target="<?php echo $aa_bir_link['target']; ?>"><?php echo $aa_bir_link['title']; ?></a>
                 </div>
             </div>
         </div>

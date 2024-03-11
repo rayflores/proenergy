@@ -27,34 +27,34 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             left: 0;
             position: relative;
             top: 50%;
-            width: 35px;
+            width: 52px;
             z-index: 1;
             vertical-align: middle;
         }
         .<?php echo $aa_uuid; ?> .aa-just-text-list-top-text-container::after {
-            background-color: rgba(163, 168, 170, 0);
-            color: #a3a8aa;
             content: attr(data-content);
             display: inline-block;
-            letter-spacing: 7.5px;
-            padding-left: 15px;
+            letter-spacing: 0.5em;
+            padding-left: 28px;
             position: relative;
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
-            font-size: 12px;
-            color: <?php echo $aa_just_text_list_text_color; ?>
+            font-family: "eurostile", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: rgba(163, 168, 170, 1);
         }
         .<?php echo $aa_uuid; ?> .aa-just-text-list-header-container h2 {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 35px;
+            font-weight: 700;
             line-height : 36px;
             letter-spacing : 0.35px;
             color : <?php echo $aa_just_text_list_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-just-text-list-paragraph-container p {
-            font-family : "MyriadPro-Regular";
+            font-family : "myriad-pro", sans-serif;
             font-size : 18px;
             line-height : 25px;
             color : <?php echo $aa_just_text_list_text_color; ?>;
@@ -66,8 +66,9 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             color: <?php echo $aa_just_text_list_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-just-text-list-link-container a {
-            font-family: "MyriadPro-Italic";
+            font-family: "myriad-pro", sans-serif;
             font-size: 18px;
+            font-style: italic;
             line-height: 25px;
             color: #A3A8AA;
             text-decoration: none;
@@ -88,17 +89,17 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         <div class="row g-0">
             <div class="col-12 col-md-7">
                 <div class="aa-just-text-list-top-text-container pt-5" data-content="<?php echo $aa_just_text_list_top_text; ?>"></div>
-                <div class="aa-just-text-list-header-container pt-3 ps-5">
-                    <h2><?php echo $aa_just_text_list_header; ?></h2>
+                <div class="aa-just-text-list-header-container pt-3 ms-4 ps-5">
+                    <h2 class="ps-2"><?php echo $aa_just_text_list_header; ?></h2>
                 </div>
-                <div class="aa-just-text-list-paragraph-container pt-3 ps-5">
-                    <p><?php echo $aa_just_text_list_paragraph; ?></p>
+                <div class="aa-just-text-list-paragraph-container pt-3 ms-4 ps-5">
+                    <p class="ps-2"><?php echo $aa_just_text_list_paragraph; ?></p>
                 </div>
                 <?php
                 if ( '' !== get_sub_field( 'aa_just_text_list_link') ) : 
                 $aa_just_text_list_link = get_sub_field( 'aa_just_text_list_link'); ?>
-                <div class="aa-just-text-list-link-container py-5 ps-5">
-                    <a class="aa-just-text-list-link" href="<?php echo $aa_just_text_list_link['url']; ?>" target="<?php echo $aa_just_text_list_link['target']; ?>"><?php echo $aa_just_text_list_link['title']; ?></a>
+                <div class="aa-just-text-list-link-container py-5 ps-5 ms-4">
+                    <a class="aa-just-text-list-link ps-2" href="<?php echo $aa_just_text_list_link['url']; ?>" target="<?php echo $aa_just_text_list_link['target']; ?>"><?php echo $aa_just_text_list_link['title']; ?></a>
                 </div>
                 <?php endif; ?>
             </div>
