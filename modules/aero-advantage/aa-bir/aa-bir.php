@@ -13,6 +13,7 @@ $aa_bir_bullet_color = get_sub_field('aa_bir_bullet_color') !== '' ? get_sub_fie
 $aa_bir_image_id = get_sub_field('aa_bir_image') !== '' ? get_sub_field('aa_bir_image') : '';
 $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
 ?>
+<section id="section_aa-bir-wrapper" class="showcase my-5 pb-5">
 <style>
     .showcase .showcase-aa-bir-img {
         min-height: 40rem;
@@ -124,7 +125,6 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         margin-left: 1em;
     }
 </style>
-<section id="section_aa-bir-wrapper" class="showcase my-5 pb-5">
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-lg-5 text-white order-lg-2 showcase-aa-bir-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_bir_image_id)); ?>');">

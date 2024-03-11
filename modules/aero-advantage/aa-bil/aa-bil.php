@@ -14,9 +14,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
 ?>
 <section id="section_areoadvantage_bil" class="p-0 showcase">
 <style>
-#section_areoadvantage_bil {
-        max-height: 655px;
-    }
+
     .aa-bil-top-text {
         line-height: 1em;
         position: relative;

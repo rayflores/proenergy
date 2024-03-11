@@ -13,7 +13,7 @@
 				endif;
 			?>
 		</main><!-- /#main -->
-		<footer id="footer">
+		<footer id="footer" class="mt-5">
 			<div class="container-fluid px-5">
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 justify-content-md-center g-0">
 				<?php if ( is_active_sidebar( 'third_widget_area' ) ) : ?>
