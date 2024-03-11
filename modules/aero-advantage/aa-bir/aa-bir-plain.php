@@ -3,18 +3,26 @@
  * Module Name: AeroAdvantage BIR Plain
  * Description: Template for AeroAdvantage BIR Plain Module.
  */
+$aa_birp_uuid = wp_unique_id('aa-birp-');
+$aa_birp_top_text = '';
 $aa_birp_top_text = get_sub_field('aa_birp_top_text') !== '' ? get_sub_field('aa_birp_top_text') : '';
+$aa_birp_header = '';
 $aa_birp_header = get_sub_field('aa_birp_header') !== '' ? get_sub_field('aa_birp_header') : '';
+$aa_birp_paragraph = '';
 $aa_birp_paragraph = get_sub_field('aa_birp_paragraph') !== '' ? get_sub_field('aa_birp_paragraph') : '';
+$aa_birp_link = '';
 $aa_birp_link = get_sub_field('aa_birp_link') !== '' ? get_sub_field('aa_birp_link') : '';
+$aa_birp_image_id = '';
 $aa_birp_image_id = get_sub_field('aa_birp_image') !== '' ? get_sub_field('aa_birp_image') : '';
+$aa_birp_image_srcset = '';
 $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
 ?>
+<section id="section_aa-birp-wrapper" class="<?php echo $aa_birp_uuid; ?> showcase p-0">
 <style>
-    #section_aa-birp-wrapper {
+    #section_aa-birp-wrapper.<?php echo $aa_birp_uuid; ?> {
         background-color: rgba(163,168,170,0.2);
     }
-    .showcase .showcase-aa-birp-img {
+    .<?php echo $aa_birp_uuid; ?>.showcase .showcase-aa-birp-img {
         min-height: 36rem;
         background-position: center center;
         background-size: cover;
@@ -38,85 +46,94 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
     .reveal.animating .aa-birp-image-mask{
         transform: translateX(100%);
     } */
-    .aa-birp-top-text-container::before {
-        background: linear-gradient(90deg, rgba(163,168,170,0.2) 50%, transparent 50%);
+    .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container::before {
+        background: #a3a8aa;
         content: '';
-        display: inline-block;
         height: 1px;
-        padding-right: 40px;
-        position: relative;
-        vertical-align: middle;
+        left: -25px;
+        position: absolute;
+        top: 50%;
+        width: 52px;
+        z-index: 1;
     }
-    .aa-birp-top-text-container {
+    .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container::after {
         color: #a3a8aa;
-        content: '';
-        letter-spacing: 7.5px;
+        content: attr(data-content);
+        display: inline-block;
+        font-family: 'eurostile', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5em;
+        padding-left: 8px;
         position: relative;
-        line-height: 25.7px;
+        line-height: 1.5em;
         text-transform: uppercase;
         z-index: 0;
-        font-family: "Eurostile-Normal";
-        font-size: 12px;
     }
-    .aa-birp-header-container h2 {
-        font-family : "Eurostile-Bold";
+    .<?php echo $aa_birp_uuid; ?> .aa-birp-header-container h2 {
+        font-family : "eurostile", sans-serif;
         font-size : 35px;
+        font-weight : 700;
         line-height : 36px;
         letter-spacing : 0.35px;
         margin-top: 25px;
         color : #53565A;
         color : rgb(83, 86, 90);
     }
-    .showcase .showcase-text.inside {
+    .<?php echo $aa_birp_uuid; ?>.showcase .showcase-text.inside {
         margin-right: -6.5em;
         position: relative;
         min-height: 27.1875em;
         background : linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(253, 253, 253, 1) 24.65%, rgba(245, 244, 244, 1) 100%, rgba(231, 230, 230, 1) 50.46%, rgba(211, 210, 211, 1) 60.62%, rgba(186, 185, 185, 1) 69.85%, rgba(155, 153, 153, 1) 78.41%, rgba(117, 115, 116, 1) 86.44%, rgba(76, 72, 73, 1) 93.85%, rgba(35, 31, 32, 1) 100%);
     }
-    .aa-birp-paragraph-container p {
-        font-family : "MyriadPro-Regular";
+    .<?php echo $aa_birp_uuid; ?> .aa-birp-paragraph-container p {
+        font-family : "myriad-pro", sans-serif;
         font-size : 18px;
         line-height : 22px;
         color : #53565A;
         color : rgb(83, 86, 90);
+        padding-right: 7.5%;
     }
-    .aa-birp-link {
-        font-family : "MyriadPro-Italic";
+    .<?php echo $aa_birp_uuid; ?> .aa-birp-link {
+        font-family : "myriad-pro", sans-serif;
         font-size : 18px;
+        font-style: italic;
         line-height : 25px;
         color : #a3a8aa;
         color : rgb(83, 86, 90);
     }
-    .aa-birp-link::after{
+    .<?php echo $aa_birp_uuid; ?> .aa-birp-link::after{
         content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
         display: inline-block;
         width: 40px;
         height: 0;
         margin-left: 1em;
     }
+    @media screen and (max-width: 768px) {
+        .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container {
+            padding-top: 25px;
+        }
+    }
 </style>
-<section id="section_aa-birp-wrapper" class="showcase p-0">
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-4 text-white order-2 showcase-aa-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_birp_image_id)); ?>');">
+            <div class="col-12 col-md-4 text-white order-md-2 order-1 showcase-aa-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_birp_image_id)); ?>');">
             </div>
-            <div class="col-8 order-1 showcase-text my-auto">
+            <div class="col-12 col-md-8 order-md-1 order-2 showcase-text my-auto">
                 <?php 
                 if ( !empty($aa_birp_top_text) ) : ?>
-                <div class="aa-birp-top-text-container">
-                    <?php echo $aa_birp_top_text; ?>
-                </div>
+                <div class="aa-birp-top-text-container position-relative ps-5 mx-4" data-content="<?php echo $aa_birp_top_text; ?>"></div>
                 <?php endif; ?>
-                <div class="aa-birp-header-container ps-5">
-                    <h2><?php echo $aa_birp_header; ?></h2>
+                <div class="aa-birp-header-container ps-5 ms-4">
+                    <h2 class="ps-2"><?php echo $aa_birp_header; ?></h2>
                 </div>
-                <div class="aa-birp-paragraph-container ps-5 pt-3">
-                    <p><?php echo $aa_birp_paragraph; ?></p>
+                <div class="aa-birp-paragraph-container ps-5 ms-4 pt-3">
+                    <p class="col-12 col-md-6 ps-2"><?php echo $aa_birp_paragraph; ?></p>
                 </div>
                 <?php 
                 if ( !empty($aa_birp_link) ) : ?>
-                <div class="aa-birp-link-container ps-5 py-4">
-                    <a class="aa-birp-link" href="<?php echo $aa_birp_link['url']; ?>" target="<?php echo $aa_birp_link['target']; ?>"><?php echo $aa_birp_link['title']; ?></a>
+                <div class="aa-birp-link-container ps-5 ms-4 py-4">
+                    <a class="aa-birp-link ps-2" href="<?php echo $aa_birp_link['url']; ?>" target="<?php echo $aa_birp_link['target']; ?>"><?php echo $aa_birp_link['title']; ?></a>
                 </div>
                 <?php endif; ?>
             </div>

@@ -4,7 +4,7 @@
  * Description: Template for AeroAdvantage Three Bullets Module.
  */
 ?>
-<section id="section_aa-three-bullets" class="mx-5 mb-5 pb-5">
+<section id="section_aa-three-bullets" class="mx-5 mb-5 pb-5 ps-2">
 <style>
     .aa-single-bullet-percentage {
         font-family : "eurostile", sans-serif; 
@@ -38,8 +38,8 @@
                 $aa_single_bullet_text = get_sub_field('aa_single_bullet_text') !== '' ? get_sub_field('aa_single_bullet_text') : '';
                 ?>
                     <div class="aa-single-bullet col-12 col-md-4">
-                        <div class="aa-single-bullet-percentage"><?php echo $aa_single_bullet_percentage; ?></div>
-                        <div class="aa-single-bullet-text"><?php echo $aa_single_bullet_text; ?></div>
+                        <div class="aa-single-bullet-percentage ps-4"><?php echo $aa_single_bullet_percentage; ?></div>
+                        <div class="aa-single-bullet-text ps-4"><?php echo $aa_single_bullet_text; ?></div>
                     </div>
 
                 <?php 

@@ -38,7 +38,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         color: #A3A8AA;
         content: attr(data-content);
         display: inline-block;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.5em;
         padding-left: 80px;
         position: relative;
         line-height: 1.5em;
@@ -47,14 +47,15 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
     }
     .aa-bil-headline {
         color: #53565A;
-        font-family: 'Eurostile-Bold';
+        font-family: 'eurostile', sans-serif;
         font-size: 2.25em;
+        font-weight: 700;
         letter-spacing: 0;
         margin-bottom: 0.5em;
         padding-left: 80px;
     }
     .aa-bil-paragraph {
-        font-family: 'MyriadPro-Regular';
+        font-family: 'myriad-pro', sans-serif;
         font-size: 1.125em;
         padding-left: 80px;
     }
@@ -62,15 +63,16 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         padding-left: 80px;
     }
     .aa-bil-bullet-percentage {
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 45px;
+        font-weight : 700;
         line-height : 54.85px;
         text-transform : uppercase;
         color : #862633;
         color : rgb(134, 38, 51);
     }
     .aa-bil-bullet-text {
-        font-family : Eurostile;
+        font-family : 'eurostile', sans-serif;
         font-size : 24px;
         line-height : 31.1px;
         letter-spacing : 0.24px;
@@ -81,8 +83,9 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         padding-left: 80px;
     }
     .aa-bil-link-container a {
-        font-family : "MyriadPro-Italic";
+        font-family : "myriad-pro";
         font-size : 18px;
+        font-style: italic;
         line-height : 25px;
         color : #862633;
         color : rgb(134, 38, 51);
