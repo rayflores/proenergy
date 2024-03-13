@@ -22,9 +22,10 @@
 
 <div id="wrapper">
 	<header class="bg-light">
-		<nav id="header" class="navbar navbar-expand-md navbar-light bg-light <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
+		<div class="menu-integration fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand mx-0" style="line-height: 100px;" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				
+				<a class="navbar-brand col-12 d-lg-none" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php
 						$header_logo = get_theme_mod( 'header_logo' ); // Get custom meta-value.
 
@@ -38,37 +39,11 @@
 					?>
 				</a>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'my-theme' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<?php ubermenu( 'main' , array( 'theme_location' => 'main-menu' ) ); ?>
+			</div>
+		</div>
 
-				<div id="navbar" class="collapse navbar-collapse bg-light">
-					<?php
-						// Loading WordPress Custom Menu (theme_location).
-						wp_nav_menu(
-							array(
-								'menu_class'     => 'navbar-nav main-menu ms-auto mb-2 mb-md-0',
-								'container'      => '',
-								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'         => new WP_Bootstrap_Navwalker(),
-								'theme_location' => 'main-menu',
-							)
-						);
-						if ( '1' === $search_enabled ) :
-					?>
-							<form class="search-form my-2 my-lg-0" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-								<div class="input-group">
-									<input type="text" name="s" class="form-control" placeholder="<?php esc_attr_e( 'Search', 'my-theme' ); ?>" title="<?php esc_attr_e( 'Search', 'my-theme' ); ?>" />
-									<button type="submit" name="submit" class="btn btn-outline-secondary"><?php esc_html_e( 'Search', 'my-theme' ); ?></button>
-								</div>
-							</form>
-					<?php
-						endif;
-					?>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container -->
-		</nav><!-- /#header -->
-		<nav class="navbar second-navbar navbar-expand-md container-fluid navbar-light justify-content-end">
+		<nav class="navbar second-navbar navbar-expand-md container-fluid navbar-light justify-content-end d-none d-lg-block">
 			<div class="container position-relative h-100 pe-0 justify-content-end">
 				<div class="col-6 top-small-menu-nav p-0">
 						<?php

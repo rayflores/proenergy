@@ -73,7 +73,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				$output .= '<li role="presentation" class="divider">';
 			} elseif ( 0 === strcasecmp( $item->attr_title, 'dropdown-header' ) && 1 === $depth ) {
 				// $output .= '<li role="presentation" class="dropdown-mega-header">' . esc_attr( $item->title );
-				$output .= '<li role="presentation" class="dropdown-mega-header"><a href="' . $item->url . '">' . $item->title . '</a>';
+				$output .= '<li role="presentation" class="dropdown-mega-header px-4"><a href="' . $item->url . '" class="inside-top-level">' . $item->title . '</a>';
 			} elseif ( 0 === strcasecmp( $item->attr_title, 'disabled' ) ) {
 				$output .= '<li role="presentation" class="disabled"><a href="#">' . esc_attr( $item->title ) . '</a>';
 			} else {
@@ -81,12 +81,18 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 
 				$classes     = empty( $item->classes ) ? array() : (array) $item->classes;
 				if ( 0 === $depth ) {
-					$classes[] = 'nav-item'; // First level.
+					$classes[] = 'nav-item lvl1'; // First level.
+				}
+				if ( 2 === $depth ) {
+					$classes[] = 'nav-item-level-2'; // Inside mega, singlt-nav-item.
+				}
+				if ( $args->has_children && 1 === $depth ) {
+					$classes[] = 'dropdown';
 				}
 				$classes[]   = 'menu-item-' . $item->ID;
 				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
 				if ( $args->has_children ) {
-					$class_names .= ' dropdown-here dropdown-megamenu d-flex h-100 align-items-center';
+					$class_names .= ' ' . $depth . ' dropdown-here dropdown-megamenu d-flex h-100 align-items-center';
 				}
 				if ( preg_grep( '/^current/', $classes ) ) {
 					$atts['aria-current'] = 'page';
@@ -116,7 +122,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 				} else {
 					$atts['href'] = ! empty( $item->url ) ? $item->url : '';
 					if ( $depth > 0 ) {
-						$atts['class'] = 'dropdown-item'; // Dropdown item.
+						$atts['class'] = $depth . ' dropdown-item'; // Dropdown item.
 					} else {
 						$atts['class'] = 'nav-link'; // First level.
 					}

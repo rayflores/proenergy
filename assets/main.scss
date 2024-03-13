@@ -165,7 +165,7 @@ $table-striped-order: even;
 body {
 	/* If WP-Adminbar is visible */
 	&.admin-bar {
-		#header {
+		.menu-integration {
 			&.fixed-top {
 				top: var(--wp-admin--admin-bar--height);
 			}
@@ -215,161 +215,60 @@ img {
 
 /* Header */
 header {
-	#header {
-		height: auto;
-		transition: height .3s;
-		.search-form {
-			min-width: 250px;
-		}
+	.menu-integration {
+		background: rgb( 248, 249, 250 );
+		position: fixed;
+		top: 0;
+		width: 100%;
 		&.small-nav {
 			height: 60px;
-		}
-		&.navbar-expand-md {
-			.navbar-toggler {
-				border: none;
-				padding: 0 12px 0 0;
+			@include media-breakpoint-down(lg) {
 				height: 100px;
-				&:focus {
-					outline: none;
-					box-shadow: none;
-				}
-
 			}
-			.navbar-nav {
-				@include media-breakpoint-down(md) {
-					li {
-						flex-direction: column;
-						width: 100%;
-						border-bottom: 1px solid rgba(163,168,170,0.5);
-						ul {
-							li {
-								&.dropdown-mega-header{
-									ul {
-										&.mega-inside {
-											li {
-												&:first-child {
-													border-top: 1px solid rgba(163,168,170,0.5);
-												}
-											}
-										}
-									}
-								}
-							}
+			.ubermenu-nav {
+				height: 60px;
+				@include media-breakpoint-down(lg) {
+					height: 100px;
+				}
+			}
+		}
+		.ubermenu-nav {
+			height: 100px;
+			li {
+				.ubermenu-item-notext {
+					justify-content: center;
+					.ubermenu-image {
+						margin-bottom: 0;
+						margin-left: 32px;
+					}
+				}
+				.ubermenu-target-text {
+					font-family: 'eurostile', sans-serif;
+					letter-spacing: 0.01em;
+				}
+				&:hover {
+					background: transparent;
+					> .ubermenu-target {
+						background: transparent;
+						> .ubermenu-target-text {
+							font-weight: 700;
 						}
 					}
 				}
-				.nav-item:hover {
-					a {
-						color: #53565A;
-						font-family: $font-family-eurostile;
-						font-weight: 700;
-						font-style: normal;
-					}
-				}
-				.nav-link {
-					color: rgba(83, 86, 90, 0.5);
-					font-family: $font-family-myriadpro;
-					font-weight: 400;
-					font-style: normal;
-					&.show,
-					&.active {
-						color: #53565A;
-						font-family: $font-family-eurostile;
-						font-weight: 700;
-						font-style: normal;
-					}
-				}
-				.current-menu-item {
-					.nav-link {
-						color: #53565A;
-						font-family: $font-family-eurostile;
-						font-weight: 700;
-						font-style: normal;
-					}
-				}
-				.dropdown-toggle {
-					&:after {
-						display: none;
-					}
-				}
-				.dropdown-menu {
-					&.mega-container {
-						> .dropdown-header {
-							display: inline-block;
+				&.ubermenu-active {
+					> .ubermenu-target {
+						background: transparent;
+						> .ubermenu-target-text {
+							font-weight: 700;
 						}
-						&.show {
-							background-color: rgba(248, 249, 250, 1);
-							border:none;
-							border-radius: 0;
-							display: flex;
-							justify-content: flex-end;
-							left: 0;
-							margin-top: 0;
-							padding-left: 1em;
-							padding-right: 1em;
-							top: 60px;
-							width:100%;
-							@include media-breakpoint-down(md) {
-								display: block;
-								height: 40vh;
-								overflow-y: auto;
-								box-shadow: none;
-							}
-							.dropdown-mega-header{
-								width: 275px;
-								@include media-breakpoint-down(md) {
-									width: auto;
-									text-align: center;
-								}
-								a {
-									color: $progrey;
-									font-family: "eurostile", sans-serif;
-									font-weight: 700;
-									font-style: normal;
-									&:hover,
-									&:active,
-									&.active {
-										color: $red;
-									}
-								}
-								.mega-inside {
-									align-items: flex-start;
-									background-color: transparent;
-									border: none;
-									box-shadow: none;
-									display: flex;
-									flex-direction: column;
-									gap: 1em;
-									margin-top: 1.5em;
-									position: relative;
-									@include media-breakpoint-down(md) {
-										display: none;
-									}
-									li {
-										a {
-
-											&.dropdown-item {
-												color: $progrey-light;
-												font-family: "myriad-pro", sans-serif;
-												font-weight: 400;
-												font-style: normal;
-												padding-left: 0;
-											}
-											&:active,
-											&.active {
-												background-color: transparent;
-												background-image: none;
-												color: $blue;
-											}
-											&:hover {
-												background-color: transparent;
-												background-image: none;
-												color: $blue;
-											}
-										}
-									}
-								}
-							}
+					}
+				}
+				&.ubermenu-current-menu-item {
+					> .ubermenu-target {
+						background: transparent;
+						font-weight: 700;
+						> .ubermenu-target-text {
+							font-weight: 700;
 						}
 					}
 				}
@@ -427,6 +326,7 @@ header {
 }
 .navbar-brand {
 	padding-left: 16px;
+	line-height: 100px;
 	img {
 		height: 22px;
 	}

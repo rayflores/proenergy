@@ -52,123 +52,26 @@ import * as bootstrap from 'bootstrap';
 		function checkWidth(){
 			var top = $(window).scrollTop();
 			var width = $(window).width();
-			if ( width > 767 ) {
-				if (top >= 220 && !$('nav.second-navbar').hasClass('d-none')) {
-					$('nav#header').addClass('small-nav');
-					$('nav.second-navbar').addClass('d-none').fadeOut(1000);
-					$('.mega-container.show').css('top', '60px');
+			console.log('top: '+top+' width: '+width);
+			if ( width > 992 ) {
+				if (top >= 200) {
+					$('.menu-integration').addClass('small-nav');
+					$('nav.second-navbar').removeClass('d-lg-block').fadeOut(1000);
 				} 
-				if (top < 220 && $('nav.second-navbar').hasClass('d-none')) {
-					$('nav#header').removeClass('small-nav');
-					$('.mega-container.show').css('top', '100px');
-					setTimeout(function(){
-						$('nav.second-navbar').removeClass('d-none').fadeIn(3000);
-					},300);
+				if (top < 200) {
+					$('.menu-integration').removeClass('small-nav');
+					$('nav.second-navbar').addClass('d-lg-block').fadeIn(1000);
 				}
-			}
+			} 
+
 		}
 		// top navigation hide on scroll down
 		var isMobile = ajax_object.isMobile;
 		if (isMobile == '' || isMobile == 'false') {
-			$(window).on('scroll load', function () {
+			$(window).on('scroll load resize', function () {
 				checkWidth();
 			});
-			$(window).on('resize', function () {
-				var newWidth = $(window).width();
-				var newTop = $(window).scrollTop();
-				if ( newWidth > 767 ) {
-					if (newTop >= 220 && !$('nav.second-navbar').hasClass('d-none')) {
-						$('nav#header').addClass('small-nav');
-						$('nav.second-navbar').addClass('d-none').fadeOut(1000);
-						$('.mega-container.show').css('top', '60px');
-					} 
-					if (newTop < 220 && $('nav.second-navbar').hasClass('d-none')) {
-						$('nav#header').removeClass('small-nav');
-						$('.mega-container.show').css('top', '100px');
-						setTimeout(function(){
-							$('nav.second-navbar').removeClass('d-none').fadeIn(3000);
-						},300);
-					}
-				}
-			});
+
 		} 
-		
-		var isMobile = ajax_object.isMobile;
-		if (isMobile == '1' ) {
-			$('.nav-link').on('click', function(e) {
-				if ( $(this).hasClass('open') ) {
-				
-				} else {
-					e.preventDefault();
-					$(this).addClass('open');
-
-				}
-			});
-			$('.dropdown-mega-header a').on('click', function(e) {
-				if ( $(this).hasClass('open') ) {
-				
-				} else {
-					e.preventDefault();
-					$(this).addClass('open');
-					$(this).next('.mega-inside').addClass('show').css('display', 'block');
-				}
-			});
-		}
-		// $('li.dropdown-here').on('show.bs.dropdown', function () {
-		// 	console.log( "dropped" );
-		// 	var theWidth = $(window).width();
-		// 	var theTop = $(window).scrollTop();
-		// 	if ( theTop >= 220 && theWidth > 767 ) {
-		// 		$('ul.dropdown-menu.mega-container').css('top', '60px');
-		// 	} else {
-		// 		$('ul.dropdown-menu.mega-container').css('top', '100px');
-		// 	}
-		// });
-
-		$(document).ready(function() {
-			var isMobile = ajax_object.isMobile;
-			console.log( 'isMobile: ' + isMobile );
-			if ( isMobile == 'false') {
-				$('.dropdown-here').hover(function() {
-					var theWidth = $(window).width();
-					var theTop = $(window).scrollTop();
-					var theContainer = $(this).next('ul.dropdown-menu.mega-container');
-					console.log('theTop: ' + theTop + ' theWidth: ' + theWidth);
-					
-				$(this).addClass('show');
-				$(this).find('.mega-container').addClass('show').fadeIn(500);
-				if ( theTop >= 220  ) {
-					console.log('top>=220');
-					$(this).find('.mega-container').css('top', '60px');
-					} else {
-						console.log('top<220');
-						$(this).find('.mega-container').css('top', '100px');
-					}
-
-					if ($(this).hasClass('show') && 'About Us' == $(this).children().first().attr('title')) {
-						var aboutUs = $(this).children().first();
-						var megaContainer = aboutUs.next('.mega-container');
-						megaContainer.addClass('d-flex justify-content-end');
-						//megaContainer.find('li').addClass('text-center');
-					}
-
-				}, function() {
-				$(this).removeClass('show');
-				$(this).find('.mega-container').removeClass('show');
-				if ('About Us' == $(this).children().first().attr('title')) {
-					var aboutUs = $(this).children().first();
-					var megaContainer = aboutUs.next('.mega-container');
-					megaContainer.removeClass('d-flex');
-					//megaContainer.find('li').addClass('text-center');
-				}
-				}).on('click', function(e) {
-					$('li').removeClass('current-menu-item');
-					$(this).find('.dropdown-toggle').addClass('active');
-				});
-			} else {
-
-			}
-
-	  });
 	});
 })();
