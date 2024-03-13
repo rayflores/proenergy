@@ -8,7 +8,7 @@ $link = get_sub_field('at_link');
 ?>
 <section id="section_all-text">
     <div class="pt-2">
-        <div class="row">
+        <div class="row g-0">
             <div class="all-text-wrapper col-lg-12">
                 <div class="all-text-container col-lg-12 pt-5 pb-5">
                     <?php
