@@ -11,7 +11,7 @@ $aa_tb_banner_text = get_sub_field('aa_tb_banner_text') ? get_sub_field('aa_tb_b
             background: linear-gradient(-60deg, #FFF 15%, #862633 15%);
         }
         .aa-tb-banner h2 {
-            font-family: 'eurstile', sans-serif;
+            font-family: "eurostile", sans-serif;
             font-size: 2.88em;
             font-weight: 700;
             letter-spacing: 0;
@@ -21,7 +21,7 @@ $aa_tb_banner_text = get_sub_field('aa_tb_banner_text') ? get_sub_field('aa_tb_b
             padding-left: 1rem;
         }
         #section_areoadvantage_tb ul li {
-            font-family: 'myriad-pro', sans-serif;
+            font-family: "myriad-pro", sans-serif;
             font-size: 1.125em;
             line-height: 1.5em;
             color: #53565A;

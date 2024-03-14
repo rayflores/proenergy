@@ -43,15 +43,15 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             text-transform: uppercase;
             z-index: 0;
             font-family: "eurostile", sans-serif;
-            font-size: 12px;
+            font-size: 18px;
             font-weight: 700;
             color: <?php echo $aa_jt_half_text_color; ?>
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-header-container h2 {
             font-family : "eurostile", sans-serif;
-            font-size : 35px;
-            font-weight: 700;
-            line-height : 36px;
+            font-size : 2.92em;
+            font-weight: 900;
+            line-height : 45px;
             letter-spacing : 0.35px;
             color : <?php echo $aa_jt_half_text_color; ?>;
         }
@@ -72,13 +72,13 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         .<?php echo $aa_uuid; ?> .aa-jt-half-bullet-point-heading-container h1 {
             font-family : "eurostile", sans-serif;
             font-size : 45px;
-            font-weight: 700;
-            line-height : 54.85px;
+            font-weight: 900;
+            line-height : 45px;
             text-transform : uppercase;
             color : <?php echo $aa_jt_half_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-bullet-point-description {
-            font-family : "Eurostile-Normal";
+            font-family : "eurostile", sans-serif;
             font-size : 24px;
             line-height : 31.1px;
             letter-spacing : normal;
@@ -113,17 +113,18 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             margin-left: 1em;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-right-header {
-            font-family: "MyriadPro-Regular";
+            font-family: "myriad-pro", sans-serif;
             font-size: 18px;
             font-weight: 700;
             line-height: 25px;
+            margin-top: 10px;
             color: <?php echo $aa_jt_half_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-list-container ul {
             padding-left: 1rem;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-list-container ul li {
-            font-family: "MyriadPro-Regular";
+            font-family: "myriad-pro", sans-serif;
             font-size: 18px;
             line-height: 30px;
             padding-left: 15px;
