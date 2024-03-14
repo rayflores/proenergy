@@ -103,14 +103,14 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 <div class="row g-0">
                     <div class="col-12">
                         <div class="aa-just-text-header-container ps-3 pt-3">
-                            <h2><?php echo $aa_just_text_header; ?></h2>
+                            <h2 class="ps-4"><?php echo $aa_just_text_header; ?></h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-5">
                         <div class="aa-just-text-paragraph-container ps-3 pt-3">
-                            <p><?php echo $aa_just_text_paragraph; ?></p>
+                            <p class="ps-4"><?php echo $aa_just_text_paragraph; ?></p>
                         </div>
                     </div>
                 </div>
