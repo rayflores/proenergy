@@ -118,7 +118,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         <div class="row g-0">
             <div class="col-12 col-lg-4 text-white order-lg-2 order-1 showcase-aa-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_birp_image_id)); ?>');">
             </div>
-            <div class="col-12 col-lg-8 order-lg-1 order-2 showcase-text my-auto">
+            <div class="col-12 col-lg-8 order-lg-1 order-2 showcase-text my-auto py-5 py-lg-0">
                 <?php 
                 if ( !empty($aa_birp_top_text) ) : ?>
                 <div class="aa-birp-top-text-container position-relative ps-5 mx-4" data-content="<?php echo $aa_birp_top_text; ?>"></div>
