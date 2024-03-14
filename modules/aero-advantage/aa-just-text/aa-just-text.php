@@ -45,9 +45,9 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         }
         .<?php echo $aa_jt_uuid; ?> .aa-just-text-header-container h2 {
             font-family : "eurostile", sans-serif;
-            font-size : 35px;
-            font-weight : 700;
-            line-height : 36px;
+            font-size : 2.92em;
+            font-weight : 900;
+            line-height : 45px;
             letter-spacing : 0.35px;
             color : <?php echo $aa_just_text_text_color; ?>;
         }
@@ -99,7 +99,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
     <div class="row g-0 pt-5">
         <div class="container-fluid p-0">
             <div class="aa-just-text-top-text-container position-relative" data-content="<?php echo $aa_just_text_top_text; ?>"></div>
-            <div class="p-4 ps-md-5 ms-3 pe-md-5 pb-5">
+            <div class="p-4 ps-lg-5 ms-3 pe-lg-5 pb-5">
                 <div class="row g-0">
                     <div class="col-12">
                         <div class="aa-just-text-header-container ps-3 pt-3">
@@ -108,7 +108,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-lg-5">
                         <div class="aa-just-text-paragraph-container ps-3 pt-3">
                             <p><?php echo $aa_just_text_paragraph; ?></p>
                         </div>

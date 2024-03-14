@@ -55,7 +55,7 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="aa_all-text-wrapper col-12 px-2 px-md-5 pt-3 pb-4">
+            <div class="aa_all-text-wrapper col-12 px-2 px-md-5 pt-5 pb-4">
                 <div class="aa_all-text-container col-12 pb-5 ps-4">
                     <?php
                     if ( '' !== $aa_all_text_header ) : ?>
