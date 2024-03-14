@@ -100,7 +100,6 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         font-style: italic;
         line-height : 25px;
         color : #a3a8aa;
-        color : rgb(83, 86, 90);
     }
     .<?php echo $aa_birp_uuid; ?> .aa-birp-link::after{
         content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow.png');
@@ -117,9 +116,9 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-12 col-md-4 text-white order-md-2 order-1 showcase-aa-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_birp_image_id)); ?>');">
+            <div class="col-12 col-lg-4 text-white order-lg-2 order-1 showcase-aa-birp-img reveal" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_birp_image_id)); ?>');">
             </div>
-            <div class="col-12 col-md-8 order-md-1 order-2 showcase-text my-auto">
+            <div class="col-12 col-lg-8 order-lg-1 order-2 showcase-text my-auto">
                 <?php 
                 if ( !empty($aa_birp_top_text) ) : ?>
                 <div class="aa-birp-top-text-container position-relative ps-5 mx-4" data-content="<?php echo $aa_birp_top_text; ?>"></div>
@@ -128,7 +127,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
                     <h2 class="ps-2"><?php echo $aa_birp_header; ?></h2>
                 </div>
                 <div class="aa-birp-paragraph-container ps-5 ms-4 pt-3">
-                    <p class="col-12 col-md-6 ps-2"><?php echo $aa_birp_paragraph; ?></p>
+                    <p class="col-12 col-lg-6 ps-2"><?php echo $aa_birp_paragraph; ?></p>
                 </div>
                 <?php 
                 if ( !empty($aa_birp_link) ) : ?>
