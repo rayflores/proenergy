@@ -69,13 +69,14 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family: 'eurostile', sans-serif;
+        font-family: "eurostile", sans-serif;
         font-size: 18px;
         font-weight: 700;
     }
     .aa-bir-header-container h2 {
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 35px;
+        font-weight : 700;
         line-height : 36px;
         letter-spacing : 0.35px;
         margin-top: 25px;
@@ -89,7 +90,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         background : linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(253, 253, 253, 1) 24.65%, rgba(245, 244, 244, 1) 100%, rgba(231, 230, 230, 1) 50.46%, rgba(211, 210, 211, 1) 60.62%, rgba(186, 185, 185, 1) 69.85%, rgba(155, 153, 153, 1) 78.41%, rgba(117, 115, 116, 1) 86.44%, rgba(76, 72, 73, 1) 93.85%, rgba(35, 31, 32, 1) 100%);
     }
     .aa-bir-paragraph-container p {
-        font-family : "MyriadPro-Regular";
+        font-family : "myriad-pro", sans-serif;
         font-size : 18px;
         line-height : 22px;
         color : #53565A;
@@ -97,14 +98,15 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
     }
     .aa-bir-bullet-percentage{
         color: <?php echo $aa_bir_bullet_color; ?>;
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 45px;
+        font-weight: 700;
         line-height : 54.85px;
         text-transform : uppercase;
     }
     .aa-bir-bullet-text{
         color: <?php echo $aa_bir_bullet_color; ?>;
-        font-family: 'Eurostile-Normal';
+        font-family: 'eurostile', sans-serif;
         font-size : 24px;
         line-height : 31.1px;
         letter-spacing : 0.24px;
@@ -113,8 +115,9 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         background: linear-gradient(-60deg, #FFF 15%, #862633 15%);
     }
     .aa-bir-link {
-        font-family : "MyriadPro-Italic";
+        font-family : "myriad-pro", sans-serif;
         font-size : 18px;
+        font-style: italic;
         line-height : 25px;
         color : #FFFFFF;
         color : rgb(255, 255, 255);
