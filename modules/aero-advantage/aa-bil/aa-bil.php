@@ -47,15 +47,16 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
     }
     .aa-bil-headline {
         color: #53565A;
-        font-family: 'eurostile', sans-serif;
+        font-family: "eurostile", sans-serif;
         font-size: 2.25em;
-        font-weight: 700;
-        letter-spacing: 0;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        line-height: 36px;
         margin-bottom: 0.5em;
         padding-left: 80px;
     }
     .aa-bil-paragraph {
-        font-family: 'myriad-pro', sans-serif;
+        font-family: "myriad-pro", sans-serif;
         font-size: 1.125em;
         padding-left: 80px;
     }
@@ -72,7 +73,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         color : rgb(134, 38, 51);
     }
     .aa-bil-bullet-text {
-        font-family : 'eurostile', sans-serif;
+        font-family : "eurostile", sans-serif;
         font-size : 24px;
         line-height : 31.1px;
         letter-spacing : 0.24px;
@@ -147,10 +148,10 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-12 col-md-5 aa-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_bil_image_id)); ?>');">
+            <div class="col-12 col-lg-5 aa-bil-image-container p-0 reveal showcase-img" style="background-image: url('<?php echo esc_url(wp_get_attachment_url($aa_bil_image_id)); ?>');">
                 <div class="aa-bil-image-mask"></div>
             </div>
-            <div class="col-12 col-md-7 aa-bil-text-container p-0 pt-5 mt-3">
+            <div class="col-12 col-lg-7 aa-bil-text-container p-0 pt-5 mt-3">
                 <div class="aa-bil-top-text col-12" data-content="<?php echo $aa_bil_top_text !== '' ? $aa_bil_top_text : ''; ?>"></div>
                 <div class="aa-bil-headline pt-4">
                     <?php echo $aa_bil_header; ?>

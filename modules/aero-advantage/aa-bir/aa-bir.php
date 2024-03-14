@@ -75,9 +75,9 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
     }
     .aa-bir-header-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 35px;
-        font-weight : 700;
-        line-height : 36px;
+        font-size : 2.92em;
+        font-weight : 900;
+        line-height : 45px;
         letter-spacing : 0.35px;
         margin-top: 25px;
         color : #53565A;
