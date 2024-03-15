@@ -164,7 +164,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                                         $index = get_row_index();
                                         $aa_jt_half_list_item = get_sub_field( 'aa_jt_half_list_item' ) ? get_sub_field( 'aa_jt_half_list_item') : ''; ?>
 
-                                        <li class="aa-jt-half-list-item item-<?php echo $index; ?>">
+                                        <li class="aa-jt-half-list-item py-2 item-<?php echo $index; ?>">
                                             <?php echo $aa_jt_half_list_item; ?>
                                         </li>
                                     <?php endwhile; ?>
