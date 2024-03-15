@@ -63,7 +63,7 @@ $featured_image_id = get_post_thumbnail_id();
 			}
 
 			.careers_all-text-paragraph-container p {
-				font-family: "MyriadPro-Regular";
+				font-family: "myriad-pro", sans-serif;
 				font-size: 18px;
 				line-height: 25px;
 				color: #53565A;

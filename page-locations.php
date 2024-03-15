@@ -47,24 +47,17 @@ $featured_image_id = get_post_thumbnail_id();
     <section id="section_loc_all-text">
         <style>
             .loc_container h2 {
-                font-family: "Eurostile-Bold";
+                font-family: "eurostile", sans-serif;
                 font-size: 35px;
+                font-weight: 900;
                 line-height: 36px;
                 letter-spacing: 0.35px;
                 color: #53565A;
                 color: rgb(83, 86, 90);
             }
 
-            .loc_at-link {
-                color: #53565A;
-                font-family: "Eurostile-Bold";
-                font-size: 18px;
-                line-height: 28px;
-                letter-spacing: 0.18px;
-            }
-
             .loc_paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -73,18 +66,22 @@ $featured_image_id = get_post_thumbnail_id();
                 padding-right: 0;
             }
             .loc-link {
-                font-family: "MyriadPro-Italic";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
+                font-style: italic;
                 line-height: 25px;
                 color: rgba(163, 168, 170, 0.75);
                 text-decoration: none;
             }
             .loc-link::after {
-                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-grey.svg');
+                content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-gray.svg');
                 display: inline-block;
                 width: 40px;
                 height: 0;
                 margin-left: 1em;
+            }
+            .loc-link:hover::after {
+                margin-left: 1.5em;
             }
         </style>
         <div class="container-fluid p-0">
@@ -129,21 +126,22 @@ $featured_image_id = get_post_thumbnail_id();
                 line-height: 25.7px;
                 text-transform: uppercase;
                 z-index: 0;
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 12px;
                 color: #53565A
             }
 
             .loc-1 .loc-header-container h2 {
-                font-family: "Eurostile-Bold";
+                font-family: "eurostile", sans-serif;
                 font-size: 35px;
+                font-weight: 900;
                 line-height: 36px;
                 letter-spacing: 0.35px;
                 color: #53565A;
             }
 
             .loc-1 .loc-paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -166,7 +164,7 @@ $featured_image_id = get_post_thumbnail_id();
             }
 
             .loc-1 .loc-bullet-point-description {
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 24px;
                 line-height: 31.1px;
                 letter-spacing: 0.24px;
@@ -235,7 +233,7 @@ $featured_image_id = get_post_thumbnail_id();
                 line-height: 25.7px;
                 text-transform: uppercase;
                 z-index: 0;
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 12px;
                 color: #53565A
             }
@@ -249,7 +247,7 @@ $featured_image_id = get_post_thumbnail_id();
             }
 
             .loc-2 .loc-paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -272,7 +270,7 @@ $featured_image_id = get_post_thumbnail_id();
             }
 
             .loc-2 .loc-bullet-point-description {
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 24px;
                 line-height: 31.1px;
                 letter-spacing: 0.24px;

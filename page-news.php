@@ -64,7 +64,7 @@ $featured_image_id = get_post_thumbnail_id();
 			}
 
 			.news_all-text-paragraph-container p {
-				font-family: "MyriadPro-Regular";
+				font-family: "myriad-pro", sans-serif;
 				font-size: 18px;
 				line-height: 25px;
 				color: #53565A;
@@ -162,7 +162,7 @@ $featured_image_id = get_post_thumbnail_id();
 				min-height: 6.8rem;
 			}
 			.card-text {
-				font-family : "MyriadPro-Regular";
+				font-family : "myriad-pro", sans-serif;
 				font-size : 18px;
 				line-height : 22px;
 				color : #53565A;
@@ -175,8 +175,9 @@ $featured_image_id = get_post_thumbnail_id();
 				margin-left: 1em;
 			}
 			.card-footer a {
-				font-family : "MyriadPro-Italic";
+				font-family : "myriad-pro", sans-serif;
 				font-size : 18px;
+				font-style: italic;
 				line-height : 25px;
 				color : #A3A8AA;
 			}

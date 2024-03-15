@@ -55,12 +55,13 @@ $ab_birp_image_srcset = get_image_srcset($ab_birp_image_id);
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family: "Eurostile-Normal";
+        font-family: "eurostile", sans-serif;
         font-size: 12px;
     }
     .ab-birp-header-container h2 {
-        font-family : "Eurostile-Bold";
+        font-family : "eurostile", sans-serif;
         font-size : 35px;
+        font-weight: 900;
         line-height : 36px;
         letter-spacing : 0.35px;
         margin-top: 25px;

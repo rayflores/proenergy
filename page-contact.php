@@ -63,7 +63,7 @@ $featured_image_id = get_post_thumbnail_id();
 			}
 
 			.news_all-text-paragraph-container p {
-				font-family: "MyriadPro-Regular";
+				font-family: "myriad-pro", sans-serif;
 				font-size: 18px;
 				line-height: 25px;
 				color: #53565A;
@@ -93,7 +93,7 @@ $featured_image_id = get_post_thumbnail_id();
                 letter-spacing: 0.18px;
             }
             .contact-1 .contact_paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -102,8 +102,10 @@ $featured_image_id = get_post_thumbnail_id();
                 padding-right: 0;
             }
             .contact-1 .contact-link {
-                font-family: "MyriadPro-Italic";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
+                font-style: italic;
+                font-style: italic;
                 line-height: 25px;
                 color: rgba(163, 168, 170, 0.75);
                 text-decoration: none;
@@ -138,7 +140,7 @@ $featured_image_id = get_post_thumbnail_id();
                 line-height: 25.7px;
                 text-transform: uppercase;
                 z-index: 0;
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 12px;
                 color: #53565A
             }
@@ -170,7 +172,7 @@ $featured_image_id = get_post_thumbnail_id();
                 letter-spacing: 0.18px;
             }
             .contact-2 .contact_paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -179,8 +181,9 @@ $featured_image_id = get_post_thumbnail_id();
                 padding-right: 0;
             }
             .contact-2 .contact-link {
-                font-family: "MyriadPro-Italic";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
+                font-style: italic;
                 line-height: 25px;
                 color: rgba(163, 168, 170, 0.75);
                 text-decoration: none;
@@ -215,7 +218,7 @@ $featured_image_id = get_post_thumbnail_id();
                 line-height: 25.7px;
                 text-transform: uppercase;
                 z-index: 0;
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 12px;
                 color: #53565A
             }
@@ -244,7 +247,7 @@ $featured_image_id = get_post_thumbnail_id();
                 letter-spacing: 0.18px;
             }
             .contact-3 .contact_paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -253,8 +256,9 @@ $featured_image_id = get_post_thumbnail_id();
                 padding-right: 0;
             }
             .contact-3 .contact-link {
-                font-family: "MyriadPro-Italic";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
+                font-style: italic;
                 line-height: 25px;
                 color: rgba(163, 168, 170, 0.75);
                 text-decoration: none;
@@ -289,7 +293,7 @@ $featured_image_id = get_post_thumbnail_id();
                 line-height: 25.7px;
                 text-transform: uppercase;
                 z-index: 0;
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 12px;
                 color: #53565A
             }
@@ -321,7 +325,7 @@ $featured_image_id = get_post_thumbnail_id();
                 letter-spacing: 0.18px;
             }
             .contact-4 .contact_paragraph-container p {
-                font-family: "MyriadPro-Regular";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
                 line-height: 25px;
                 color: #53565A;
@@ -330,8 +334,10 @@ $featured_image_id = get_post_thumbnail_id();
                 padding-right: 0;
             }
             .contact-4 .contact-link {
-                font-family: "MyriadPro-Italic";
+                font-family: "myriad-pro", sans-serif;
                 font-size: 18px;
+                font-style: italic;
+                font-style: italic;
                 line-height: 25px;
                 color: rgba(163, 168, 170, 0.75);
                 text-decoration: none;
@@ -366,7 +372,7 @@ $featured_image_id = get_post_thumbnail_id();
                 line-height: 25.7px;
                 text-transform: uppercase;
                 z-index: 0;
-                font-family: "Eurostile-Normal";
+                font-family: "eurostile", sans-serif;
                 font-size: 12px;
                 color: #53565A
             }
