@@ -3,19 +3,28 @@
  * Module Name: AeroAdvantage Bullet Image Left
  * Description: Template for AeroAdvantage Bullet Image Left Module.
  */
+$aa_bil_uuid = wp_unique_id( 'aa-bil-' );
+$aa_bil_image_id = '';
 $aa_bil_image_id = get_sub_field('aa_bil_image') ? get_sub_field('aa_bil_image') : '';
+$aa_bil_image_srcset = '';
 $aa_bil_image_srcset = get_image_srcset($aa_bil_image_id);
+$aa_bil_top_text = '';
 $aa_bil_top_text = get_sub_field('aa_bil_top_text') ? get_sub_field('aa_bil_top_text') : '';
+$aa_bil_header = '';
 $aa_bil_header = get_sub_field('aa_bil_header') ? get_sub_field('aa_bil_header') : '';
+$aa_bil_paragraph = '';
 $aa_bil_paragraph = get_sub_field('aa_bil_paragraph') ? get_sub_field('aa_bil_paragraph') : '';
+$aa_bil_percentage = '';
 $aa_bil_percentage = get_sub_field('aa_bil_percentage') ? get_sub_field('aa_bil_percentage') : '';
+$aa_bil_text = '';
 $aa_bil_text = get_sub_field('aa_bil_text') ? get_sub_field('aa_bil_text') : '';
+$aa_bil_link = '';
 $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
 ?>
-<section id="section_areoadvantage_bil" class="p-0 showcase">
+<section id="section_areoadvantage_bil" class="<?php echo $aa_bil_uuid; ?> p-0 showcase">
 <style>
 
-    .aa-bil-top-text {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-top-text {
         line-height: 1em;
         position: relative;
         outline: 0;
@@ -24,7 +33,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         text-align: left;
         height: 1.5em;
     }
-    .aa-bil-top-text::before{
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-top-text::before{
         content: '';
         position: absolute;
         top: 50%;
@@ -34,7 +43,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         background: #A3A8AA;
         z-index: 1;
     }
-    .aa-bil-top-text::after{
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-top-text::after{
         color: #A3A8AA;
         content: attr(data-content);
         display: inline-block;
@@ -48,7 +57,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         font-size: 18px;
         font-weight: 700;
     }
-    .aa-bil-headline {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-headline {
         color: #53565A;
         font-family: "eurostile", sans-serif;
         font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
@@ -58,15 +67,15 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         margin-bottom: 0.5em;
         padding-left: 80px;
     }
-    .aa-bil-paragraph {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-paragraph {
         font-family: "myriad-pro", sans-serif;
         font-size: 1.125em;
         padding-left: 80px;
     }
-    .aa-bil-bullet-container {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-container {
         padding-left: 80px;
     }
-    .aa-bil-bullet-percentage {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-percentage {
         font-family : "eurostile", sans-serif;
         font-size : 45px;
         font-weight : 700;
@@ -75,7 +84,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         color : #862633;
         color : rgb(134, 38, 51);
     }
-    .aa-bil-bullet-text {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-text {
         font-family : "eurostile", sans-serif;
         font-size : 24px;
         line-height : 31.1px;
@@ -83,10 +92,10 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         color : #862633;
         color : rgb(134, 38, 51);
     }
-    .aa-bil-link-container {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-link-container {
         padding-left: 80px;
     }
-    .aa-bil-link-container a {
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-link-container a {
         font-family : "myriad-pro";
         font-size : 18px;
         font-style: italic;
@@ -94,17 +103,17 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         color : #862633;
         color : rgb(134, 38, 51);
     }
-    .aa-bil-link-container a::after{
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-link-container a::after{
         content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-red.png');
         display: inline-block;
         width: 40px;
         height: 0;
         margin-left: 1em;
     }
-    .aa-bil-link-container a:hover::after{
+    .<?php echo $aa_bil_uuid; ?> .aa-bil-link-container a:hover::after{
         margin-left: 1.5em;
     }
-    .showcase .showcase-img {
+    .<?php echo $aa_bil_uuid; ?>.showcase .showcase-img {
         min-height: 40rem;
         background-position: center;
         background-size: cover;
@@ -129,27 +138,27 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         transform: translateX(-100%);
     } */
     @media screen and (max-width: 768px) {
-        .aa-bil-top-text::before{
+        .<?php echo $aa_bil_uuid; ?> .aa-bil-top-text::before{
             width: 20px;
         }
-        .aa-bil-top-text::after{
+        .<?php echo $aa_bil_uuid; ?> .aa-bil-top-text::after{
             font-size: 14px;
             letter-spacing: 0.25em;
             padding-left: 40px;
         }
-        .aa-bil-headline {
+        .<?php echo $aa_bil_uuid; ?> .aa-bil-headline {
             padding-left: 40px;
         }
-        .aa-bil-paragraph {
+        .<?php echo $aa_bil_uuid; ?> .aa-bil-paragraph {
             padding-left: 40px;
         }
-        .aa-bil-bullet-container {
+        .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-container {
             padding-left: 40px;
         }
-        .aa-bil-link-container {
+        .<?php echo $aa_bil_uuid; ?> .aa-bil-link-container {
             padding-left: 40px;
         }
-        .showcase .showcase-img {
+        .<?php echo $aa_bil_uuid; ?>.showcase .showcase-img {
             min-height: 20rem;
         }
         
