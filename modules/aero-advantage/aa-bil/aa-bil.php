@@ -63,13 +63,14 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
         font-weight: 900;
         letter-spacing: 0.01em;
-        line-height: 36px;
+        line-height: clamp(1.75rem, 1.393rem + 0.952vw, 2.25rem);
         margin-bottom: 0.5em;
         padding-left: 80px;
     }
     .<?php echo $aa_bil_uuid; ?> .aa-bil-paragraph {
         font-family: "myriad-pro", sans-serif;
-        font-size: 1.125em;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+        line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
         padding-left: 80px;
     }
     .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-container {
