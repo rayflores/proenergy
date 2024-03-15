@@ -8,17 +8,18 @@ $sus_uuid = wp_unique_id( 'sus-three-bullets-' );
 <section id="section_sus-three-bullets" class="m-5 pb-5 <?php echo $sus_uuid; ?>">
 <style>
     .<?php echo $sus_uuid; ?> .sus-bullet-percentage {
-        font-family : "Eurostile-Bold";
-        font-size : 35px;
-        line-height : 54.85px;
+        font-family : "eurostile", sans-serif;
+        font-size: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
+        font-style: 700;
+        line-height: clamp(0.75rem, -1.163rem + 5.101vw, 3.428rem);
         text-transform : uppercase;
         color : #862633;
         color : rgb(134, 38, 51);
     }
     .<?php echo $sus_uuid; ?> .sus-bullet-text {
-        font-family : "Eurostile-Normal";
-        font-size : 24px;
-        line-height : 26px;
+        font-family : "eurostile", sans-serif;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+        line-height: clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
         letter-spacing : 0.24px;
         color : #53565A;
         color : rgb(83, 86, 90);

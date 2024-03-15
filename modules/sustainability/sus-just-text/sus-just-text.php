@@ -45,18 +45,19 @@ if ( "rgb(255, 255, 255)" === $sus_jt_text_color ) {
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
         }
         .<?php echo $sus_uuid; ?> .sus-just-text-header-container h2 {
-            font-family : "Eurostile-Bold";
+            font-family : "eurostile", sans-serif;
             font-size : 35px;
+            font-weight: 900;
             line-height : 36px;
             letter-spacing : 0.35px;
             color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(83,86,90)'; ?>;
         }
         .<?php echo $sus_uuid; ?> .sus-just-text-paragraph-container p {
-            font-family : "MyriadPro-Regular";
+            font-family : "myriad-pro", sans-serif;
             font-size : 17px;
             line-height : 25px;
             color : <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgb(83,86,90)'; ?>;
@@ -65,8 +66,9 @@ if ( "rgb(255, 255, 255)" === $sus_jt_text_color ) {
             padding-right: 0;
         }
         .<?php echo $sus_uuid; ?> .sus-jt-link-container a {
-            font-family: "MyriadPro-Italic";
+            font-family: "myriad-pro", sans-serif;
             font-size: 18px;
+            font-style: italic;
             line-height: 25px;
             color: <?php echo 'rgb(255, 255, 255)' === $sus_jt_text_color ? 'rgb(255, 255, 255)' : 'rgba(163, 168, 170, 0.5)'; ?>;
             text-decoration: none;
@@ -78,6 +80,9 @@ if ( "rgb(255, 255, 255)" === $sus_jt_text_color ) {
             width: 40px;
             height: 0;
             margin-left: 1em;
+        }
+        .<?php echo $sus_uuid; ?> .sus-jt-link-container a:hover::after {
+            margin-left: 1.5em;
         }
     </style>
     <div class="container-fluid p-0">
