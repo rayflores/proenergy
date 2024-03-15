@@ -158,7 +158,9 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
             letter-spacing: 0.25em;
             padding-left: 40px;
         }
-
+        .<?php echo $aa_bir_uuid; ?> .aa-bir-header-container h2 {
+            line-height: 35px;
+        }
     }
 </style>
     <div class="container-fluid p-0">
@@ -171,8 +173,8 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
                     <div class="inside-showcase-text col-9">
                         <div class="aa-bir-top-text-container" data-content="<?php echo $aa_bir_top_text; ?>">
                         </div>
-                        <div class="aa-bir-header-container ps-4">
-                            <h2 class="ps-2"><?php echo $aa_bir_header; ?></h2>
+                        <div class="aa-bir-header-container ps-0 ps-lg-4">
+                            <h2 class="ps-0 ps-lg-2"><?php echo $aa_bir_header; ?></h2>
                         </div>
                         <div class="aa-bir-paragraph-container ps-4 pt-3">
                             <p class="ps-2"><?php echo $aa_bir_paragraph; ?></p>
