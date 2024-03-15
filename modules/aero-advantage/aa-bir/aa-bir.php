@@ -160,6 +160,11 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         }
         .<?php echo $aa_bir_uuid; ?> .aa-bir-header-container h2 {
             line-height: 35px;
+            margin-left: -8px;
+        }
+        .<?php echo $aa_bir_uuid; ?> .aa-bir-paragraph-container p,
+        .<?php echo $aa_bir_uuid; ?> .aa-bir-bullet-container {
+            margin-left: -8px;
         }
     }
 </style>
@@ -176,21 +181,21 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
                         <div class="aa-bir-header-container ps-0 ps-lg-4">
                             <h2 class="ps-0 ps-lg-2"><?php echo $aa_bir_header; ?></h2>
                         </div>
-                        <div class="aa-bir-paragraph-container ps-4 pt-3">
-                            <p class="ps-2"><?php echo $aa_bir_paragraph; ?></p>
+                        <div class="aa-bir-paragraph-container ps-lg-4 pt-3">
+                            <p class="ps-lg-2"><?php echo $aa_bir_paragraph; ?></p>
                         </div>
-                        <div class="aa-bir-bullet-container ps-4 pt-5">
-                            <div class="aa-bir-bullet-percentage ps-2">
+                        <div class="aa-bir-bullet-container ps-lg-4 pt-5">
+                            <div class="aa-bir-bullet-percentage ps-lg-2">
                                 <?php echo $aa_bir_percentage; ?>
                             </div>
-                            <div class="aa-bir-bullet-text ps-2">
+                            <div class="aa-bir-bullet-text ps-lg-2">
                                 <?php echo $aa_bir_text; ?>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="aa-bir-link-container ps-5 py-4">
-                    <a class="aa-bir-link ms-4 ps-2" href="<?php echo $aa_bir_link['url']; ?>" target="<?php echo $aa_bir_link['target']; ?>"><?php echo $aa_bir_link['title']; ?></a>
+                    <a class="aa-bir-link ms-4 ps-4 ps-lg-2" href="<?php echo $aa_bir_link['url']; ?>" target="<?php echo $aa_bir_link['target']; ?>"><?php echo $aa_bir_link['title']; ?></a>
                 </div>
             </div>
         </div>
