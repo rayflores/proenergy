@@ -13,7 +13,7 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
         font-family : "eurostile", sans-serif;
         font-size: clamp(1.75rem, 1.504rem + .995vw, 2.25rem);
         font-weight: 900;
-        line-height : 45px;
+        line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         letter-spacing : 0.01em;
         color : #53565A;
         color : rgb(83, 86, 90);
@@ -50,6 +50,9 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
         width: 40px;
         height: 0;
         margin-left: 1em;
+    }
+    .ab-all-text-link-container a:hover::after {
+        margin-left: 1.5em;
     }
     
 </style>

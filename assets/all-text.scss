@@ -19,12 +19,14 @@
                 font-size: clamp(1.75rem, 1.504rem + 0.995vw, 2.25rem);
                 font-weight: 800;
                 letter-spacing: 0;
+                line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
                 margin-bottom: 0.5em;
             }
             .all-text-description {
                 font-family: 'myriad-pro', sans-serif;
-                font-size: 1.125em;
+                font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
                 font-weight: 400;
+                line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
             }
             a {
                 &.at-link {
