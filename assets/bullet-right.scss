@@ -64,25 +64,24 @@
     .bir-headline {
         color: #53565A;
         font-family: 'eurostile', sans-serif;
-        font-size: clamp(1.625rem, 1.009rem + 2.488vw, 2.875rem);
+        font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
         font-weight: 800;
         letter-spacing: 0;
+        line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         margin-bottom: 0.5em;
         padding-left: 80px;
         @include media-breakpoint-down(md) {
-            line-height: 26px;
             padding-left: 40px;
             padding-right: 40px;
         }
     }
     .bir-paragraph {
         font-family: 'myriad-pro', sans-serif;
-        font-size: 1.125em;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
         font-weight: 400;
+        line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
         padding-left: 80px;
         @include media-breakpoint-down(md) {
-            font-size: 1.0em;
-            line-height: 1.25em;
             padding-left: 40px;
             padding-right: 40px;
         }
@@ -96,41 +95,32 @@
     }
     .bir-nb-percentage{
         font-family: 'eurostile', sans-serif;
-        font-size: 3.75em;
+        font-size: clamp(2rem, 0.75rem + 3.333vw, 3.75rem);
         font-weight: 800;
         letter-spacing: 0;
-        line-height: 0.75em;
+        line-height: clamp(3.313rem, 2.42rem + 2.381vw, 4.563rem);
         text-transform: uppercase;
-        @include media-breakpoint-down(md) {
-            font-size: 1.75em;
-            line-height: 0.75em;
-        }
     }
     .bir-nb-percentage-header{
-        font-family: 'eurostile';
-        font-size: 2em;
-        font-weight: 400;
+        font-family: "eurostile", sans-serif;
+        font-size: clamp(2rem, 0.75rem + 3.333vw, 3.75rem);
+        font-weight: 700;
         letter-spacing: 0;
-        @include media-breakpoint-down(md) {
-            font-size: 1em;
-            line-height: 1.25em;
-        }
+        line-height: clamp(3.313rem, 2.42rem + 2.381vw, 4.563rem);
     }
     .bir-nb-link{
         color: #A3A8AA;
         font-family: 'myriad-pro', sans-serif;
-        font-size: 1.5em;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
         font-style: italic;
         font-weight: 400;
+        line-height: clamp(1.563rem, 1.205rem + 0.952vw, 2.063rem);
         margin-top: 30px;
-        @include media-breakpoint-down(md) {
-            font-size: 1em;
-        }
     }
     img.image-bg {
-        min-height: 577px;
+        min-height: 40em;
         @include media-breakpoint-down(md) {
-            min-height: 288px;
+            min-height: 20em;
         }
     }
     .bir-image-mask {
