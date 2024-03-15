@@ -24,7 +24,6 @@
         background: #A3A8AA;
         z-index: 1;
         @include media-breakpoint-down(md) {
-        
             width: 20px;
         }
     }
@@ -98,7 +97,7 @@
         font-size: clamp(2rem, 0.75rem + 3.333vw, 3.75rem);
         font-weight: 800;
         letter-spacing: 0;
-        line-height: clamp(3.313rem, 2.42rem + 2.381vw, 4.563rem);
+        line-height: 1em;
         text-transform: uppercase;
     }
     .bir-nb-percentage-header{
@@ -106,7 +105,7 @@
         font-size: clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
         font-weight: 700;
         letter-spacing: 0;
-        line-height: clamp(2.188rem, 1.83rem + 0.952vw, 2.688rem);
+        line-height: 1.5em;
     }
     .bir-nb-link{
         color: #A3A8AA;

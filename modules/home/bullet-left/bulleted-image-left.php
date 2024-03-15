@@ -40,7 +40,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             content: attr(data-content);
             display: inline-block;
             font-family: "eurostile", sans-serif;
-            font-size: 18px;
+            font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
             font-weight: 700;
             letter-spacing: 0.5em;
             padding-left: 80px;
@@ -71,7 +71,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         }
         .bil-paragraph {
             font-family: 'myriad-pro', sans-serif;
-            font-size: 1.5em;
+            font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
             padding-left: 80px;
         }
         .bil-bullets{
@@ -80,22 +80,23 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         .bil-nb-percentage{
             color: <?php echo $bullet_color; ?>;
             font-family: "eurostile", sans-serif;
-            font-size: 3.75em;
+            font-size: clamp(2rem, 0.75rem + 3.333vw, 3.75rem);
             font-weight: 800;
             letter-spacing: 0;
-            line-height: 0.75em;
+            line-height: 1em;
             text-transform: uppercase;
         }
         .bil-nb-percentage-header{
             color: <?php echo $bullet_color; ?>;
             font-family: 'eurostile', sans-serif;
-            font-size: 2em;
+            font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
             letter-spacing: 0;
+            line-height: 1.5em;
         }
         .bil-nb-link{
             color: #A3A8AA;
             font-family: 'myriad-pro', sans-serif;
-            font-size: 1.5em;
+            font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
             font-style: italic;
             margin-top: 30px;
         }
@@ -125,39 +126,24 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
             height: 88px;
         }
         img.image-bg {
-            min-height: 577px;
+            min-height: 40em;
         }
         @media screen and (max-width: 768px) {
             .bil-top-text::before{
                 width: 20px;
             }
             .bil-top-text::after{
-                font-size: 14px;
                 letter-spacing: 0.25em;
                 padding-left: 40px;
             }
             .bil-headline {
-                line-height: 26px;
                 padding-left: 40px;
             }
             .bil-paragraph {
-                font-size: 1.0em;
-                line-height: 1.25em;
                 padding-left: 40px;
             }
             .bil-bullets {
                 padding-left: 40px;
-            }
-            .bil-nb-percentage {
-                font-size: 1.75em;
-                line-height: 0.75em;
-            }
-            .bil-nb-percentage-header {
-                font-size: 1em;
-                line-height: 1.25em;
-            }
-            .bil-nb-link {
-                font-size: 1em;
             }
             .bil-top-text-spacer {
                 height: 44px;
@@ -166,7 +152,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
                 width: 20px;
             }
             img.image-bg {
-                min-height: 288px;
+                min-height: 20em;
             }
             
         }
