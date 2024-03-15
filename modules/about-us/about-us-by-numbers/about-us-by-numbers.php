@@ -25,7 +25,7 @@ $ab_btn_header = get_sub_field('ab_btn_header') !== '' ? get_sub_field('ab_btn_h
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 14px;
         }
         .ab_btn-header {
@@ -46,7 +46,7 @@ $ab_btn_header = get_sub_field('ab_btn_header') !== '' ? get_sub_field('ab_btn_h
             color: rgb(134, 38, 51);
           }
           .ab_btn-card-text-container {
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 24px;
             line-height: 26px;
             color: #53565A;

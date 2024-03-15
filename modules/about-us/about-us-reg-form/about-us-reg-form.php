@@ -23,7 +23,7 @@
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family: "Eurostile-Normal";
+        font-family: "eurostile", sans-serif;
         font-size: 12px;
     }
         .ab-reg-form-header-container {

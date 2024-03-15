@@ -33,7 +33,7 @@ $ab_text_loc_map_image_srcset = get_image_srcset($ab_text_loc_map_image_id);
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family: "Eurostile-Normal";
+        font-family: "eurostile", sans-serif;
         font-size: 12px;
     }
     .ab_text-loc-map-container h2 {

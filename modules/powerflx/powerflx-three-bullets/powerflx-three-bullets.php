@@ -15,7 +15,7 @@
         color : rgb(134, 38, 51);
     }
     .powerflx-bullet-text {
-        font-family : "Eurostile-Normal";
+        font-family : "eurostile", sans-serif;
         font-size : 24px;
         line-height : 26px;
         letter-spacing : 0.24px;

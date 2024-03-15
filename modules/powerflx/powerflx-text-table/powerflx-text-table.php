@@ -47,7 +47,7 @@ $bottom_link = get_sub_field( 'bottom_link' ) ? get_sub_field( 'bottom_link' ) :
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family : "Eurostile-Normal";
+        font-family : "eurostile", sans-serif;
         font-size : 12px;
         color : rgb(163, 168, 170);
     }
@@ -85,7 +85,7 @@ $bottom_link = get_sub_field( 'bottom_link' ) ? get_sub_field( 'bottom_link' ) :
         padding: clamp(1rem, -0.982rem + 2.619vw, 1.375rem) clamp(1rem, -1.429rem + 3.81vw, 2rem) clamp(0rem, -0.357rem + 0.952vw, 0.5rem);
     }
     .pflx-text-table-table .table.table-two tr th.header-top {
-        font-family : "Eurostile-Normal";
+        font-family : "eurostile", sans-serif;
         font-weight : bold;
         font-size: clamp(0.4375rem, -0.1394rem + 0.7692vw, 0.8125rem);
         line-height : clamp(0.75rem, 0.438rem + 0.833vw, 1.188rem);

@@ -45,7 +45,7 @@ $ab_person_bg_color = get_sub_field( 'ab_person_bg_color' ) ? get_sub_field( 'ab
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
         }
         .<?php echo $ab_uuid; ?> .ab-person-name-container h2 {

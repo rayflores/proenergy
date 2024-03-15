@@ -44,7 +44,7 @@ $rs_image_srcset = get_image_srcset( $rs_image_id );
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
             color: rgb(163, 168, 170);
         }

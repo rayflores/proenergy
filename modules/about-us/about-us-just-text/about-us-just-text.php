@@ -44,7 +44,7 @@ endif;
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
             color: <?php echo $ab_just_text_text_color; ?>
         }
@@ -76,7 +76,7 @@ endif;
             color : <?php echo $ab_just_text_text_color; ?>;
         }
         .<?php echo $ab_uuid; ?> .ab-just-text-bullet-point-description {
-            font-family : "Eurostile-Normal";
+            font-family : "eurostile", sans-serif;
             font-size : 24px;
             line-height : 31.1px;
             letter-spacing : 0.24px;

@@ -44,7 +44,7 @@ if ( "rgb(255, 255, 255)" === $lc_jt_text_color ) {
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
         }
         .<?php echo $lc_uuid; ?> .lc-just-text-header-container h2 {

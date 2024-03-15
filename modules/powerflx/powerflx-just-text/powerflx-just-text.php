@@ -39,7 +39,7 @@ $just_text_text_color = get_sub_field( 'just_text_text_color' ) ? get_sub_field(
             line-height: 25.7px;
             text-transform: uppercase;
             z-index: 0;
-            font-family: "Eurostile-Normal";
+            font-family: "eurostile", sans-serif;
             font-size: 12px;
             color: <?php echo $just_text_text_color; ?>
         }

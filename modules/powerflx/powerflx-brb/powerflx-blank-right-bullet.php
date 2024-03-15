@@ -38,7 +38,7 @@ $brb_percentage_description = get_sub_field( 'brb_percentage_description' ) ? ge
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family: "Eurostile-Normal";
+        font-family: "eurostile", sans-serif;
         font-size: 12px;
         color: rgb(163, 168, 170);
     }

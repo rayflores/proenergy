@@ -34,7 +34,7 @@ $ul_list_header = get_sub_field( 'ul_list_header' ) ? get_sub_field( 'ul_list_he
         line-height: 25.7px;
         text-transform: uppercase;
         z-index: 0;
-        font-family : "Eurostile-Normal";
+        font-family : "eurostile", sans-serif;
         font-size : 12px;
         color : rgb(255, 255, 255);
     }
