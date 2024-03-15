@@ -13,7 +13,14 @@
 				endif;
 			?>
 		</main><!-- /#main -->
-		<footer id="footer" class="mt-5">
+		<?php
+		$post = get_post( get_the_ID() );
+		$mt = 'mt-5';
+		if ( 'Parts Inventory' === $post->post_title ) {
+			$mt = 'mt-0';
+		}
+		?>
+		<footer id="footer" class="<?php echo $mt; ?>">
 			<div class="container-fluid px-5">
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 justify-content-md-center g-0">
 				<?php if ( is_active_sidebar( 'third_widget_area' ) ) : ?>

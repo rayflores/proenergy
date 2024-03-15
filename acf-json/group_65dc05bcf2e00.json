@@ -1705,7 +1705,7 @@
                             "label": "Apply The Contact Form",
                             "name": "aa_cf_apply",
                             "aria-label": "",
-                            "type": "select",
+                            "type": "true_false",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1714,17 +1714,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": {
-                                "Yes": "Yes",
-                                "No": "No"
-                            },
-                            "default_value": "Yes",
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 0,
+                            "message": "",
+                            "default_value": 1,
                             "ui": 0,
-                            "ajax": 0,
-                            "placeholder": ""
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -1766,5 +1760,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710388028
+    "modified": 1710424299
 }
