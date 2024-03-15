@@ -38,9 +38,9 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
         }
     .aa_two-tiers-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 35px;
-        font-weight: 700;
-        line-height : 36px;
+        font-size : 2.92em;
+        font-weight: 900;
+        line-height : 45px;
         letter-spacing : 0.01em;
         color : #53565A;
         color : rgb(83, 86, 90);

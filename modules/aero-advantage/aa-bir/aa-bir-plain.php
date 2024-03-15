@@ -23,7 +23,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         background-color: rgba(163,168,170,0.2);
     }
     .<?php echo $aa_birp_uuid; ?>.showcase .showcase-aa-birp-img {
-        min-height: 36rem;
+        min-height: 40rem;
         background-position: center center;
         background-size: cover;
     }
@@ -72,9 +72,9 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
     }
     .<?php echo $aa_birp_uuid; ?> .aa-birp-header-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 35px;
-        font-weight : 700;
-        line-height : 36px;
+        font-size : 2.92em;
+        font-weight : 900;
+        line-height : 45px;
         letter-spacing : 0.35px;
         margin-top: 25px;
         color : #53565A;
@@ -109,8 +109,8 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         margin-left: 1em;
     }
     @media screen and (max-width: 768px) {
-        .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container {
-            padding-top: 25px;
+        .showcase .showcase-aa-birp-img {
+            min-height: 20rem;
         }
     }
 </style>

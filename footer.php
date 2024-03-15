@@ -20,7 +20,9 @@
 			$post->post_title, 
 				[
 					'Parts Inventory', 
-					'Fuel Nozzles'
+					'Fuel Nozzles',
+					'Parts Manufacturing',
+					'Water Spray Injection Nozzles',
 				] 
 				) 
 			)
