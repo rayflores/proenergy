@@ -28,9 +28,9 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
     }
     .aa_all-text-paragraph-container p {
         font-family : "myriad-pro", sans-serif;
-        font-size : 18px;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+        line-height : clamp(1.125rem, 0.946rem + 0.476vw, 1.375rem);
         font-weight: 400;
-        line-height : 25px;
         color : #53565A;
         color : rgb(83, 86, 90);
         margin-top: 1.25em;
