@@ -63,7 +63,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
         font-weight: 900;
         letter-spacing: 0.01em;
-        line-height: clamp(1.75rem, 1.393rem + 0.952vw, 2.25rem);
+        line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         margin-bottom: 0.5em;
         padding-left: 80px;
     }
