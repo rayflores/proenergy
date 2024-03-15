@@ -3,19 +3,29 @@
  * Module Name: AeroAdvantage Bullet Image Right
  * Description: Template for AeroAdvantage Bullet Image Right Module.
  */
+$aa_bir_uuid = wp_unique_id('aa-bir-');
+$aa_bir_top_text = '';
 $aa_bir_top_text = get_sub_field('aa_bir_top_text') !== '' ? get_sub_field('aa_bir_top_text') : '';
+$aa_bir_header = '';
 $aa_bir_header = get_sub_field('aa_bir_header') !== '' ? get_sub_field('aa_bir_header') : '';
+$aa_bir_paragraph = '';
 $aa_bir_paragraph = get_sub_field('aa_bir_paragraph') !== '' ? get_sub_field('aa_bir_paragraph') : '';
+$aa_bir_percentage = '';
 $aa_bir_percentage = get_sub_field('aa_bir_percentage') !== '' ? get_sub_field('aa_bir_percentage') : '';
+$aa_bir_text = '';
 $aa_bir_text = get_sub_field('aa_bir_text') !== '' ? get_sub_field('aa_bir_text') : '';
+$aa_bir_link = '';
 $aa_bir_link = get_sub_field('aa_bir_link') !== '' ? get_sub_field('aa_bir_link') : '';
+$aa_bir_bullet_color = '';
 $aa_bir_bullet_color = get_sub_field('aa_bir_bullet_color') !== '' ? get_sub_field('aa_bir_bullet_color') : '';
+$aa_bir_image_id = '';
 $aa_bir_image_id = get_sub_field('aa_bir_image') !== '' ? get_sub_field('aa_bir_image') : '';
+$aa_bir_image_srcset = '';
 $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
 ?>
-<section id="section_aa-bir-wrapper" class="showcase my-5 pb-5">
+<section id="section_aa-bir-wrapper" class="<?php echo $aa_bir_uuid; ?> showcase my-5 pb-5">
 <style>
-    .showcase .showcase-aa-bir-img {
+    .<?php echo $aa_bir_uuid; ?>.showcase .showcase-aa-bir-img {
         min-height: 40rem;
         background-position: center;
         background-size: cover;
@@ -39,7 +49,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
     .reveal.animating .aa-bir-image-mask{
         transform: translateX(100%);
     } */
-    .aa-bir-top-text-container {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-top-text-container {
         border: 0;
         color: #a3a8aa;
         height: 1.5em;
@@ -49,7 +59,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         position: relative;
         text-align: left;
     }
-    .aa-bir-top-text-container::before {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-top-text-container::before {
         background: #a3a8aa;
         content: '';
         height: 1px;
@@ -59,7 +69,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         width: 52px;
         z-index: 1;
     }
-    .aa-bir-top-text-container::after {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-top-text-container::after {
         color: #a3a8aa;
         content: attr(data-content);
         display: inline-block;
@@ -73,9 +83,9 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         font-size: 18px;
         font-weight: 700;
     }
-    .aa-bir-header-container h2 {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-header-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 2.92em;
+        font-size: clamp(1.75rem, 1.504rem + .995vw, 2.25rem);
         font-weight : 900;
         line-height : 45px;
         letter-spacing : 0.35px;
@@ -83,20 +93,20 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         color : #53565A;
         color : rgb(83, 86, 90);
     }
-    .showcase .showcase-text.inside {
+    .<?php echo $aa_bir_uuid; ?>.showcase .showcase-text.inside {
         margin-right: -6.5em;
         position: relative;
         min-height: 27.1875em;
         background : linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(253, 253, 253, 1) 24.65%, rgba(245, 244, 244, 1) 100%, rgba(231, 230, 230, 1) 50.46%, rgba(211, 210, 211, 1) 60.62%, rgba(186, 185, 185, 1) 69.85%, rgba(155, 153, 153, 1) 78.41%, rgba(117, 115, 116, 1) 86.44%, rgba(76, 72, 73, 1) 93.85%, rgba(35, 31, 32, 1) 100%);
     }
-    .aa-bir-paragraph-container p {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-paragraph-container p {
         font-family : "myriad-pro", sans-serif;
         font-size : 18px;
         line-height : 22px;
         color : #53565A;
         color : rgb(83, 86, 90);
     }
-    .aa-bir-bullet-percentage{
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-bullet-percentage{
         color: <?php echo $aa_bir_bullet_color; ?>;
         font-family : "eurostile", sans-serif;
         font-size : 45px;
@@ -104,17 +114,17 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         line-height : 54.85px;
         text-transform : uppercase;
     }
-    .aa-bir-bullet-text{
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-bullet-text{
         color: <?php echo $aa_bir_bullet_color; ?>;
         font-family: 'eurostile', sans-serif;
         font-size : 24px;
         line-height : 31.1px;
         letter-spacing : 0.24px;
     }
-    .aa-bir-link-container {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-link-container {
         background: linear-gradient(-60deg, #FFF 15%, #862633 15%);
     }
-    .aa-bir-link {
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-link {
         font-family : "myriad-pro", sans-serif;
         font-size : 18px;
         font-style: italic;
@@ -122,23 +132,33 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         color : #FFFFFF;
         color : rgb(255, 255, 255);
     }
-    .aa-bir-link::after{
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-link::after{
         content: url('<?php echo get_stylesheet_directory_uri(); ?>/images/right-arrow-white.png');
         display: inline-block;
         width: 40px;
         height: 0;
         margin-left: 1em;
     }
-    .aa-bir-link:hover::after{
+    .<?php echo $aa_bir_uuid; ?> .aa-bir-link:hover::after{
         margin-left: 1.5em;
     }
     @media screen and (max-width: 768px) {
-        .showcase .showcase-aa-bir-img {
+
+        .<?php echo $aa_bir_uuid; ?>.showcase .showcase-aa-bir-img {
             min-height: 20rem;
         }
-        .showcase .showcase-text.inside {
+        .<?php echo $aa_bir_uuid; ?>.showcase .showcase-text.inside {
             margin-right: 0;
         }
+        .<?php echo $aa_bir_uuid; ?> .aa-bir-top-text-container::before {
+            width: 20px;
+        }
+        .<?php echo $aa_bir_uuid; ?> .aa-bir-top-text-container::after {
+            font-size: 14px;
+            letter-spacing: 0.25em;
+            padding-left: 40px;
+        }
+
     }
 </style>
     <div class="container-fluid p-0">
