@@ -129,6 +129,9 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         height: 0;
         margin-left: 1em;
     }
+    .aa-bir-link:hover::after{
+        margin-left: 1.5em;
+    }
     @media screen and (max-width: 768px) {
         .showcase .showcase-aa-bir-img {
             min-height: 20rem;
