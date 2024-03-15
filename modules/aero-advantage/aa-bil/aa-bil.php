@@ -98,6 +98,9 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         height: 0;
         margin-left: 1em;
     }
+    .aa-bil-link-container a:hover::after{
+        margin-left: 1.5em;
+    }
     .showcase .showcase-img {
         min-height: 40rem;
         background-position: center;
