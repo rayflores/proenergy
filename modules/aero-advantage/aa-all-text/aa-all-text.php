@@ -11,7 +11,7 @@ $aa_all_text_link = get_sub_field('aa_all_text_link') ? get_sub_field('aa_all_te
 <style>
     .aa_all-text-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 2.92em;
+        font-size: clamp(1rem, -0.384rem + 3.69vw, 2.938rem);
         font-weight: 900;
         line-height : 45px;
         letter-spacing : 0.01em;
