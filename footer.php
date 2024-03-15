@@ -16,7 +16,15 @@
 		<?php
 		$post = get_post( get_the_ID() );
 		$mt = 'mt-5';
-		if ( 'Parts Inventory' === $post->post_title ) {
+		if ( in_array( 
+			$post->post_title, 
+				[
+					'Parts Inventory', 
+					'Fuel Nozzles'
+				] 
+				) 
+			)
+		{
 			$mt = 'mt-0';
 		}
 		?>
