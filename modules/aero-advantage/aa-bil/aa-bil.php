@@ -51,7 +51,7 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
     .aa-bil-headline {
         color: #53565A;
         font-family: "eurostile", sans-serif;
-        font-size: 2.25em;
+        font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
         font-weight: 900;
         letter-spacing: 0.01em;
         line-height: 36px;
