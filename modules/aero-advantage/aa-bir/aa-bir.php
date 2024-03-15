@@ -101,24 +101,24 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
     }
     .<?php echo $aa_bir_uuid; ?> .aa-bir-paragraph-container p {
         font-family : "myriad-pro", sans-serif;
-        font-size : 18px;
-        line-height : 22px;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+        line-height : clamp(1.125rem, 0.946rem + 0.476vw, 1.375rem);
         color : #53565A;
         color : rgb(83, 86, 90);
     }
     .<?php echo $aa_bir_uuid; ?> .aa-bir-bullet-percentage{
         color: <?php echo $aa_bir_bullet_color; ?>;
         font-family : "eurostile", sans-serif;
-        font-size : 45px;
+        font-size: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         font-weight: 700;
-        line-height : 54.85px;
+        line-height : clamp(0.75rem, -1.163rem + 5.101vw, 3.428rem);
         text-transform : uppercase;
     }
     .<?php echo $aa_bir_uuid; ?> .aa-bir-bullet-text{
         color: <?php echo $aa_bir_bullet_color; ?>;
         font-family: 'eurostile', sans-serif;
-        font-size : 24px;
-        line-height : 31.1px;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+        line-height : clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
         letter-spacing : 0.24px;
     }
     .<?php echo $aa_bir_uuid; ?> .aa-bir-link-container {
