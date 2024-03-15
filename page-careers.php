@@ -46,26 +46,19 @@ $featured_image_id = get_post_thumbnail_id();
 	<section id="section_careers_all-text">
 		<style>
 			.careers_all-text-container h2 {
-				font-family: "Eurostile-Bold";
-				font-size: 35px;
-				line-height: 36px;
+				font-family: "eurostile", sans-serif;
+				font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
+				font-weight: 900;
+				line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
 				letter-spacing: 0.35px;
 				color: #53565A;
 				color: rgb(83, 86, 90);
 			}
 
-			.careers_at-link {
-				color: #53565A;
-				font-family: "Eurostile-Bold";
-				font-size: 18px;
-				line-height: 28px;
-				letter-spacing: 0.18px;
-			}
-
 			.careers_all-text-paragraph-container p {
 				font-family: "myriad-pro", sans-serif;
-				font-size: 18px;
-				line-height: 25px;
+				font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+				line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
 				color: #53565A;
 				color: rgb(83, 86, 90);
 				margin-top: 1.25em;
