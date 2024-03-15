@@ -31,8 +31,8 @@
         color: #A3A8AA;
         content: attr(data-content);
         display: inline-block;
-        font-family: "eurstile", sans-serif;
-        font-size: 18px;
+        font-family: "eurostile", sans-serif;
+        font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
         font-weight: 700;
         letter-spacing: 0.5em;
         padding-left: 80px;
@@ -41,7 +41,6 @@
         text-transform: uppercase;
         z-index: 0;
         @include media-breakpoint-down(md) {
-            font-size: 14px;
             letter-spacing: 0.25em;
             padding-left: 40px;
         }
