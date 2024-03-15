@@ -136,7 +136,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-6 p-0">
+            <div class="col-6 col-lg-12 p-0">
                 <div class="row g-0">
                     <div class="col-12 p-0">
                     <div class="aa-jt-half-top-text-container pt-5" data-content="<?php echo $aa_jt_half_top_text; ?>"></div>
@@ -153,7 +153,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-lg-12">
                 <div class="row g-0 overlay h-100">
                     <div class="col-12 p-0">
                         <div class="aa-jt-half-list-container mt-5 pt-5 pb-5 ps-5">

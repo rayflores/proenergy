@@ -47,7 +47,7 @@ if ( $aa_cf_apply ) {
         <div class="row g-0">
             <div class="col-12 col-lg-3">
                 <div class="aa-contact-header-container pt-5">
-                    <h2 class="text-white mx-auto">Contact</h2>
+                    <h2 class="text-white ps-5 mx-auto">Contact</h2>
                 </div>
             </div>
             <form method="post" class="p-5 bg-light col-12 col-lg-9">
