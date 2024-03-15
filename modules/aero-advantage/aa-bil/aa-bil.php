@@ -143,6 +143,9 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
         .aa-bil-link-container {
             padding-left: 40px;
         }
+        .showcase .showcase-img {
+            min-height: 20rem;
+        }
         
     }
 </style>
