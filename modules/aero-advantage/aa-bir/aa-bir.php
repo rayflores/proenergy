@@ -130,6 +130,9 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         margin-left: 1em;
     }
     @media screen and (max-width: 768px) {
+        .showcase .showcase-aa-bir-img {
+            min-height: 20rem;
+        }
         .showcase .showcase-text.inside {
             margin-right: 0;
         }

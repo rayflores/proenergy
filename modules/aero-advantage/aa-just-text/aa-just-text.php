@@ -95,6 +95,16 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             height: 0;
             margin-left: 1em;
         }
+        @media screen and (max-width: 768px) {
+            .<?php echo $aa_jt_uuid; ?> .aa-just-text-top-text-container::before {
+                width: 20px;
+            }
+            .<?php echo $aa_jt_uuid; ?> .aa-just-text-top-text-container::after {
+                font-size: 14px;
+                letter-spacing: 0.25em;
+                padding-left: 40px;
+            }
+        }
     </style>
     <div class="row g-0 pt-5">
         <div class="container-fluid p-0">
