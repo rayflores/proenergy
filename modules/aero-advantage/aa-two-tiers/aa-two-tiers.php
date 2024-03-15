@@ -32,7 +32,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
             text-transform: uppercase;
             z-index: 0;
             font-family: "eurostile", sans-serif;
-            font-size: 12px;
+            font-size: 18px;
             font-weight: 700;
             color: <?php echo $aa_jt_hl_text_color; ?>
         }
@@ -93,11 +93,11 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                 <div class="aa_two-tiers-container col-12 pb-5 ps-3">
                     <?php
                     if ( '' !== $aa_two_tiers_header ) : ?>
-                    <h2 class="aa_two-tiers-header"><?php echo $aa_two_tiers_header; ?></h2>
+                    <h2 class="aa_two-tiers-header ps-3"><?php echo $aa_two_tiers_header; ?></h2>
                     <?php
                     endif;
                     if ( '' !== $aa_two_tiers_paragraph ) : ?>
-                    <div class="aa_two-tiers-paragraph-container col-12">
+                    <div class="aa_two-tiers-paragraph-container col-12 ps-3">
                         <p><?php echo $aa_two_tiers_paragraph; ?></p>
                     </div>
                     <?php endif; ?>

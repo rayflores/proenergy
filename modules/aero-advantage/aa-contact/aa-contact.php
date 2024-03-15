@@ -45,12 +45,12 @@ if ( $aa_cf_apply ) {
     </style>
     <div class="container-fluid overlay p-5">
         <div class="row g-0">
-            <div class="col-12 col-lg-2">
+            <div class="col-12 col-lg-3">
                 <div class="aa-contact-header-container pt-5">
                     <h2 class="text-white mx-auto">Contact</h2>
                 </div>
             </div>
-            <form method="post" class="p-5 bg-light col-12 col-lg-10">
+            <form method="post" class="p-5 bg-light col-12 col-lg-9">
                 <div class="row g-5">
                     <div class="col-6 pb-5">
                         <div class="ab-reg-form-container pe-3">
