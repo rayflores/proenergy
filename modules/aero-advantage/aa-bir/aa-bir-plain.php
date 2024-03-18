@@ -118,7 +118,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container::after {
             font-size: 14px;
             letter-spacing: 0.25em;
-            padding-left: 40px;
+            padding-left: 16px;
         }
     }
 </style>
@@ -129,18 +129,18 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
             <div class="col-12 col-lg-8 order-lg-1 order-2 showcase-text my-auto py-5 py-lg-0">
                 <?php 
                 if ( !empty($aa_birp_top_text) ) : ?>
-                <div class="aa-birp-top-text-container position-relative ps-5 mx-4" data-content="<?php echo $aa_birp_top_text; ?>"></div>
+                <div class="aa-birp-top-text-container position-relative ps-lg-5 mx-4" data-content="<?php echo $aa_birp_top_text; ?>"></div>
                 <?php endif; ?>
-                <div class="aa-birp-header-container ps-5 ms-4">
-                    <h2 class="ps-2"><?php echo $aa_birp_header; ?></h2>
+                <div class="aa-birp-header-container ps-lg-5 ms-4">
+                    <h2 class="ps-3 ps-lg-2"><?php echo $aa_birp_header; ?></h2>
                 </div>
-                <div class="aa-birp-paragraph-container ps-5 ms-4 pt-3">
-                    <p class="col-12 col-lg-6 ps-2"><?php echo $aa_birp_paragraph; ?></p>
+                <div class="aa-birp-paragraph-container ps-lg-5 ms-4 pt-3">
+                    <p class="col-12 col-lg-6 ps-3 ps-lg-2"><?php echo $aa_birp_paragraph; ?></p>
                 </div>
                 <?php 
                 if ( !empty($aa_birp_link) ) : ?>
-                <div class="aa-birp-link-container ps-5 ms-4 py-4">
-                    <a class="aa-birp-link ps-2" href="<?php echo $aa_birp_link['url']; ?>" target="<?php echo $aa_birp_link['target']; ?>"><?php echo $aa_birp_link['title']; ?></a>
+                <div class="aa-birp-link-container ps-lg-5 ms-4 py-4">
+                    <a class="aa-birp-link ps-3 ps-lg-2" href="<?php echo $aa_birp_link['url']; ?>" target="<?php echo $aa_birp_link['target']; ?>"><?php echo $aa_birp_link['title']; ?></a>
                 </div>
                 <?php endif; ?>
             </div>
