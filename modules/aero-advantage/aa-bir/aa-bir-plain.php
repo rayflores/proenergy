@@ -109,7 +109,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         margin-left: 1em;
     }
     @media screen and (max-width: 768px) {
-        .showcase .showcase-aa-birp-img {
+        .<?php echo $aa_birp_uuid; ?>.showcase .showcase-aa-birp-img {
             min-height: 20rem;
         }
     }
