@@ -89,7 +89,7 @@ $bullet_color = get_sub_field('bil_bullet_color') !== '' ? get_sub_field('bil_bu
         .bil-nb-percentage-header{
             color: <?php echo $bullet_color; ?>;
             font-family: 'eurostile', sans-serif;
-            font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+            font-size: clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
             letter-spacing: 0;
             line-height: 1.5em;
         }
