@@ -766,7 +766,7 @@ function pe_acf_input_admin_footer() { ?>
 		acf.add_filter('color_picker_args', function( args, $field ){
 
 			// add the hexadecimal codes here for the colors you want to appear as swatches
-			args.palettes = ['#53565A', '#862633','rgba(168,163,170,0.2)', '#FFFFFF']
+			args.palettes = ['#53565A', '#862633','rgba(168,163,170,0.2)', '#FFFFFF', '#003A70']
 		// return colors
 		return args;
 		});

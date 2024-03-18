@@ -71,31 +71,31 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         }
         .tbil-paragraph {
             color: #53565A;
-            font-family: 'myriad-pro', sans-serif;
-            font-size: 1.5em;
-            line-height: 1.5em;
+            font-family: "myriad-pro", sans-serif;
+            font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+            font-weight: 400;
+            line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
             text-align: left;
             padding-top: 1em;
             padding-bottom: 2em;
         }
         .tbil-nb-percentage{
-            color: <?php echo $bullet_color; ?>;
-            font-family: 'eurostile', sans-serif;
-            font-size: 3.75em;
+            font-family: "eurostile", sans-serif;
+            font-size: clamp(2rem, 0.75rem + 3.333vw, 3.75rem);
             font-weight: 800;
             letter-spacing: 0;
-            line-height: 0.75em;
+            line-height: 1em;
             text-transform: uppercase;
         }   
         .tbil-nb-percentage-header{
-            color: <?php echo $bullet_color; ?>;
-            font-family: 'eurostile', sans-serif;
-            font-size: 2em;
+            font-family: "eurostile", sans-serif;
+            font-size: clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
             letter-spacing: 0;
+            line-height: 1.5em;
         }   
         .tbil-nb-link{
             color: #A3A8AA;
-            font-family: 'myriad-pro', sans-serif;
+            font-family: "myriad-pro", sans-serif;
             font-size: 1.5em;
             font-style: italic;
             line-height: 1.5em;
@@ -114,7 +114,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
         }
         .nav-tabs .nav-link {
             border: 0;
-            font-family: 'eurostile', sans-serif;
+            font-family: "eurostile", sans-serif;
             font-size: 1.33em;
             font-weight: 700;
             margin-bottom: 0;
@@ -164,12 +164,6 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
             .tbil-paragraph {
                 font-size: 1.0em;
                 line-height: 1.25em;
-            }
-            .tbil-nb-percentage {
-                font-size: 2.5em;
-            }
-            .tbil-nb-percentage-header {
-                font-size: 1.5em;
             }
             .tbil-nb-link {
                 font-size: 1em;
@@ -241,8 +235,9 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                                 $tbil_tab_percentage = get_sub_field('bil_nb_percentage') !== '' ? get_sub_field('bil_nb_percentage') : '';
                                 $tbil_tab_percentage_header = get_sub_field('bil_nb_percentage_header') !== '' ? get_sub_field('bil_nb_percentage_header') : '';
                                 $tbil_tab_link = get_sub_field('bil_nb_bullet_link') !== '' ? get_sub_field('bil_nb_bullet_link') : '';
+                                $tbil_bullet_color = get_sub_field('tbil_bullet_color') !== '' ? get_sub_field('tbil_bullet_color') : '';
                             ?>
-                            <div class="tbil-nb-percentage"><?php echo $tbil_tab_percentage; ?></div>
+                            <div class="tbil-nb-percentage" style="color: <?php echo $tbil_bullet_color; ?>;"><?php echo $tbil_tab_percentage; ?></div>
                             <div class="tbil-nb-percentage-header pb-4"><?php echo $tbil_tab_percentage_header; ?></div>
                             <a class="tbil-nb-link" href="<?php echo $tbil_tab_link['url']; ?>"><?php echo $tbil_tab_link['title']; ?></a>
                         </div>
