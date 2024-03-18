@@ -45,16 +45,16 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         }
         .<?php echo $aa_jt_uuid; ?> .aa-just-text-header-container h2 {
             font-family : "eurostile", sans-serif;
-            font-size : 2.92em;
+            font-size: clamp(1.75rem, 1.504rem + .995vw, 2.25rem);
             font-weight : 900;
-            line-height : 45px;
+            line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
             letter-spacing : 0.35px;
             color : <?php echo $aa_just_text_text_color; ?>;
         }
         .<?php echo $aa_jt_uuid; ?> .aa-just-text-paragraph-container p {
             font-family : "myriad-pro", sans-serif;
-            font-size : 18px;
-            line-height : 25px;
+            font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+            line-height : clamp(1.125rem, 0.946rem + 0.476vw, 1.375rem);
             color : <?php echo $aa_just_text_text_color; ?>;
             margin-top: 1.25em;
             margin-bottom: 3em;
