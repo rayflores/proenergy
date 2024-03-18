@@ -112,15 +112,15 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             <div class="p-4 ps-lg-5 ms-3 pe-lg-5 pb-5">
                 <div class="row g-0">
                     <div class="col-12">
-                        <div class="aa-just-text-header-container ps-3 pt-3">
-                            <h2 class="ps-4 ps-lg-0"><?php echo $aa_just_text_header; ?></h2>
+                        <div class="aa-just-text-header-container ps-lg-2 pt-3">
+                            <h2 class="ps-lg-1"><?php echo $aa_just_text_header; ?></h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-5">
-                        <div class="aa-just-text-paragraph-container ps-3 pt-3">
-                            <p class="ps-4 ps-lg-0"><?php echo $aa_just_text_paragraph; ?></p>
+                        <div class="aa-just-text-paragraph-container ps-lg-3 pt-3">
+                            <p class="ps-lg-0"><?php echo $aa_just_text_paragraph; ?></p>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 $aa_just_text_link = get_sub_field( 'aa_just_text_link'); ?>
                 <div class="row">
                     <div class="col-12">
-                        <div class="aa-just-text-link-container ps-3 py-5">
+                        <div class="aa-just-text-link-container ps-lg-3 py-5">
                             <a class="aa-just-text-link" href="<?php echo $aa_just_text_link['url']; ?>" target="<?php echo $aa_just_text_link['target']; ?>"><?php echo $aa_just_text_link['title']; ?></a>
                         </div>
                     </div>
