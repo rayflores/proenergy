@@ -78,20 +78,18 @@ $aa_bil_link = get_sub_field('aa_bil_link') ? get_sub_field('aa_bil_link') : '';
     }
     .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-percentage {
         font-family : "eurostile", sans-serif;
-        font-size : 45px;
-        font-weight : 700;
-        line-height : 54.85px;
+        font-size: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
+        font-weight: 700;
+        line-height : clamp(1.75rem, -1.163rem + 5.101vw, 3.428rem);
         text-transform : uppercase;
         color : #862633;
-        color : rgb(134, 38, 51);
     }
     .<?php echo $aa_bil_uuid; ?> .aa-bil-bullet-text {
-        font-family : "eurostile", sans-serif;
-        font-size : 24px;
-        line-height : 31.1px;
+        font-family: 'eurostile', sans-serif;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+        line-height : clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
         letter-spacing : 0.24px;
         color : #862633;
-        color : rgb(134, 38, 51);
     }
     .<?php echo $aa_bil_uuid; ?> .aa-bil-link-container {
         padding-left: 80px;
