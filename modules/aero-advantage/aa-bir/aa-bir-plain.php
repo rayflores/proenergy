@@ -112,6 +112,14 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         .<?php echo $aa_birp_uuid; ?>.showcase .showcase-aa-birp-img {
             min-height: 20rem;
         }
+        .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container::before {
+            width: 20px;
+        }
+        .<?php echo $aa_birp_uuid; ?> .aa-birp-top-text-container::after {
+            font-size: 14px;
+            letter-spacing: 0.25em;
+            padding-left: 40px;
+        }
     }
 </style>
     <div class="container-fluid p-0">
