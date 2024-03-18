@@ -237,7 +237,7 @@ $tbil_top_text = get_sub_field('tbil_top_text') !== '' ? get_sub_field('tbil_top
                                 $tbil_tab_link = get_sub_field('bil_nb_bullet_link') !== '' ? get_sub_field('bil_nb_bullet_link') : '';
                             ?>
                             <div class="tbil-nb-percentage" style="color: <?php echo $tbil_bullet_color; ?>;"><?php echo $tbil_tab_percentage; ?></div>
-                            <div class="tbil-nb-percentage-header pb-4"><?php echo $tbil_tab_percentage_header; ?></div>
+                            <div class="tbil-nb-percentage-header pb-4" style="color: <?php echo $tbil_bullet_color; ?>;"><?php echo $tbil_tab_percentage_header; ?></div>
                             <a class="tbil-nb-link" href="<?php echo $tbil_tab_link['url']; ?>"><?php echo $tbil_tab_link['title']; ?></a>
                         </div>
                             <?php endwhile; ?>
