@@ -72,9 +72,9 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
     }
     .<?php echo $aa_birp_uuid; ?> .aa-birp-header-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 2.92em;
+        font-size: clamp(1.75rem, 1.504rem + .995vw, 2.25rem);
         font-weight : 900;
-        line-height : 45px;
+        line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         letter-spacing : 0.35px;
         margin-top: 25px;
         color : #53565A;
@@ -88,8 +88,8 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
     }
     .<?php echo $aa_birp_uuid; ?> .aa-birp-paragraph-container p {
         font-family : "myriad-pro", sans-serif;
-        font-size : 18px;
-        line-height : 22px;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+        line-height : clamp(1.125rem, 0.946rem + 0.476vw, 1.375rem);
         color : #53565A;
         color : rgb(83, 86, 90);
         padding-right: 7.5%;
