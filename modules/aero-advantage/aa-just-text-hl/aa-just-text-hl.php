@@ -52,16 +52,16 @@ endif;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-header-container h2 {
             font-family : "eurostile", sans-serif;
-            font-size : 35px;
-            font-weight: 700;
-            line-height : 36px;
+            font-size: clamp(1.75rem, 1.504rem + .995vw, 2.25rem);
+            font-weight : 900;
+            line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
             letter-spacing : 0.01em;
             color : <?php echo $aa_jt_hl_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-paragraph-container p {
             font-family : "myriad-pro", sans-serif;
-            font-size : 18px;
-            line-height : 25px;
+            font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+            line-height : clamp(1.125rem, 0.946rem + 0.476vw, 1.375rem);
             color : <?php echo $aa_jt_hl_text_color; ?>;
             margin-top: 1.25em;
             margin-bottom: 3em;
@@ -74,16 +74,16 @@ endif;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-bullet-point-heading-container h1 {
             font-family : "eurostile", sans-serif;
-            font-size : 45px;
-            font-weight: 700;
-            line-height : 54.85px;
+            font-size: clamp(2rem, 0.75rem + 3.333vw, 3.75rem);
+            font-weight: 800;
+            line-height : 1em;
             text-transform : uppercase;
             color : <?php echo $aa_jt_hl_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-hl-bullet-point-description {
             font-family : "eurostile", sans-serif;
-            font-size : 24px;
-            line-height : 31.1px;
+            font-size: clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
+            line-height : 1.5em;
             letter-spacing : 0.01em;
             color : <?php echo $aa_jt_hl_text_color; ?>;
         }
