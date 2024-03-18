@@ -111,7 +111,7 @@ $aa_bir_image_srcset = get_image_srcset($aa_bir_image_id);
         font-family : "eurostile", sans-serif;
         font-size: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         font-weight: 700;
-        line-height : clamp(0.75rem, -1.163rem + 5.101vw, 3.428rem);
+        line-height : clamp(1.75rem, -1.163rem + 5.101vw, 3.428rem);
         text-transform : uppercase;
     }
     .<?php echo $aa_bir_uuid; ?> .aa-bir-bullet-text{
