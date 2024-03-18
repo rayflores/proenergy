@@ -61,7 +61,7 @@ $aa_birp_image_srcset = get_image_srcset($aa_birp_image_id);
         content: attr(data-content);
         display: inline-block;
         font-family: 'eurostile', sans-serif;
-        font-size: 18px;
+        font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
         font-weight: 700;
         letter-spacing: 0.5em;
         padding-left: 8px;

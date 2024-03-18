@@ -46,7 +46,7 @@ endif;
             text-transform: uppercase;
             z-index: 0;
             font-family: "eurostile", sans-serif;
-            font-size: 12px;
+            font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
             font-weight: 700;
             color: <?php echo $aa_jt_hl_text_color; ?>
         }
@@ -140,6 +140,15 @@ endif;
             letter-spacing : normal;
             padding: 0;
             color : #862633;
+        }
+        @media screen and (max-width: 768px) {
+            .<?php echo $aa_uuid; ?> .aa-jt-hl-top-text-container::before {
+                width: 20px;
+            }
+            .<?php echo $aa_uuid; ?> .aa-jt-hl-top-text-container::after {
+                letter-spacing: 0.25em;
+                padding-left: 16px;
+            }
         }
     </style>
     <div class="container-fluid p-0">
