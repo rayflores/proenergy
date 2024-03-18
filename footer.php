@@ -24,7 +24,8 @@
 					'Parts Manufacturing',
 					'Water Spray Injection Nozzles',
 					'Technical Services',
-					'Remote Monitoring & Diagnostics'
+					'Remote Monitoring & Diagnostics',
+					'Overhaul Services',
 				] 
 				) 
 			)
