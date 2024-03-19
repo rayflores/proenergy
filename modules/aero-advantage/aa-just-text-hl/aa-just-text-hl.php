@@ -155,14 +155,14 @@ endif;
         <div class="aa-jt-hl-top-text-container pt-5" data-content="<?php echo $aa_jt_hl_top_text; ?>"></div>
         <div class="p-4 ps-lg-5 pe-lg-5 pb-5">
             <div class="row g-0">
-                <div class="col-12 ps-lg-4">
+                <div class="col-12 ps-3 ps-lg-4">
                     <div class="aa-jt-hl-header-container pt-3 ps-2">
                         <h2><?php echo $aa_jt_hl_header; ?></h2>
                     </div>
                 </div>
             </div>
             <div class="row g-0">
-                <div class="col-8 ps-lg-4">
+                <div class="col-8 ps-3 ps-lg-4">
                     <div class="aa-jt-hl-paragraph-container pt-3 ps-2">
                         <p><?php echo $aa_jt_hl_paragraph; ?></p>
                     </div>
@@ -179,7 +179,7 @@ endif;
                 if ( 'rgb(134,38,51)' === $aa_jt_hl_background_color ) : 
                     $add_class = 'darker'; 
                 endif; ?>
-                <div class="aa-jt-hl-link-container d-flex align-items-center ps-lg-5 <?php echo $add_class; ?>">
+                <div class="aa-jt-hl-link-container d-flex align-items-center ps-2 ps-lg-5 <?php echo $add_class; ?>">
                     <a class="aa-jt-hl-link ps-4 ms-2" href="<?php echo $aa_jt_hl_link['url']; ?>" target="<?php echo $aa_jt_hl_link['target']; ?>"><?php echo $aa_jt_hl_link['title']; ?></a>
                 </div>
             </div>
