@@ -156,14 +156,14 @@ endif;
         <div class="p-4 ps-lg-5 pe-lg-5 pb-5">
             <div class="row g-0">
                 <div class="col-12 ps-3 ps-lg-4">
-                    <div class="aa-jt-hl-header-container pt-3 ps-2">
+                    <div class="aa-jt-hl-header-container pt-3 ps-lg-2">
                         <h2><?php echo $aa_jt_hl_header; ?></h2>
                     </div>
                 </div>
             </div>
             <div class="row g-0">
                 <div class="col-8 ps-3 ps-lg-4">
-                    <div class="aa-jt-hl-paragraph-container pt-3 ps-2">
+                    <div class="aa-jt-hl-paragraph-container pt-3 ps-lg-2">
                         <p><?php echo $aa_jt_hl_paragraph; ?></p>
                     </div>
                 </div>
