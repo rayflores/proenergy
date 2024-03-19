@@ -39,7 +39,8 @@
 					'Onsite O&M Services',
 					'Remote Operations Centers',
 					'O&M Compliance',
-					'Mobilization'
+					'Mobilization',
+					'Total Care Services'
 				] 
 				) 
 			)

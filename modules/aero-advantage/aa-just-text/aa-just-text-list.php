@@ -41,22 +41,23 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             text-transform: uppercase;
             z-index: 0;
             font-family: "eurostile", sans-serif;
-            font-size: 18px;
+            font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
             font-weight: 700;
             color: rgba(163, 168, 170, 1);
         }
         .<?php echo $aa_uuid; ?> .aa-just-text-list-header-container h2 {
             font-family : "eurostile", sans-serif;
-            font-size : 35px;
-            font-weight: 700;
-            line-height : 36px;
-            letter-spacing : 0.35px;
+            font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
             color : <?php echo $aa_just_text_list_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-just-text-list-paragraph-container p {
             font-family : "myriad-pro", sans-serif;
-            font-size : 18px;
-            line-height : 25px;
+            font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+            font-weight: 400;
+            line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
             color : <?php echo $aa_just_text_list_text_color; ?>;
             margin-top: 1.25em;
             margin-bottom: 3em;
@@ -84,22 +85,34 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         .<?php echo $aa_uuid; ?> .aa-just-text-list-items-container {
             background: rgba(163, 168, 170, 0.2);
         }
+        @media screen and (max-width: 768px) {
+            .<?php echo $aa_uuid; ?> .aa-just-text-list-top-text-container::before {
+                width: 20px;
+            }
+            .<?php echo $aa_uuid; ?> .aa-just-text-list-top-text-container::after {
+                padding-left: 20px;
+            }
+            .<?php echo $aa_uuid; ?> .aa-just-text-list-header-container h2,
+            .<?php echo $aa_uuid; ?> .aa-just-text-list-paragraph-container p {
+                padding-left: 40px;
+            }
+        }
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-12 col-md-7">
                 <div class="aa-just-text-list-top-text-container pt-5" data-content="<?php echo $aa_just_text_list_top_text; ?>"></div>
-                <div class="aa-just-text-list-header-container pt-3 ms-4 ps-5">
-                    <h2 class="ps-2"><?php echo $aa_just_text_list_header; ?></h2>
+                <div class="aa-just-text-list-header-container pt-3 ms-lg-4 ps-lg-5">
+                    <h2 class="ps-lg-2"><?php echo $aa_just_text_list_header; ?></h2>
                 </div>
-                <div class="aa-just-text-list-paragraph-container pt-3 ms-4 ps-5">
-                    <p class="ps-2"><?php echo $aa_just_text_list_paragraph; ?></p>
+                <div class="aa-just-text-list-paragraph-container pt-3 ms-lg-4 ps-lg-5">
+                    <p class="ps-lg-2"><?php echo $aa_just_text_list_paragraph; ?></p>
                 </div>
                 <?php
                 if ( '' !== get_sub_field( 'aa_just_text_list_link') ) : 
                 $aa_just_text_list_link = get_sub_field( 'aa_just_text_list_link'); ?>
-                <div class="aa-just-text-list-link-container py-5 ps-5 ms-4">
-                    <a class="aa-just-text-list-link ps-2" href="<?php echo $aa_just_text_list_link['url']; ?>" target="<?php echo $aa_just_text_list_link['target']; ?>"><?php echo $aa_just_text_list_link['title']; ?></a>
+                <div class="aa-just-text-list-link-container py-5 ps-5 ms-lg-4">
+                    <a class="aa-just-text-list-link ps-lg-2" href="<?php echo $aa_just_text_list_link['url']; ?>" target="<?php echo $aa_just_text_list_link['target']; ?>"><?php echo $aa_just_text_list_link['title']; ?></a>
                 </div>
                 <?php endif; ?>
             </div>
