@@ -147,7 +147,7 @@ endif;
             }
             .<?php echo $aa_uuid; ?> .aa-jt-hl-top-text-container::after {
                 letter-spacing: 0.25em;
-                padding-left: 16px;
+                padding-left: 20px;
             }
         }
     </style>

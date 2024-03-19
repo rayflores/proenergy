@@ -26,7 +26,8 @@
 					'Technical Services',
 					'Remote Monitoring & Diagnostics',
 					'Overhaul Services',
-					'Depot Services'
+					'Depot Services',
+					'Depot Process'
 				] 
 				) 
 			)
