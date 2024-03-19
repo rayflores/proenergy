@@ -36,29 +36,30 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
             color: #a3a8aa;
             content: attr(data-content);
             display: inline-block;
-            letter-spacing: 7.5px;
+            letter-spacing: 0.5em;
             padding-left: 28px;
             position: relative;
-            line-height: 25.7px;
+            line-height: 1.5em;
             text-transform: uppercase;
             z-index: 0;
             font-family: "eurostile", sans-serif;
-            font-size: 18px;
-            font-weight: 700;
+            font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+            font-weight: 800;
             color: <?php echo $aa_jt_half_text_color; ?>
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-header-container h2 {
             font-family : "eurostile", sans-serif;
-            font-size : 2.92em;
-            font-weight: 900;
-            line-height : 45px;
-            letter-spacing : 0.35px;
+            font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
+            font-weight: 800;
+            letter-spacing: 0;
+            line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
             color : <?php echo $aa_jt_half_text_color; ?>;
         }
         .<?php echo $aa_uuid; ?> .aa-jt-half-paragraph-container p {
             font-family : "myriad-pro", sans-serif;
-            font-size : 18px;
-            line-height : 25px;
+            font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+            font-weight: 400;
+            line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
             color : <?php echo $aa_jt_half_text_color; ?>;
             margin-top: 1.25em;
             margin-bottom: 3em;
@@ -133,6 +134,14 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
         .<?php echo $aa_uuid; ?> .row.overlay {
             background-color: rgba(0,0,0,0.2);
         }
+        @media screen and (max-width: 768px) {
+            .<?php echo $aa_uuid; ?> .aa-jt-half-top-text-container::before {
+                width: 20px;
+            }
+            .<?php echo $aa_uuid; ?> .aa-jt-half-top-text-container::after {
+                padding-left: 20px;
+            }
+        }
     </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
@@ -140,14 +149,14 @@ $content = 'url("' . get_stylesheet_directory_uri() . '/images/right-arrow.png' 
                 <div class="row g-0">
                     <div class="col-12 p-0">
                     <div class="aa-jt-half-top-text-container pt-5" data-content="<?php echo $aa_jt_half_top_text; ?>"></div>
-                        <div class="aa-jt-half-header-container pt-5 ps-5 ms-4">
+                        <div class="aa-jt-half-header-container pt-5 ps-2 ps-lg-5 ms-4">
                             <h2 class="ps-2"><?php echo $aa_jt_half_header; ?></h2>
                         </div>
                     </div>
                 </div>
                 <div class="row g-0">
                     <div class="col-12 p-0">
-                        <div class="aa-jt-half-paragraph-container pt-3 ps-5 ms-4">
+                        <div class="aa-jt-half-paragraph-container pt-3 ps-2 ps-lg-5 ms-4">
                             <p class="ps-2 pe-4"><?php echo $aa_jt_half_paragraph; ?></p>
                         </div>
                     </div>

@@ -27,7 +27,10 @@
 					'Remote Monitoring & Diagnostics',
 					'Overhaul Services',
 					'Depot Services',
-					'Depot Process'
+					'Depot Process',
+					'Engine Testing',
+					'Parts Equipment',
+					'Lease Engines'
 				] 
 				) 
 			)
