@@ -39,7 +39,7 @@ $aa_tb_banner_text = get_sub_field('aa_tb_banner_text') ? get_sub_field('aa_tb_b
             </div>
         </div>
         <div class="row g-0">
-            <div class="col-12 pt-5 ps-5 ms-4">
+            <div class="col-12 pt-5 ps-5 ms-lg-4">
                 <ul class="ps-4">
                 <?php
                 if ( have_rows('aa_tb_list_items') ) :

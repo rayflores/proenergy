@@ -173,7 +173,7 @@ endif;
         if ( '' !== get_sub_field( 'aa_jt_hl_link') ) : 
         $aa_jt_hl_link = get_sub_field( 'aa_jt_hl_link'); ?>
         <div class="row g-0">
-            <div class="col-8">
+            <div class="col-12 col-lg-6">
                 <?php
                 $add_class = '';
                 if ( 'rgb(134,38,51)' === $aa_jt_hl_background_color ) : 
@@ -186,8 +186,8 @@ endif;
         <?php 
         if ( '' !== get_sub_field( 'aa_jt_hl_link_two') ) : 
         $aa_jt_hl_link = get_sub_field( 'aa_jt_hl_link_two'); ?>
-            <div class="col-6">
-                <div class="aa-jt-hl-link-two-container d-flex align-items-center ps-5 darker">
+            <div class="col-12 col-lg-6">
+                <div class="aa-jt-hl-link-two-container d-flex align-items-center ps-2 ps-lg-5 darker">
                     <a class="aa-jt-hl-link-two ps-4 ms-2" href="<?php echo $aa_jt_hl_link_two['url']; ?>" target="<?php echo $aa_jt_hl_link_two['target']; ?>"><?php echo $aa_jt_hl_link_two['title']; ?></a>
                 </div>
             </div>

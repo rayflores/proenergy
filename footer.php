@@ -30,7 +30,16 @@
 					'Depot Process',
 					'Engine Testing',
 					'Parts Equipment',
-					'Lease Engines'
+					'Lease Engines',
+					'Field Services',
+					'Conversions, Modifications, and Upgrades',
+					'DLE Tuning',
+					'PROENERGY UNIVERSITY',
+					'O&M Services',
+					'Onsite O&M Services',
+					'Remote Operations Centers',
+					'O&M Compliance',
+					'Mobilization'
 				] 
 				) 
 			)
