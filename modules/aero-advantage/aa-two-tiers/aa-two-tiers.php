@@ -10,7 +10,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
 <section id="section_aa_all-text">
 <style>
     .aa-tt-top-text-container::before {
-            background: rgba(163, 168, 170, 0.5);
+            background: #a3a8aa;
             content: '';
             display: inline-block;
             height: 1px;
@@ -21,27 +21,25 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
             z-index: 1;
         }
         .aa-tt-top-text-container::after {
-            background-color: rgba(163, 168, 170, 0);
             color: #a3a8aa;
             content: attr(data-content);
             display: inline-block;
             letter-spacing: 0.5em;
             padding-left: 28px;
             position: relative;
-            line-height: 25.7px;
+            line-height: 1.5em;
             text-transform: uppercase;
             z-index: 0;
             font-family: "eurostile", sans-serif;
-            font-size: 18px;
+            font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
             font-weight: 700;
-            color: <?php echo $aa_jt_hl_text_color; ?>
         }
     .aa_two-tiers-container h2 {
         font-family : "eurostile", sans-serif;
-        font-size : 2.92em;
-        font-weight: 900;
-        line-height : 45px;
-        letter-spacing : 0.01em;
+        font-size: clamp(1.75rem, 0.902rem + 2.262vw, 2.938rem);
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: clamp(1.75rem, 0.991rem + 2.024vw, 2.813rem);
         color : #53565A;
         color : rgb(83, 86, 90);
     }
@@ -55,10 +53,10 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
     }
     .aa_two-tiers-paragraph-container p {
         font-family : "myriad-pro", sans-serif;
-        font-size : 18px;
-        line-height : 25px;
+        font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);
+        font-weight: 400;
+        line-height: clamp(1.25rem, 1.071rem + 0.476vw, 1.5rem);
         color : #53565A;
-        color : rgb(83, 86, 90);
         margin-top: 1.25em;
         padding-right: 0;
     }
@@ -85,11 +83,26 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
         letter-spacing: 0.05em;
         padding-left: 60px!important;
     }
+    @media screen and (max-width: 768px) {
+        .aa-tt-top-text-container::before {
+            width: 20px;
+        }
+        .aa-tt-top-text-container::after {
+            padding-left: 20px;
+        }
+        th.text-dark.ps-lg-5 {
+            vertical-align: top;
+        }
+        th.text-grey {
+            padding-left: 20px !important;
+        
+        }
+    }
 </style>
     <div class="container-fluid p-0">
         <div class="row g-0">
         <div class="aa-tt-top-text-container pt-5" data-content="<?php echo $aa_two_tiers_top_text; ?>"></div>
-            <div class="aa_two-tiers-wrapper col-12 px-5 pt-5 pb-4">
+            <div class="aa_two-tiers-wrapper col-12 px-2 px-lg-5 pt-5 pb-4">
                 <div class="aa_two-tiers-container col-12 pb-5 ps-3">
                     <?php
                     if ( '' !== $aa_two_tiers_header ) : ?>
@@ -121,7 +134,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                                 </th>
                             </tr>
                             <tr>
-                                <th class="text-dark ps-5">
+                                <th class="text-dark ps-lg-5">
                                     <ul>
                                         <li>Check valves</li>
                                         <li>Thermocouples ignition systems</li>
@@ -131,7 +144,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                                         <li>Pumps</li>
                                     </ul>
                                 </th>
-                                <th class="text-dark ps-5">
+                                <th class="text-dark ps-lg-5">
                                     <ul>
                                         <li>Vibration system parts</li>
                                         <li>Generator spares</li>
@@ -154,7 +167,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                                 </th>
                             </tr>
                             <tr>
-                                <th class="text-dark ps-5">
+                                <th class="text-dark ps-lg-5">
                                     <ul>
                                         <li>Everything in Tier 1</li>
                                         <li>HPT Stage 1 blades and nozzles</li>
@@ -163,7 +176,7 @@ $aa_two_tiers_paragraph = get_sub_field('aa_two_tiers_paragraph') ? get_sub_fiel
                                         <li>LPT Stage 1 blades and nozzles</li>
                                     </ul>
                                 </th>
-                                <th class="text-dark ps-5">
+                                <th class="text-dark ps-lg-5">
                                     <ul>
                                         <li>Controls</li>
                                         <li>Starter motors</li>
